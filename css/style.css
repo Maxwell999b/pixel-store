@@ -35,3 +35,20 @@ body{color: rgb(255, 255, 255);}
     padding-left: 50px;
   } */
 
+  .form-control {
+    resize: none;  /* Disable textarea resizing */
+  }
+
+  .textarea-wrapper {
+    position: relative;
+  }
+
+  .textarea-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 10px;
+    line-height: 1.5;
+    color: #212529; /* Text color */
+  }
