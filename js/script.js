@@ -24,3 +24,11 @@ function displayProd(p) {
     divContainer.append(divPrd)
   }
 getProducts();
+
+    // Copy textarea content to the overlaying div
+    var textarea = document.querySelector('.form-control');
+    var textareaContent = document.querySelector('.textarea-content');
+
+    textarea.addEventListener('input', function() {
+      textareaContent.textContent = textarea.value;
+    });
