@@ -1,0 +1,29 @@
+#containeritems {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+  gap: 0.5rem;
+  font-size: 15px;
+}
+.item{
+  padding: 5px;
+  border-radius: 8px;
+  row-gap: 0.3rem;
+  color: #ffffff;
+  background-color: rgb(65, 65, 65);
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  flex-direction:column-reverse;
+}
+.img_item {
+  width: 60%;
+  margin: auto 20%;
+  display: block;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.img_item:hover{
+  transform: scale(1.03);
+  transition: 0.8s all;
+}
