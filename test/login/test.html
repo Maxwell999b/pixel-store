@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Card data on local storage</title>
+</head>
+
+<body>
+    <input type="text" id="product_name" placeholder="Product Name">
+    <input type="text" id="product_quantity" placeholder="Product Quantity">
+    <button id="btn_card">Add to Card</button>
+
+
+
+    <section>
+        <ul id="display-Field">
+
+        </ul>
+    </section>
+
+
+    
+    <script>
+        // 1 get input value from html
+const getInputValueById = (id) => {
+    const inputField = document.getElementById(id);
+    const inputValue = inputField.value;
+    inputField.value = '';
+    return inputValue;
+};
+// 2 set click event on btn and start operation
+document.getElementById('btn_card').addEventListener('click', () => {
+    const productName = getInputValueById('product_name');
+    const productQuantity = getInputValueById('product_quantity');
+    setValueOnLocalStorage(productName, productQuantity);
+    addDisplayProduct(productName, productQuantity);
+});
+
+
+// 3 check isCart ablavail in localstorage 
+const getCardFromLocalStorage = () => {
+    const savedCart = localStorage.getItem('cart');
+    let cart = {};
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+    }
+    return cart;
+};
+
+
+//4 add value in to the object and set to the local storage 
+const setValueOnLocalStorage = (product, quantity) => {
+    const cart = getCardFromLocalStorage();
+
+    // set value in object 
+    cart[product] = quantity;
+    const cartStringified = JSON.stringify(cart);
+
+
+    // save to the local storage 
+    localStorage.setItem('cart', cartStringified);
+};
+
+
+//5 show product on display
+const addDisplayProduct = (productName, quantityNum) => {
+    const displayField = document.getElementById('display-Field');
+    const porductItem = document.createElement('li');
+    porductItem.innerHTML = `
+    ${productName} - ${quantityNum}
+    `;
+    displayField.appendChild(porductItem);
+};
+
+
+// 6 get product list from local storage 
+const showProduct = () => {
+    const cart = getCardFromLocalStorage();
+    for (let product in cart) {
+        addDisplayProduct(product, cart[product]);
+    }
+};
+
+
+// 7 call function-6
+showProduct();
+
+    </script>
+</body>
+
+</html>

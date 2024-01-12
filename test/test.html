@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<style>
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+    gap: 0.5rem;
+    font-size: 15px;
+  }
+  .item{
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    row-gap: 0.5rem;
+    color: #9b5c41;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* .item:hover{
+    font-size: 30px;
+    color: hsl(18,41%,38%);
+    transition: 0.3s all linear;
+  } */
+
+  img {
+    width: 60%;
+    margin: auto 20%;
+    display: block;
+    object-fit: contain;
+  }
+</style>
+<body>
+    <input type="text" id="username">
+    <input type="text" id="password">
+    <button class="btn" onclick="login()">send Request</button>
+    <!-- <div id="container"></div> -->
+<!-- <script src="test.js"></script> -->
+<script>
+function login (){
+  var usernamecheck = document.getElementById("username").value
+  var passwordcheck = document.getElementById("password").value
+if (usernamecheck && passwordcheck){
+  localStorage.clear()
+  localStorage.setItem("login_data",JSON.stringify({uname:usernamecheck,pwd:passwordcheck}))
+}
+}
+window.onload = function () {
+  var login_data = localStorage.getItem("login_data")
+  if (login_data){
+    var login_data_obj = JSON.parse(login_data)
+    debugger;
+  document.getElementById("container").innerHTML = login_data_obj.uname
+  }
+}
+</script>
+</body>
+</html>
