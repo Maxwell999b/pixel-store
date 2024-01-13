@@ -16,44 +16,37 @@
   }
   </style>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone"></i>Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <!-- <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Product</a> -->
-              </li>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone"></i>Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self" onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item navbarcheck" href="Men.html" target="_blank">Men's Section</a></li>
-                  <li><a class="dropdown-item navbarcheck" href="Women.html" target="_blank">Women's Section</a></li>
-                  <li><hr class="dropdown-divider navbarcheck"></li>
-                  <li><a class="dropdown-item navbarcheck" href="#">Rate Us</a></li>
+                  <li><a class="dropdown-item navbarcheck" href="Hoodie.html" target="_self" onclick="getProducts()">Hoodie's Category</a></li>
+                  <li><a class="dropdown-item navbarcheck" href="Pants.html" target="_Self" onclick="getProductsP('Pants')">Pants's Category</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled invisible">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 search-click" type="search" placeholder="..." aria-label="Search" value="">
-              <button class="btn btn-outline-dark" id="search-check" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-              &nbsp;&nbsp;&nbsp;
-              <button type="button" class="btn btn-outline-dark me-2 "><i class="fa-solid fa-user"></i></button>
-            </form>
-            </div>
-        </div>
-      </nav>
+            </li>
+
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="..." aria-label="Search">
+            <button class="btn btn-outline-dark" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          </form>
+          </div>
+      </div>
+    </nav>
       <!-- <div id="containeritems">
         <span id="counterSpan">0</span>
         <div id="cart-icon"><img src="./icons8-envelope-48.png" alt=""></div>

@@ -35,8 +35,8 @@
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item navbarcheck" href="Men.html" target="_self" onclick="getProducts()">Hoodie's Category</a></li>
-                    <li><a class="dropdown-item navbarcheck" href="Women.html" target="_Self" onclick="getProductsP('Pants')">Pants's Category</a></li>
+                    <li><a class="dropdown-item navbarcheck" href="Hoodie.html" target="_self" onclick="getProducts()">Hoodie's Category</a></li>
+                    <li><a class="dropdown-item navbarcheck" href="Pants.html" target="_Self" onclick="getProductsP('Pants')">Pants's Category</a></li>
                     <!-- <li><hr class="dropdown-divider navbarcheck"></li> -->
                   </ul>
               </li>
@@ -46,16 +46,16 @@
                 <a class="nav-link disabled invisible">Disabled</a>
               </li> -->
             </ul>
-            <form class="d-flex" role="search" action="home.html">
-              <input class="form-control me-2 search-click" type="search" placeholder="..." aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-              &nbsp;&nbsp;&nbsp;
-              <button type="button" class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="toggle_hidden"><i class="fa-solid fa-user"></i>Login</button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+              <!-- &nbsp;&nbsp;&nbsp;
+              <button type="button" class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="toggle_hidden"><i class="fa-solid fa-user"></i>Login</button> -->
             </form>
             </div>
         </div>
       </nav>
-      <form class="row g-3 container" action="Home.html" method="get" id="logindataform">
+      <!-- <form class="row g-3 container" action="Home.html" method="get" id="logindataform">
       <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog" >
           <div class="modal-content">
@@ -80,7 +80,7 @@
           </div>
         </div>
       </div>
-    </form>
+    </form> -->
       <header class="hero-section">
         <div id="carouselExampleCaptions" class="carousel slide">
             <div class="carousel-indicators">
@@ -209,5 +209,6 @@
     <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>
   </body>
 </html>
