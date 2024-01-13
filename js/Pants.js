@@ -1,4 +1,6 @@
-var divContainer = document.getElementById("containeritems")
+var divContainer = document.getElementById("containeritems");
+var searchForm = document.getElementById("searchForm");
+var searchInput = document.getElementById("searchInput");
 
 function Loadapi(){
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
