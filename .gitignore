@@ -1,0 +1,12 @@
+# Ignore text/ directory
+text/
+
+# Ignore test/ directory
+test/
+
+# Ignore JS Files
+.amtest.js
+.pleasework.js
+
+# Ignore HTML Files
+test.html
