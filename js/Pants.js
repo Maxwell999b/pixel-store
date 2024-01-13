@@ -39,4 +39,37 @@ function getProductsPants(category){
             }
         });
 }
-window.onload = getProductsPants('Pants')
+
+function searchProducts(query, category) {
+    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+        .then(response => response.json())
+        .then(Data => {
+            divContainer.innerHTML = ''; // Clear the existing content
+
+            for (const item of Data.filter(x =>
+                x.category === category && // Check if the product belongs to the 'Pants' category
+                (x.name.toLowerCase().includes(query.toLowerCase()) ||
+                x.price.toString().includes(query))
+            )) {
+                displayProd(item);
+            }
+        });
+}
+
+window.onload = function () {
+    // Load default products on the Pants page
+    getProductsPants('Pants');
+
+    // Add submit event listener to the search form
+    searchForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+        var searchTerm = searchInput.value;
+        searchProducts(searchTerm, 'Pants');
+    });
+
+    // Add input event listener to the search input
+    searchInput.addEventListener('input', function () {
+        var searchTerm = searchInput.value;
+        searchProducts(searchTerm, 'Pants');
+    });
+};
