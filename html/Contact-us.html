@@ -36,8 +36,6 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item navbarcheck" href="Men.html" target="_blank">Men's Section</a></li>
                   <li><a class="dropdown-item navbarcheck" href="Women.html" target="_blank">Women's Section</a></li>
-                  <li><hr class="dropdown-divider navbarcheck"></li>
-                  <li><a class="dropdown-item navbarcheck" href="#">Rate Us</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -45,11 +43,9 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2 search-click" type="search" placeholder="..." aria-label="Search">
-              <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-              &nbsp;&nbsp;&nbsp;
-              <button type="button" class="btn btn-outline-dark me-2 "><i class="fa-solid fa-user"></i></button>
-            </form>
+              <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </form>       
             </div>
         </div>
       </nav>
@@ -130,27 +126,36 @@
       
         <!-- Section: Links  -->
         <section class="container-fluid">
-          <div class="container text-center text-md-start mt-5">
+          <div class="container text-center text-md-start mt-5 form-control">
             <!-- Grid row -->
             <div class="row mt-3">
               <!-- Grid column -->
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-warning" id="basic-addon1">@</span>
-                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="Fullname" aria-label="Username" aria-describedby="basic-addon1">
+              <div class="input-group mb-1">
+                <span class="input-group-text bg-warning align-items-center" id="basic-addon1">@</span>
+                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="Fullname" aria-label="Username" aria-describedby="basic-addon1" id="fullnameInput">
               </div>
               
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-warning" id="basic-addon1">@</span>
-                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group mb-1">
+                <span class="input-group-text bg-warning align-items-center" id="basic-addon2">@</span>
+                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2" id="emailInput">
               </div>
-
-              <div class="input-group textarea-wrapper">
-                <span class="input-group-text bg-warning">@</span>
-                <textarea class="form-control bg-primary p-2 text-dark bg-opacity-10" aria-label="With textarea" placeholder="Leave Your Message Here"></textarea>
+      
+              <div class="input-group textarea-wrapper mb-2 p-2">
+                <span class="input-group-text bg-warning align-items-center">@</span>
+                <textarea class="form-control bg-primary p-2 text-dark bg-opacity-10 rounded" aria-label="With textarea" placeholder="Leave Your Message Here" id="messageTextarea"></textarea>
                 <div class="textarea-content"></div>
               </div>
+              <button type="button" class="btn btn-dark" onclick="sendMessage()">Send</button>
+      
+              <!-- Alert message -->
+              <div class="alert alert-danger mt-3 d-none" id="validationAlert">
+                <strong>!</strong> Please correct the following fields before sending the message:
+                <ul id="validationErrors"></ul>
+              </div>
+            </div>
+          </div>
         </section>
-        <!-- Section: Links  -->
+                                      <!-- Section: Links  -->
       
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
@@ -163,5 +168,7 @@
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/contact.js"></script>
   </body>
 </html>

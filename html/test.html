@@ -3,53 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Example</title>
+  <title>testBootstrap</title>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/437b80c4cb.css" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <style>
+    .hidden {
+    display: none;
+  }
+  </style>
 </head>
 <body>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="..." aria-label="Search">
+    <button class="btn btn-outline-dark" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+  </form>          
 
-  <h1>Login Page</h1>
-  
-  <label for="username">Username:</label>
-  <input type="text" id="username" placeholder="Enter your username">
-
-  <label for="password">Password:</label>
-  <input type="password" id="password" placeholder="Enter your password">
-
-  <button onclick="saveLoginData()">Login</button>
-
-  <script>
-    // Function to save login data to localStorage
-    function saveLoginData() {
-      var username = document.getElementById('username').value;
-      var password = document.getElementById('password').value;
-
-      // Check if both fields are filled
-      if (username && password) {
-        // Save data to localStorage
-        localStorage.setItem('username', username);
-        localStorage.setItem('password', password);
-
-        alert('Login data saved successfully!');
-      } else {
-        alert('Please fill in both username and password fields.');
-      }
-    }
-
-    // Check if there is saved login data
-    window.onload = function() {
-      var savedUsername = localStorage.getItem('username');
-      var savedPassword = localStorage.getItem('password');
-
-      // Check if both savedUsername and savedPassword are not null or undefined
-      if (savedUsername && savedPassword) {
-        // Auto-fill the login form
-        document.getElementById('username').value = savedUsername;
-        document.getElementById('password').value = savedPassword;
-
-        alert('Login data loaded!');
-      }
-    }
-  </script>
-
+    <script>
+    document.getElementById('toggleButton').addEventListener('click', function() {
+        var searchInput = document.querySelector('.search-click');
+        searchInput.classList.toggle('visually-hidden');
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
 </html>
