@@ -9,4 +9,4 @@ test/
 .pleasework.js
 
 # Ignore HTML Files
-test.html
+html/test.html
