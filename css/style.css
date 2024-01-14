@@ -90,3 +90,31 @@ body{color: rgb(255, 255, 255);}
 #bold-text-bs-all{
   font-weight: bold;
 }
+
+#h-title-1,#h-title-2 {
+  color: #2B2B2B;
+}
+
+#p-title-1,#p-title-2{
+  color: #444444;
+  font-weight: light;
+}
+#s-title-1{
+  color: #FBD434;
+  font-weight: bold;
+}
+#s-title-2{
+  color: #FF6F61;
+  font-weight: bold;
+  }
+/* #blur-bg-image-hc{
+  filter: blur(1.9px);
+} */
+
+.brand-text {
+  color: #2B2B2B;
+}
+.lead{
+  color: #444444;
+  font-weight: light;
+}
