@@ -5,8 +5,11 @@ text/
 test/
 
 # Ignore JS Files
-.amtest.js
-.pleasework.js
+js/.amtest.js
+js/.pleasework.js
 
 # Ignore HTML Files
 html/test.html
+
+# Ignore git diff Files
+side-by-side

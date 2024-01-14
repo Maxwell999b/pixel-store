@@ -57,3 +57,36 @@ body{color: rgb(255, 255, 255);}
     display: none;
   }
 
+/* Hover background color for fields */
+#emailInput:hover,
+#messageTextarea:hover,
+#fullnameInput:hover {
+  background-color: rgba(106, 192, 192, 0.247) !important; /* Added !important to ensure it overrides other styles */
+}
+
+/* Hover color for @ symbol in emailInput */
+#emailInput::after {
+  content: "@";
+  color: #F8CB84 !important; /* Added !important to ensure it overrides other styles */
+}
+
+/* Hover background color for Clear */
+#Clear_button_form:hover {
+  background-color: #292929 !important; /* Added !important to ensure it overrides other styles */
+}
+/* Hover background color for Send */
+#Send_button_form:hover {
+  background-color: #f5d184 !important; /* Added !important to ensure it overrides other styles */
+}
+
+.modal-dialog.modal-dialog-top {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+.modal.show .modal-dialog.modal-dialog-top {
+  transform: translateY(0);
+}
+#bold-text-bs-all{
+  font-weight: bold;
+}

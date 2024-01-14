@@ -122,35 +122,55 @@
         <!-- Section: Social media -->
       
         <!-- Section: Links  -->
-        <section class="container-fluid">
-          <div class="container text-center text-md-start mt-5 form-control">
-            <!-- Grid row -->
-            <div class="row mt-3">
-              <!-- Grid column -->
-              <div class="input-group mb-1">
-                <span class="input-group-text bg-warning align-items-center" id="basic-addon1">@</span>
-                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="Fullname" aria-label="Username" aria-describedby="basic-addon1" id="fullnameInput">
-              </div>
-              
-              <div class="input-group mb-1">
-                <span class="input-group-text bg-warning align-items-center" id="basic-addon2">@</span>
-                <input type="text" class="form-control bg-primary p-2 text-dark bg-opacity-10" placeholder="example@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2" id="emailInput">
-              </div>
-      
-              <div class="input-group textarea-wrapper mb-2 p-2">
-                <span class="input-group-text bg-warning align-items-center">@</span>
-                <textarea class="form-control bg-primary p-2 text-dark bg-opacity-10 rounded" aria-label="With textarea" placeholder="Leave Your Message Here" id="messageTextarea"></textarea>
-                <div class="textarea-content"></div>
-              </div>
-              <button type="button" class="btn btn-dark" onclick="sendMessage()">Send</button>
-      
-              <!-- Alert message -->
-              <div class="alert alert-danger mt-3 d-none" id="validationAlert">
-                <strong>!</strong> Please correct the following fields before sending the message:
-                <ul id="validationErrors"></ul>
-              </div>
-            </div>
+        <section class="container-fluid ">
+          <h1 class="text-muted rounded d-flex justify-content-center">Connect with Us</h1>
+          <p class="lead text-center mb-4 text-primary">We're here to assist you. Feel free to reach out and send us a message.</p>
+  <form class="container text-center text-md-start mt-5" id="contactForm">
+    <!-- Fullname input -->
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control bg-primary text-dark bg-opacity-10" id="fullnameInput" placeholder=" ">
+      <label for="fullnameInput" id="fullnameLabel">Fullname</label>
+    </div>
+  
+    <!-- Email input -->
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control bg-primary text-dark bg-opacity-10" id="emailInput" placeholder=" ">
+      <label for="emailInput" id="emailLabel">Email address</label>
+    </div>
+  
+    <!-- Message textarea -->
+    <div class="form-floating mb-3">
+      <textarea class="form-control bg-primary text-dark bg-opacity-10 rounded" id="messageTextarea" placeholder=" "></textarea>
+      <label for="messageTextarea" id="messageLabel">Leave Your Message Here</label>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="row container d-flex justify-content-center">
+      <button type="button" class="btn btn-primary col-md-4" onclick="clearFields()" id="Clear_button_form">Clear</button>
+      <button type="button" class="btn btn-warning col col-md-5" onclick="sendMessage()" id="Send_button_form">Send</button>
+    </div>
+  
+    <!-- Alert message -->
+    <div class="alert alert-danger mt-3 d-none" id="validationAlert">
+      <strong>!</strong> Please correct the following fields before sending the message:
+      <ul id="validationErrors"></ul>
+    </div>
+  
+    <!-- Modal for successful send -->
+    <div class="modal" tabindex="-1" id="successModal">
+      <div class="modal-dialog modal-dialog-top">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-dark" id="bold-text-bs-all">Your Message has been sent <span class="text-success">successfully.</span><br><span class="text-info">We are working on it!</span></p>
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+          
         </section>
                                       <!-- Section: Links  -->
       
