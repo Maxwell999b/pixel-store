@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/437b80c4cb.css" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" type="" href="../css/style.css">
+</head>
+  <style>
+  body{
+    background-color: rgb(51, 51, 51);
+  }
+.search-click {border-radius: 10px;width: 10em;transition: all 0.5s;}
+.search-click:focus {width: 18em;}
+.search-click {position: relative;overflow: hidden;}
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone"></i>Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self" onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item navbarcheck" href="Hoodie.html" target="_self" onclick="getProducts()">Hoodie's Category</a></li>
+                    <li><a class="dropdown-item navbarcheck" href="Pants.html" target="_Self" onclick="getProductsP('Pants')">Pants's Category</a></li>
+                  </ul>
+              </li>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            </form>
+            </div>
+        </div>
+      </nav>
+      <header class="hero-section">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="custom-carousel-container">
+            <div class="carousel-inner custom-carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="../pics/banner/au1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="about-us-logo-button-color btn btn-lg btn-outline-dark">
+                <a href="Home.html">
+                <img src="../pics/white-logo-small.png">
+                </a></button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/au2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="about-us-logo-button-color btn btn-lg btn-outline-dark">
+                <a href="Home.html">
+                <img src="../pics/white-logo-small.png">
+                </a></button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/au3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                <button type="button" class="about-us-logo-button-color btn btn-lg btn-outline-dark">
+                <a href="Home.html">
+                <img src="../pics/white-logo-small.png">
+                </a></button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade  " data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </header>
+      <footer class="text-center text-lg-start bg-white text-muted text-fixed-bottom">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block text-dark">
+            <span id="bold-text-bs-all">Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel"><i class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small">
+                ...
+              </div>
+            </div>
+            <a href="" class="me-4 link-secondary">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="container-fluid">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+              <!-- Grid column -->
+              <div class="row align-items-center">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fa-solid fa-cog fa-spin"></i>プレイステーション PS
+                </h6>
+                <div class="container">
+                  <div class="lead m-2 p-2 center-content-us-div">
+                    <h3>Welcome to <span class="brand-text m-1 p-1">プレイステーション</span> - Your Pixel Playground for Hoodies and Pants!</h3>
+                    <br>
+                    Level up your wardrobe game at
+                    <span class="brand-text m-1 p-1">プレイステーション</span>, where fashion meets pixels in a playground designed for gamers and the young at heart.<br>
+                    Step into our digital realm, where every hoodie and pair of pants is a power-up for your style journey.<br>
+                    Dress the part with our curated
+                    collection that transcends the virtual and real worlds.<br><br>
+                    From comfy hoodies adorned with gaming motifs to pants that effortlessly blend
+                    street style with a touch of joystick flair,
+                    <span class="brand-text">プレイステーション</span> is your go-to destination for leveling up your streetwear.<br>
+                    Immerse yourself in the aesthetics
+                    of our virtual aisles, where the language of pixels converges with urban fashion.<br>
+                    Each piece in our collection is not just an article of
+                    clothing; it's a cheat code to unlocking your unique style.<br>
+                    Whether you're conquering virtual realms or navigating real-life adventures,
+                    <span class="brand-text">プレイステーション</span> ensures you do it in style.<br>
+                    Embrace the controller in your hands and the joystick in your
+                    heart as you explore the dynamic designs that resonate with gamers and the young, bold, and unapologetic.<br><br>
+                    At
+                    <span class="brand-text">プレイステーション</span>, fashion isn't just about what you wear; it's about making a statement that speaks the
+                    language of your gaming soul.<br>
+                    Join us in crafting a style narrative that blends the pixelated nostalgia of gaming with the street-smart
+                    swagger of today.<br>
+                    Our hoodies and pants aren't just clothing; they're power-ups for your wardrobe, enhancing your presence with a touch
+                    of gaming charisma.<br>
+                    <br><br><div class="text-warning" id="bold-text-bs-all">Get ready to level up your fashion game at
+                    <span class="brand-text">プレイステーション</span> – because in this pixelated playground, your style adventure awaits, and every piece is a
+                    respawn of your unique identity!
+                </div>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- Grid column -->
+            <!-- Grid row -->
+        </section>
+        <!-- Section: Links  -->
+      <!-- Footer -->
+        <!-- Copyright -->
+        <footer>
+        <div class="text-center p-4">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="Home.html">プレイステーション - playstaion</a>
+          <span><i class="fas fa-print text-secondary"></i> + 01 234 567 89</span>
+          <span><i class="fas fa-phone me-1 text-secondary"></i> + 01 234 567 89</span>
+          <span><i class="fas fa-envelope me-1 text-secondary"></i>info@example.com</span>
+          <span><i class="fas fa-home me-1 text-secondary"></i> QENA, QN 10012, EG</span>
+        </div>
+      </footer>
+        <!-- Copyright -->
+    <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/search.js"></script>
+  </body>
+</html>

@@ -17,7 +17,7 @@ body{color: rgb(255, 255, 255);}
 
 .home-logo-button-color{background-color: rgba(44, 9, 88, 0.842);}
 .contact-us-logo-button-color{background-color: rgba(68, 61, 1, 0.575);}
-
+.about-us-logo-button-color{background-color: #ae2d3393;}
 /* 
 .rate-us-hover {
     border: 1px solid #ccc;
@@ -87,17 +87,24 @@ body{color: rgb(255, 255, 255);}
 .modal.show .modal-dialog.modal-dialog-top {
   transform: translateY(0);
 }
-#bold-text-bs-all{
+#bold-text-bs-all,.nav-link,.nav-link-menu{
   font-weight: bold;
+}
+.nav-link{
+  color: #202023 !important;
+}
+.nav-link:hover{
+  color: #99abc7 !important;
 }
 
 #h-title-1,#h-title-2 {
   color: #2B2B2B;
+  font-weight: bolder;
 }
 
 #p-title-1,#p-title-2{
   color: #444444;
-  font-weight: light;
+  font-weight: 500;
 }
 #s-title-1{
   color: #FBD434;
@@ -112,9 +119,11 @@ body{color: rgb(255, 255, 255);}
 } */
 
 .brand-text {
-  color: #2B2B2B;
+  color: #f57f67;
+  font-weight: bold;
+
 }
 .lead{
-  color: #444444;
+  color: #005b96;
   font-weight: light;
 }
