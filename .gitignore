@@ -13,3 +13,6 @@ html/test.html
 
 # Ignore git diff Files
 side-by-side
+
+# pictures
+pics/assets/

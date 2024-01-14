@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'LilitaOne';
+  src: url('/Fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype'); /* Adjust the path to your font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{color: rgb(255, 255, 255);}
 
 .form-control:focus{border-color: #2c2c2c;  box-shadow:#f7f7f7}
@@ -135,4 +142,9 @@ body{color: rgb(255, 255, 255);}
 }
 #special-footer-bg,.special-footer-bg2{
   background-color: #111111 !important;
+}
+.cards-home-cat{
+  color: #005b96;
+  font-weight: bold;
+  background-color: #F0E7DB !important;
 }

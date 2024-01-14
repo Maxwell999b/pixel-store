@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'LilitaOne';
+    src: url('/Fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+.card-cs {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .card-cs:hover {
+    transform: scale(1.009);
+    filter: brightness(70%);
+  }
+  
+  .card-img-overlay-cs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    
+  }
+  
+  .card-cs:hover .card-img-overlay-cs {
+    opacity: 1;
+  }
+  .card-cs1:hover img {
+    content: url('/pics/product/black-hoodie.jpg'); /* Replace with the path to your second image */
+}
+.card-cs2:hover img {
+    content: url('/pics/product/pants-grey2.jpg'); /* Replace with the path to your second image */
+}
+  .btn-overlay-cs {
+    background-color: #C7C7C7; 
+    color: #fff;
+    border: none;
+    padding: 30%; 
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+    position: relative;
+    z-index: 1;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: 'LilitaOne';
+    letter-spacing: 10%;
+  }
+  
+  .btn-overlay-cs:hover {
+    background-color: #c1d6f3; 
+  }
