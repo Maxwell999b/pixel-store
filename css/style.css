@@ -127,3 +127,9 @@ body{color: rgb(255, 255, 255);}
   color: #005b96;
   font-weight: light;
 }
+#special-page-bg,.special-page-bg{
+  background-color: #F0E7DB !important;
+}
+#special-page-bg2,.special-page-bg2{
+  background-color: #dbe4f0 !important;
+}

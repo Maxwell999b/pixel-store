@@ -28,15 +28,18 @@
               <a class="nav-link active" aria-current="page" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone"></i>Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-cart-shopping"></i>Product</a>
+              <a class="nav-link active nav-link" aria-current="page" role="button" href="About-us.html" target="_self"><i class="fa-solid fa-circle-info fa-bounce"></i>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Products.html"><i class="fa-solid fa-cart-shopping"></i>Product</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-gear"></i>
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item navbarcheck" href="Hoodie.html" target="_blank">Men's Section</a></li>
-                <li><a class="dropdown-item navbarcheck" href="Women.html" target="_blank">Women's Section</a></li>
+                <li><a class="dropdown-item navbarcheck" href="Hoodie.html" target="_self" onclick="getProducts()">Hoodie's Category</a></li>
+                <li><a class="dropdown-item navbarcheck" href="Pants.html" target="_self" onclick="getProductsP('Pants')">Pants's Category</a></li>
               </ul>
             </li>
             <li class="nav-item">
