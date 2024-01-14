@@ -133,3 +133,6 @@ body{color: rgb(255, 255, 255);}
 #special-page-bg2,.special-page-bg2{
   background-color: #dbe4f0 !important;
 }
+#special-footer-bg,.special-footer-bg2{
+  background-color: #111111 !important;
+}

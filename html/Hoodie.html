@@ -65,24 +65,53 @@
       <footer class="text-center text-lg-start bg-dark text-muted text-fixed-bottom fixed-bottom footer">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <!-- Left -->
-          <div class="container text-center">
+          <div class="container d-flex align-items-center">
+            <!-- Left -->
             <span><a href="Home.html"><img src="../pics/white-logo-small.png" width="50em"></a></span>
           </div>
-          <!-- Left -->
       
-          <!-- Right -->
-          <div>
+          <div class="container d-flex align-items-center justify-content-center justify-content-lg-end">
+            <!-- Right -->
             <a href="" class="me-4 link-secondary">
-              <i class="fab fa-facebook-f"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </a>
             <a href="" class="me-4 link-secondary">
               <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-google"></i>
+            </a>
             <a href="" class="me-4 link-secondary">
               <i class="fab fa-instagram"></i>
             </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 link-secondary">
+              <i class="fa-brands fa-github"></i>
+            </a>
+      
+            <button class="btn btn-light btn-sm cart-container" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+              <i class="fa-solid fa-cart-shopping fa-fade"></i>Product
+            </button>
+            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                  <i class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body small cart-list">
+              </div>
+              <div class="cart-total">
+                <h6 style="background-color: darkcyan; display: flex; width: 10rem;">Checkout: $</h6>
+                <span id="cart-total-value"></span>
+              </div>
+            </div>
           </div>
+        </section>
       </footer>
+      
   <!-- Footer -->
     <!-- <script src="../js/poduct.js"></script> -->
     <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
