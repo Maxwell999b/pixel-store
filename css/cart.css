@@ -43,17 +43,26 @@
 .cart-item-quantity {
     font-weight: bold;
 }
-#cart-total-title{
-    font-family:LibreBarcode39;
+#cart-total-title {
+    font-family: PoppinsBlack;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
+    margin-right: 50px;
+    color: #f57f67;
 }
-#cart-total-value{
-    font-family: LibreBarcode39;
+
+#cart-total-value {
+    font-family: FjallaOne;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
-    color: blueviolet;
+    margin-top: -5px;
+    color: #4CAF50;
 }
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    background-color: rgb(31, 31, 31);
+
+    padding: 15px;
+    line-height: 2;
+}
+
