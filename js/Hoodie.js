@@ -2,63 +2,77 @@ var divContainer = document.getElementById("containeritems");
 var searchForm = document.getElementById("searchForm");
 var searchInput = document.getElementById("searchInput");
 
-function Loadapi(){
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
-    .then(response => response.json())
-    .then(json => container.innerHTML = JSON.parse(json));
-}
-function getProducts(){
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
-    .then(response => response.json())
-    .then(Data => 
-        {
-            let str =''
-            for (const item of Data) {
-                displayProd(item)
-            }
-        });
-}
-function displayProd(pa) {
-    let title = pa.name
-    let price = pa.price
-    let thumbnail = pa.imgSrc
-    var divPrd = document.createElement("div")
-    divPrd.innerHTML += "<br>" + title + "<br>" + price + "<br>" + "<img class='img_item' src='" + thumbnail + "'>"
-    divPrd.setAttribute("class", "item")
-    divContainer.append(divPrd)
+function loadApi() {
+    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5')
+        .then(response => response.json())
+        .then(data => displayProducts(data, 'Hoodie'));
 }
 
-function getProductsHoodie(category){
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
-    .then(response => response.json())
-    .then(Data => 
-        {
-            let str =''
-            for (const item of Data.filter(x=>x.category==category)) {
-                displayProd(item)
-            }
-        });
+function displayProducts(data, category) {
+    divContainer.innerHTML = ''; // Clear the container before adding new items
+
+    data.filter(item => item.category === category).forEach(item => {
+        const { name, price, imgSrc } = item;
+        const productElement = createProductElement(name, price, imgSrc);
+        divContainer.appendChild(productElement);
+    });
 }
+
+function createProductElement(title, price, thumbnail) {
+    const divPrd = document.createElement("div");
+    divPrd.classList.add("item");
+    divPrd.innerHTML = `
+        <div class="product-title">${title}</div>
+        <div class="product-price">${price}</div>
+        <img class='img_item' src='${thumbnail}'>
+        <button class="add-to-cart-button" onclick="addToCart('${title}', '${price}', '${thumbnail}')">Add to Cart</button>
+    `;
+    return divPrd;
+}
+
 
 function searchProducts(query, category) {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
         .then(response => response.json())
-        .then(Data => {
+        .then(data => {
             divContainer.innerHTML = ''; // Clear the existing content
 
-            for (const item of Data.filter(x =>
+            data.filter(x =>
                 x.category === category && // Check if the product belongs to the 'Hoodie' category
                 (x.name.toLowerCase().includes(query.toLowerCase()) ||
                 x.price.toString().includes(query))
-            )) {
+            ).forEach(item => {
                 displayProd(item);
-            }
+            });
         });
+}
+
+function getProductsHoodie() {
+    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
+        .then(response => response.json())
+        .then(data => {
+            displayProducts(data, 'Hoodie');
+        });
+}
+
+function displayProd(pa) {
+    let title = pa.name;
+    let price = pa.price;
+    let thumbnail = pa.imgSrc;
+    var divPrd = document.createElement("div");
+    divPrd.classList.add("item");
+    divPrd.innerHTML = `
+        <div class="product-title">${title}</div>
+        <div class="product-price">${price}</div>
+        <img class='img_item' src='${thumbnail}'>
+        <button class="add-to-cart-button" onclick="addToCart('${title}', '${price}', '${thumbnail}')">Add to Cart</button>
+    `;
+    divContainer.append(divPrd);
 }
 
 window.onload = function () {
     // Load default products on the Hoodie page
-    getProductsHoodie('Hoodie');
+    getProductsHoodie();
 
     // Add submit event listener to the search form
     searchForm.addEventListener('submit', function (event) {

@@ -9,12 +9,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="" href="../css/style.css">
     <link rel="stylesheet" type="" href="../css/Products.css">
+    <link rel="stylesheet" type="" href="../css/cart.css">
 </head>
-  <style>
-  body{
-    background-color: rgb(51, 51, 51);
-  }
-  </style>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -85,24 +81,26 @@
             <a href="" class="me-4 link-secondary">
               <i class="fa-brands fa-github"></i>
             </a>
-      
-            <button class="btn btn-light btn-sm cart-container" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
-              <i class="fa-solid fa-cart-shopping fa-fade"></i>Product
-            </button>
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+            <!-- Cart Menu -->
+            <button class="btn btn-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions" aria-controls="offcanvasLeftBothOptions">
+              <i class="fa-solid fa-cart-shopping fa-fade"></i> Product
+          </button>
+          
+           
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-                  <i class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...
+                <h5 class="offcanvas-title" id="offcanvasLeftBothOptionsLabel">
                 </h5>
                 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body small cart-list">
               </div>
               <div class="cart-total">
-                <h6 style="background-color: darkcyan; display: flex; width: 10rem;">Checkout: $</h6>
+                <h6 id="cart-total-title">Checkout: $</h6>
                 <span id="cart-total-value"></span>
               </div>
             </div>
+            
           </div>
         </section>
       </footer>
@@ -112,5 +110,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/products.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>

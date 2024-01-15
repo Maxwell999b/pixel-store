@@ -1,10 +1,24 @@
+body{
+  background-color: rgb(51, 51, 51);
+}
+@font-face {
+  font-family: 'LilitaOne';
+  src: url('/Fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+  background-color: rgb(51, 51, 51);
+}
 #containeritems {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 0.5rem;
   font-size: 15px;
 }
-.item{
+
+.item {
+  position: relative; /* Add this to enable positioning of the button */
   padding: 5px;
   border-radius: 8px;
   row-gap: 0.3rem;
@@ -13,8 +27,9 @@
   font-size: 110%;
   display: flex;
   text-align: center;
-  flex-direction:column;
+  flex-direction: column;
 }
+
 .img_item {
   width: 60%;
   margin: auto 20%;
@@ -23,7 +38,47 @@
   border-radius: 8px;
 }
 
-.img_item:hover{
+.img_item:hover {
   transform: scale(1.07);
   transition: 0.8s all;
+}
+
+/* Hide the button initially */
+.add-to-cart-button {
+  display: none;
+  position: absolute;
+  bottom: 10px; /* Adjust the positioning based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Display the button on hover */
+.item:hover .add-to-cart-button {
+  display: block;
+}
+
+.product-title {
+  font-weight: bold;
+  color: #ff5733;
+  font-family: 'LilitaOne';
+}
+
+.product-price {
+  font-weight: lighter;
+  color: #99cc99;
+  font-family: 'LilitaOne';
+}
+
+.add-to-cart-button:hover {
+  background-color: #45a049;
 }
