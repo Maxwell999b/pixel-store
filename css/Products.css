@@ -1,12 +1,7 @@
 body{
   background-color: rgb(51, 51, 51);
 }
-@font-face {
-  font-family: 'LilitaOne';
-  src: url('/Fonts/Lilita_One/LilitaOne-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+
 body{
   background-color: rgb(51, 51, 51);
 }

@@ -43,3 +43,17 @@
 .cart-item-quantity {
     font-weight: bold;
 }
+#cart-total-title{
+    font-family:LibreBarcode39;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+#cart-total-value{
+    font-family: LibreBarcode39;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    color: blueviolet;
+}
