@@ -60,6 +60,8 @@ body{
   font-size: 16px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 15px 50px 30px;;
+
 }
 
 /* Display the button on hover */
