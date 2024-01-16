@@ -92,3 +92,23 @@
     color: #4CAF50;
     font-size: xx-large;
 }
+.BUY-btn{
+    font-family: LilitaOne;
+    color: #181C22;
+    background-color: #5dbea3;
+    font-weight: lighter;
+    border-color: #5adbb5;
+    letter-spacing: 1.1rem;
+}
+.BUY-btn:hover{
+    color: #181C22;
+    background-color: #ffe169;
+    border-color: #5adbb5;
+    font-weight: bolder;
+}
+.BUY-btn:focus{
+    color: #ececec;
+    background-color: #33b249;
+    font-weight: bolder;
+    border-color: #5adbb5;
+}
