@@ -5,8 +5,11 @@ function addToCart(title, price, thumbnail) {
         var quantityElement = existingCartItem.querySelector('.cart-item-quantity');
         var quantity = parseInt(quantityElement.value);
 
-        // Increment the quantity, but ensure it does not exceed the limit (10000)
-        quantityElement.value = Math.min(quantity + 1, 10000);
+        // Check if the quantity is already at the maximum limit (100)
+        if (quantity < 100) {
+            // Increment the quantity, but ensure it does not exceed the limit (100)
+            quantityElement.value = Math.min(quantity + 1, 100);
+        }
     } else {
         var cartList = document.querySelector('.cart-list');
         // Add item to the cart
@@ -250,5 +253,4 @@ clearCartModal();
 //     // Close the cart modal
 //     $('#offcanvasLeftBothOptions').offcanvas('hide');
 // }
-
 
