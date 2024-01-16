@@ -22,7 +22,6 @@ function addToCart(title, price, thumbnail) {
 }
 
 function addItemToCart(cartList, title, price, thumbnail) {
-    var cartTotalValue = document.getElementById('cart-total-value');
 
     var cartItem = document.createElement('div');
     cartItem.classList.add('cart-item');
@@ -199,7 +198,7 @@ function showBuyAlert() {
         // Reload the page after a delay
         setTimeout(function () {
             location.reload();
-        }, 4000); // 3000 milliseconds (3 seconds) delay before reload
+        }, 2500); // 3000 milliseconds (3 seconds) delay before reload
 
         // Clear the cart modal
         setTimeout(function () {
