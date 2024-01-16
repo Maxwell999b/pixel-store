@@ -164,3 +164,43 @@ function calculateTotalPrice() {
         totalPriceElement.textContent = total.toFixed(2);
     }, 200);
 }
+
+function showBuyAlert() {
+    // Show the alert
+    var buyAlert = document.getElementById('buyAlert');
+    buyAlert.style.display = 'block';
+
+    // Reload the page after a delay
+    setTimeout(function () {
+        location.reload();
+    }, 4000); // 3000 milliseconds (3 seconds) delay before reload
+
+    // Clear the cart modal
+    setTimeout(function () {
+        clearCartModal();
+    }, 500);
+}
+
+function clearCartModal() {
+    var cartList = document.querySelector('.cart-list');
+    cartList.innerHTML = ''; // Clear the cart items
+
+    // Trigger a custom event to notify the offcanvas script
+    var event = new Event('cartUpdated');
+    document.dispatchEvent(event);
+
+    // Update the total value
+    updateTotalPrice();
+}
+
+
+// function showBuyToast() {
+//     // Trigger the toast
+//     var toast = new bootstrap.Toast(document.getElementById('buyToast'));
+//     toast.show();
+
+//     // Close the cart modal
+//     $('#offcanvasLeftBothOptions').offcanvas('hide');
+// }
+
+

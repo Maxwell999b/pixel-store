@@ -49,6 +49,7 @@
           </div>
       </div>
     </nav>
+    
       <section >
         <br>
         <div id="containeritems"></div>
@@ -98,12 +99,24 @@
                   <span id="cart-total-value"></span>
 
               </div>
-              <button class="btn btn-light btn-sm BUY-btn" type="button">
-                <i class="fa-solid fa-credit-card"></i>BUY
-            </button>
+              <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
+    <i class="fa-solid fa-credit-card"></i>BUY
+</button>
+
+<!-- Alert BUY Message here -->
+<div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
+  <strong>Thank you for your purchase!</strong> Your order has been received.
+</div>
+
+            <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="buyToast">
+                <div class="toast-body">
+                    Your purchase was successful!
+                </div>
+            </div> -->
           </div>
-            
-          </div>
+
+          
+        </div>
         </section>
       </footer>
       

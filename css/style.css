@@ -141,3 +141,6 @@ body{color: rgb(255, 255, 255);}
   font-weight: bold;
   background-color: #F0E7DB !important;
 }
+#containeritems{
+  margin-bottom: 8%;
+}
