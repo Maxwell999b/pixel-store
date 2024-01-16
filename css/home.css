@@ -19,15 +19,21 @@
     transition: opacity 0.3s;
     
   }
+  .card-cs img {
+    transition: opacity 1s ease-in-out;
+  }
+  .card-cs:hover img {
+    opacity: 0.8;
+  }
   
   .card-cs:hover .card-img-overlay-cs {
     opacity: 1;
   }
   .card-cs1:hover img {
-    content: url('/pics/product/black-hoodie.jpg'); /* Replace with the path to your second image */
+    content: url('/pics/product/black-hoodie.jpg');
 }
 .card-cs2:hover img {
-    content: url('/pics/product/pants-grey2.jpg'); /* Replace with the path to your second image */
+    content: url('/pics/product/pants-grey2.jpg');
 }
   .btn-overlay-cs {
     background-color: #C7C7C7; 
@@ -47,5 +53,6 @@
   }
   
   .btn-overlay-cs:hover {
-    background-color: #c1d6f3; 
+    background-color: #c1d6f3;
   }
+
