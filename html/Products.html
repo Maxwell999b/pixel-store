@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://kit.fontawesome.com/437b80c4cb.css" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="" href="../css/style.css">
-    <link rel="stylesheet" type="" href="../css/Products.css">
     <link rel="stylesheet" type="" href="../css/cart.css">
+    <link rel="stylesheet" type="" href="../css/Products.css">
     <link rel="stylesheet" type="" href="../css/Fonts.css">
 </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary special-page-bg2">
       <div class="container-fluid">
         <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +52,6 @@
       <section >
         <br>
         <div id="containeritems"></div>
-        <br><br><br><br>
       </section>
       <footer class="text-center text-lg-start bg-dark text-muted text-fixed-bottom fixed-bottom footer">
         <!-- Section: Social media -->
@@ -87,13 +86,12 @@
               <i class="fa-solid fa-cart-shopping fa-fade"></i> Product
           </button>
           
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
+          <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
               <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasLeftBothOptionsLabel">
-                  </h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasLeftBothOptionsLabel">Cart</h5>
+                  <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div class="offcanvas-body small cart-list">
+              <div class="offcanvas-body small cart-list canvas-cart-body">
               </div>
               <div class="cart-total">
                   <h6 id="cart-total-title">Total is :</h6>

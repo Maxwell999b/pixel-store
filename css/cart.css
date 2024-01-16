@@ -60,9 +60,35 @@
 .cart-total {
     display: flex;
     align-items: center;
-    background-color: rgb(31, 31, 31);
-
+    background-color: #181C22;
     padding: 15px;
     line-height: 2;
 }
-
+.cart-item-title{
+    font-family: FjallaOne;
+    font-weight: bold;
+    color: #f57f67;
+}
+.cart-item-price{
+    font-family: FjallaOne;
+    font-weight: bold;
+    color: #4CAF50;
+}
+.cart-item-thumbnail{
+    background-color: #cacaca;
+}
+.cart-item-quantity{
+    border: 1px solid #16191E;
+}
+.canvas-cart-body{
+    background: #16191E;
+}
+.canvas-cart-heading{
+    background: #181C22;
+}
+.canvas-cart-heading-title{
+    font-family: PoppinsBold;
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: xx-large;
+}

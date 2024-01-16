@@ -11,6 +11,12 @@ function loadApi() {
 function displayProducts(data) {
     divContainer.innerHTML = ''; // Clear the container before adding new items
 
+    if (data.length === 0) {
+        // No matching products found
+        divContainer.innerHTML = 'No products found.';
+        return;
+    }
+
     data.forEach(item => {
         const { name, price, imgSrc } = item;
         const productElement = createProductElement(name, price, imgSrc);
@@ -30,23 +36,28 @@ function createProductElement(title, price, thumbnail) {
     return divPrd;
 }
 
-
-// Load API data when the page is loaded
-document.addEventListener("DOMContentLoaded", loadApi);
-
-
 function searchProducts(query) {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
         .then(response => response.json())
         .then(Data => {
             divContainer.innerHTML = ''; // Clear the existing content
 
-            for (const item of Data.filter(x => 
+            const filteredData = Data.filter(x => 
                 x.name.toLowerCase().includes(query.toLowerCase()) ||
                 x.price.toString().includes(query)
-            )) {
-                displayProd(item);
+            );
+
+            if (filteredData.length === 0) {
+                // No matching products found
+                divContainer.innerHTML = 'No products found.';
+                return;
             }
+
+            filteredData.forEach(item => {
+                const { name, price, imgSrc } = item;
+                const productElement = createProductElement(name, price, imgSrc);
+                divContainer.appendChild(productElement);
+            });
         });
 }
 
@@ -67,5 +78,3 @@ window.onload = function () {
         searchProducts(searchTerm);
     });
 };
-
-
