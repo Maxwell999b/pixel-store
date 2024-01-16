@@ -4,22 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women's Page</title>
+    <title>Products's Page</title>
     <link rel="stylesheet" href="https://kit.fontawesome.com/437b80c4cb.css" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="" href="../css/style.css">
     <link rel="stylesheet" type="" href="../css/cart.css">
     <link rel="stylesheet" type="" href="../css/Products.css">
     <link rel="stylesheet" type="" href="../css/Fonts.css">
-    
+    <link rel="stylesheet" type="" href="../css/mediaquery.css">
 </head>
-  <style>
-  body{
-    background-color: rgb(51, 51, 51);
-  }
-  </style>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary special-page-bg2">
       <div class="container-fluid">
         <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,14 +46,14 @@
             <button class="btn btn-outline-dark" type="submit" id="toggleButton">
                 <i class="fa-solid fa-magnifying-glass"></i>Search
             </button>
-        </form>  
+        </form>
           </div>
       </div>
     </nav>
-      <section>
+    
+      <section >
         <br>
         <div id="containeritems"></div>
-        <br><br><br><br>
       </section>
       <footer class="text-center text-lg-start bg-dark text-muted text-fixed-bottom fixed-bottom footer">
         <!-- Section: Social media -->
@@ -88,27 +83,41 @@
             <a href="" class="me-4 link-secondary">
               <i class="fa-brands fa-github"></i>
             </a>
-      
+            <!-- Cart Menu -->
             <button class="btn btn-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions" aria-controls="offcanvasLeftBothOptions">
               <i class="fa-solid fa-cart-shopping fa-fade"></i> Product
           </button>
           
-           
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
+          <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasLeftBothOptionsLabel">
-                </h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasLeftBothOptionsLabel">Cart</h5>
+                  <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div class="offcanvas-body small cart-list">
+              <div class="offcanvas-body small cart-list canvas-cart-body">
               </div>
               <div class="cart-total">
-                <h6 style="background-color: darkcyan; display: flex; width: 10rem;">Checkout: $</h6>
-                <span id="cart-total-value"></span>
-              </div>
-            </div>
+                  <h6 id="cart-total-title">Total is :</h6>
+                  <span id="cart-total-value"></span>
 
+              </div>
+              <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
+    <i class="fa-solid fa-credit-card"></i>BUY
+</button>
+
+<!-- Alert BUY Message here -->
+<div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
+  <strong>Thank you for your purchase!</strong> Your order has been received.
+</div>
+
+            <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="buyToast">
+                <div class="toast-body">
+                    Your purchase was successful!
+                </div>
+            </div> -->
           </div>
+
+          
+        </div>
         </section>
       </footer>
       

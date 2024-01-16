@@ -7,11 +7,9 @@ body{
 }
 #containeritems {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 0.5rem;
   font-size: 15px;
 }
-
 .item {
   position: relative; /* Add this to enable positioning of the button */
   padding: 5px;
@@ -64,7 +62,7 @@ body{
 }
 
 .product-title {
-  font-weight: bold;
+  font-weight: lighter;
   color: #ff5733;
   font-family: 'LilitaOne';
 }
