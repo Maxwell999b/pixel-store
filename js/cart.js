@@ -5,22 +5,21 @@ function addToCart(title, price, thumbnail) {
         var quantityElement = existingCartItem.querySelector('.cart-item-quantity');
         var quantity = parseInt(quantityElement.value);
 
-        // Check if the quantity is already at the maximum limit (100)
+
         if (quantity < 100) {
-            // Increment the quantity, but ensure it does not exceed the limit (100)
+
             quantityElement.value = Math.min(quantity + 1, 100);
         }
     } else {
         var cartList = document.querySelector('.cart-list');
-        // Add item to the cart
+
         addItemToCart(cartList, title, price, thumbnail);
     }
 
-    // Trigger a custom event to notify the offcanvas script
+
     var event = new Event('cartUpdated');
     document.dispatchEvent(event);
 
-    // Update the total value
     updateTotalPrice();
 }
 
@@ -74,8 +73,12 @@ document.addEventListener('cartUpdated', updateTotalPrice);
 
 // Update the total value
 function updateTotalPrice() {
-    var totalPrice = calculateTotalPrice();
-    document.getElementById('cart-total-value').textContent = totalPrice.toFixed(2);
+    var totalPriceElement = document.getElementById('cart-total-value');
+
+    if (totalPriceElement) {
+        var totalPrice = calculateTotalPrice();
+        totalPriceElement.textContent = totalPrice !== undefined ? totalPrice.toFixed(2) : totalPriceElement.textContent;
+    }
 }
 
 // Listen for the custom event
@@ -178,15 +181,33 @@ function calculateTotalPrice() {
         cartItems.forEach(function (cartItem) {
             var priceElement = cartItem.querySelector('.cart-item-price');
             var quantityInput = cartItem.querySelector('.cart-item-quantity');
-            var price = parseFloat(priceElement.textContent.replace('$', ''));
-            var quantity = parseInt(quantityInput.value);
 
-            total += price * quantity;
+            // Check if both priceElement and quantityInput are valid elements
+            if (priceElement && quantityInput) {
+                var price = parseFloat(priceElement.textContent.replace('EGP', '')); // Parse price and remove currency symbol
+                var quantity = parseInt(quantityInput.value);
+
+                // Check if price and quantity are valid numbers before adding to total
+                if (!isNaN(price) && !isNaN(quantity)) {
+                    total += price * quantity;
+                }
+            }
         });
 
         // Update the total value
         var totalPriceElement = document.getElementById('cart-total-value');
-        totalPriceElement.textContent = total.toFixed(2);
+
+        // Check if totalPriceElement is a valid element
+        if (totalPriceElement) {
+            // Check if total is a valid number before updating the element
+            if (!isNaN(total)) {
+                totalPriceElement.textContent = total.toFixed(2);
+            } else {
+                console.error('Invalid total price value:', total);
+            }
+        } else {
+            console.error('Total price element not found.');
+        }
     }, 200);
 }
 
@@ -220,8 +241,11 @@ function clearCartModal() {
     var event = new Event('cartUpdated');
     document.dispatchEvent(event);
 
-    // Update the total value
-    updateTotalPrice();
+    // Update the total value if #cart-total-value element is present
+    var totalPriceElement = document.getElementById('cart-total-value');
+    if (totalPriceElement) {
+        updateTotalPrice();
+    }
 
     // Check if the BUY button should be visible
     var buyButton = document.querySelector('.BUY-btn');
