@@ -112,9 +112,32 @@ function addCartItem(button) {
 function deleteCartItem(button) {
     var cartItem = button.closest('.cart-item');
     cartItem.remove();
+
+    // Check if the BUY button should be visible
+    checkBuyButtonVisibility();
+
     // Update the total value
     updateTotalPrice();
 }
+
+// Add this function to check the visibility of the BUY button
+function checkBuyButtonVisibility() {
+    var cartList = document.querySelector('.cart-list');
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
+}
+
+// Initial setup to hide the BUY button
+document.addEventListener('DOMContentLoaded', function () {
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = 'none';
+});
+
+// Update the visibility of the BUY button when the cart is updated
+document.addEventListener('cartUpdated', function () {
+    checkBuyButtonVisibility();
+});
+
 
 function decrementCartItem(button) {
     var quantityInput = button.parentElement.querySelector('.cart-item-quantity');
@@ -133,7 +156,7 @@ function incrementCartItem(button) {
     var quantity = parseInt(quantityInput.value);
 
     // Increment the quantity, but ensure it does not exceed the limit (10000)
-    quantityInput.value = Math.min(quantity + 1, 10000);
+    quantityInput.value = Math.min(quantity + 1, 100);
 
     // Update the total value
     updateTotalPrice();
@@ -166,21 +189,27 @@ function calculateTotalPrice() {
 }
 
 function showBuyAlert() {
-    // Show the alert
-    var buyAlert = document.getElementById('buyAlert');
-    buyAlert.style.display = 'block';
+    // Check if there are items in the cart
+    var cartItems = document.querySelectorAll('.cart-item');
+    if (cartItems.length > 0) {
+        // Show the alert
+        var buyAlert = document.getElementById('buyAlert');
+        buyAlert.style.display = 'block';
 
-    // Reload the page after a delay
-    setTimeout(function () {
-        location.reload();
-    }, 4000); // 3000 milliseconds (3 seconds) delay before reload
+        // Reload the page after a delay
+        setTimeout(function () {
+            location.reload();
+        }, 4000); // 3000 milliseconds (3 seconds) delay before reload
 
-    // Clear the cart modal
-    setTimeout(function () {
-        clearCartModal();
-    }, 500);
+        // Clear the cart modal
+        setTimeout(function () {
+            clearCartModal();
+        }, 500);
+    }
 }
 
+// Modify the clearCartModal function to update the visibility of the BUY button
+// Modify the clearCartModal function to update the visibility of the BUY button
 function clearCartModal() {
     var cartList = document.querySelector('.cart-list');
     cartList.innerHTML = ''; // Clear the cart items
@@ -191,7 +220,27 @@ function clearCartModal() {
 
     // Update the total value
     updateTotalPrice();
+
+    // Check if the BUY button should be visible
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
 }
+
+// Initial setup to hide the BUY button
+document.addEventListener('DOMContentLoaded', function () {
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = 'none';
+});
+
+// Update the visibility of the BUY button when the cart is updated
+document.addEventListener('cartUpdated', function () {
+    var cartList = document.querySelector('.cart-list');
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
+});
+
+// Add this line to hide the BUY button initially if the cart is empty
+clearCartModal();
 
 
 // function showBuyToast() {
