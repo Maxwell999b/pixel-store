@@ -15,25 +15,45 @@ body{color: rgb(255, 255, 255);}
 
 .hs {display: flex;justify-content: center}
 
-.home-logo-button-color{background-color: rgba(44, 9, 88, 0.842);}
-.contact-us-logo-button-color{background-color: rgba(68, 61, 1, 0.575);}
-.about-us-logo-button-color{background-color: #ae2d3393;}
-/* 
-.rate-us-hover {
-    border: 1px solid #ccc;
-    outline: none;
-    background-size: 22px;
-    background-position: 13px;
-    border-radius: 10px;
-    width: 50px;
-    height: 50px;
-    padding: 25px;
-    transition: all 0.5s;
-  }
-  .rate-us-hover:hover {
-    width: 300px;
-    padding-left: 50px;
-  } */
+.logo-buttons-carousel {
+  background-color: rgba(0, 31, 24, 0.767);
+  border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-buttons-carousel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(44, 205, 226, 0.8) 0%, transparent 80%);
+    opacity: 0;
+    border-radius: 2%;
+    animation: glow 2s infinite;
+}
+
+.logo-buttons-carousel:hover::before {
+    opacity: 1;
+}
+
+@keyframes glow {
+    0% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.7);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+}
 
   .form-control {
     resize: none;  /* Disable textarea resizing */
