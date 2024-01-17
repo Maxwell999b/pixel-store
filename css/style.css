@@ -119,17 +119,20 @@ body{color: rgb(255, 255, 255);}
 } */
 
 .brand-text {
-  color: #f57f67;
+  color: #333333;
   font-weight: bold;
-
 }
 .lead{
-  color: #005b96;
-  font-weight: light;
+  color: #000000;
+  font-weight: lighter;
 }
-#special-page-bg,.special-page-bg{
+.hf-text {
+  color: #001f3f;
+  font-weight: bold;
+}
+/* #special-page-bg,.special-page-bg{
   background-color: #F0E7DB !important;
-}
+} */
 #special-page-bg2,.special-page-bg2{
   background-color: #dbe4f0 !important;
 }
