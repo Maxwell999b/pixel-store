@@ -277,4 +277,3 @@ clearCartModal();
 //     // Close the cart modal
 //     $('#offcanvasLeftBothOptions').offcanvas('hide');
 // }
-
