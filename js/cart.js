@@ -77,8 +77,13 @@ function updateTotalPrice() {
 
     if (totalPriceElement) {
         var totalPrice = calculateTotalPrice();
-        totalPriceElement.textContent = totalPrice !== undefined ? totalPrice.toFixed(2) : totalPriceElement.textContent;
+        totalPriceElement.textContent = 'Total is: ' + (totalPrice !== undefined ? formatNumberWithCommas(totalPrice.toFixed(2)) : '');
     }
+}
+
+// Function to format a number with commas
+function formatNumberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 // Listen for the custom event
@@ -170,46 +175,29 @@ function incrementCartItem(button) {
 var debouncedUpdateTotalPrice;
 
 function calculateTotalPrice() {
-    // Clear any existing debounced function
-    clearTimeout(debouncedUpdateTotalPrice);
+    var cartItems = document.querySelectorAll('.cart-item');
+    var total = 0;
 
-    // Create a debounced function to update the total price after 500 milliseconds of inactivity
-    debouncedUpdateTotalPrice = setTimeout(function () {
-        var cartItems = document.querySelectorAll('.cart-item');
-        var total = 0;
+    cartItems.forEach(function (cartItem) {
+        var priceElement = cartItem.querySelector('.cart-item-price');
+        var quantityInput = cartItem.querySelector('.cart-item-quantity');
 
-        cartItems.forEach(function (cartItem) {
-            var priceElement = cartItem.querySelector('.cart-item-price');
-            var quantityInput = cartItem.querySelector('.cart-item-quantity');
+        if (priceElement && quantityInput) {
+            var price = parseFloat(priceElement.textContent.replace(/[^\d.]/g, '')); // Remove non-numeric characters
+            var quantity = parseInt(quantityInput.value);
 
-            // Check if both priceElement and quantityInput are valid elements
-            if (priceElement && quantityInput) {
-                var price = parseFloat(priceElement.textContent.replace('EGP', '')); // Parse price and remove currency symbol
-                var quantity = parseInt(quantityInput.value);
-
-                // Check if price and quantity are valid numbers before adding to total
-                if (!isNaN(price) && !isNaN(quantity)) {
-                    total += price * quantity;
-                }
+            if (!isNaN(price) && !isNaN(quantity)) {
+                total += price * quantity;
             }
-        });
-
-        // Update the total value
-        var totalPriceElement = document.getElementById('cart-total-value');
-
-        // Check if totalPriceElement is a valid element
-        if (totalPriceElement) {
-            // Check if total is a valid number before updating the element
-            if (!isNaN(total)) {
-                totalPriceElement.textContent = total.toFixed(2);
-            } else {
-                console.error('Invalid total price value:', total);
-            }
-        } else {
-            console.error('Total price element not found.');
         }
-    }, 200);
+    });
+
+    return total;
 }
+
+// Initial setup to update the total price on page load
+document.addEventListener('DOMContentLoaded', updateTotalPrice);
+
 
 function showBuyAlert() {
     // Check if there are items in the cart
@@ -264,6 +252,14 @@ document.addEventListener('cartUpdated', function () {
     var buyButton = document.querySelector('.BUY-btn');
     buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initial setup to update the total price on page load
+    updateTotalPrice();
+
+    // Add other necessary setup or initialization code here
+});
+
 
 // Add this line to hide the BUY button initially if the cart is empty
 clearCartModal();
