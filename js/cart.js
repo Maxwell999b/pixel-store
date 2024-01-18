@@ -21,10 +21,10 @@ function addToCart(title, price, thumbnail) {
     dispatchQuantityChangeEvent();
 
     updateTotalPrice();
+
+    // Check if the BUY button should be visible
+    checkBuyButtonVisibility();
 }
-
-
-
 
 function addItemToCart(cartList, title, price, thumbnail, productId) {
     var cartItem = document.createElement('div');
