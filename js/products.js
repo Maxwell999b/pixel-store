@@ -2,10 +2,38 @@ const debounceSearch = debounce(searchProducts, 200);
 var divContainer = document.getElementById("containeritems");
 var searchForm = document.getElementById("searchForm");
 var searchInput = document.getElementById("searchInput");
+const pageCategory = getPageCategory();
+
 function loadApi() {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5')
         .then(response => response.json())
-        .then(data => displayProducts(data));
+        .then(data => {
+            if (pageCategory === 'Hoodie') {
+                displayProducts(data.filter(item => item.category === 'Hoodie'));
+            } else if (pageCategory === 'Pants') {
+                displayProducts(data.filter(item => item.category === 'Pants'));
+            } else {
+                displayProducts(data);
+            }
+        });
+}
+
+function getProductsHoodie() {
+    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Hoodie products
+            displayProducts(data.filter(item => item.category === 'Hoodie'));
+        });
+}
+
+function getProductsPants() {
+    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Pants products
+            displayProducts(data.filter(item => item.category === 'Pants'));
+        });
 }
 
 function displayProducts(data) {
@@ -18,8 +46,8 @@ function displayProducts(data) {
     }
 
     data.forEach(item => {
-        const { name, price, imgSrc } = item;
-        const productElement = createProductElement(name, price, imgSrc);
+        const { name, price, imgSrc, category } = item;
+        const productElement = createProductElement(name, price, imgSrc, category);
         divContainer.appendChild(productElement);
     });
 }
@@ -54,8 +82,8 @@ function searchProducts(query) {
             }
 
             filteredData.forEach(item => {
-                const { name, price, imgSrc } = item;
-                const productElement = createProductElement(name, price, imgSrc);
+                const { name, price, imgSrc, category } = item;
+                const productElement = createProductElement(name, price, imgSrc, category);
                 divContainer.appendChild(productElement);
             });
         });
@@ -72,8 +100,13 @@ function debounce(func, delay) {
 }
 
 window.onload = function () {
-    // Load default products on page load
-    loadApi();
+    if (pageCategory === 'Hoodie') {
+        getProductsHoodie();
+    } else if (pageCategory === 'Pants') {
+        getProductsPants();
+    } else {
+        loadApi();
+    }
 
     // Add submit event listener to the search form
     searchForm.addEventListener('submit', function (event) {
@@ -88,3 +121,14 @@ window.onload = function () {
         debounceSearch(searchTerm);
     });    
 };
+
+function getPageCategory() {
+    // Get the current page URL
+    const currentPageUrl = window.location.pathname;
+    
+    // Extract the category from the URL (assuming URLs like "Products.html" and "Hoodie.html")
+    const categoryMatch = currentPageUrl.match(/\/(\w+)\.html/);
+    
+    // Return the category or a default value (e.g., 'All' or 'Products')
+    return categoryMatch ? categoryMatch[1] : 'All';
+}
