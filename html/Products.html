@@ -84,9 +84,11 @@
               <i class="fa-brands fa-github"></i>
             </a>
             <!-- Cart Menu -->
-            <button class="btn btn-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions" aria-controls="offcanvasLeftBothOptions">
-              <i class="fa-solid fa-cart-shopping fa-fade"></i> Product
-          </button>
+            <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions" aria-controls="offcanvasLeftBothOptions">
+              <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
+              <span id="cartBadge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;"></span>
+            </button>
+            
           
           <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
               <div class="offcanvas-header">

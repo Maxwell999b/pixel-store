@@ -264,6 +264,25 @@ document.addEventListener('DOMContentLoaded', function () {
 // Add this line to hide the BUY button initially if the cart is empty
 clearCartModal();
 
+function updateCartBadge(count) {
+    var cartBadge = document.getElementById('cartBadge');
+    cartBadge.textContent = count;
+    cartBadge.style.display = count > 0 ? 'inline-block' : 'none';
+}
+
+// Listen for the custom event
+document.addEventListener('cartUpdated', function () {
+    var cartItems = document.querySelectorAll('.cart-item');
+    var cartItemCount = cartItems.length;
+    updateCartBadge(cartItemCount);
+});
+
+// Initial setup to update the cart badge count on page load
+document.addEventListener('DOMContentLoaded', function () {
+    var cartItems = document.querySelectorAll('.cart-item');
+    var cartItemCount = cartItems.length;
+    updateCartBadge(cartItemCount);
+});
 
 // function showBuyToast() {
 //     // Trigger the toast
