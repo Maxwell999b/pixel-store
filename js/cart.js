@@ -1,33 +1,36 @@
+// Update the addToCart function
 function addToCart(title, price, thumbnail) {
-    var existingCartItem = document.querySelector(`.cart-list .cart-item[data-title="${title}"]`);
+    var cartList = document.querySelector('.cart-list');
+    var existingCartItem = cartList.querySelector(`.cart-item[data-title="${title}"]`);
 
     if (existingCartItem) {
         var quantityElement = existingCartItem.querySelector('.cart-item-quantity');
         var quantity = parseInt(quantityElement.value);
 
-
         if (quantity < 100) {
-
             quantityElement.value = Math.min(quantity + 1, 100);
         }
     } else {
-        var cartList = document.querySelector('.cart-list');
+        // Generate a unique identifier for the product (you may use a more robust method)
+        var productId = title.replace(/\s+/g, '-').toLowerCase() + '-' + Date.now();
 
-        addItemToCart(cartList, title, price, thumbnail);
+        addItemToCart(cartList, title, price, thumbnail, productId);
     }
 
-
-    var event = new Event('cartUpdated');
-    document.dispatchEvent(event);
+    // Trigger a custom event when quantity changes
+    dispatchQuantityChangeEvent();
 
     updateTotalPrice();
 }
 
-function addItemToCart(cartList, title, price, thumbnail) {
 
+
+
+function addItemToCart(cartList, title, price, thumbnail, productId) {
     var cartItem = document.createElement('div');
     cartItem.classList.add('cart-item');
     cartItem.setAttribute('data-title', title);
+    cartItem.setAttribute('data-id', productId); // Add product ID attribute
 
     var thumbnailElement = new Image();
     thumbnailElement.src = new URL(thumbnail, window.location.href).href; // Use absolute path
@@ -41,7 +44,7 @@ function addItemToCart(cartList, title, price, thumbnail) {
         <p class="cart-item-price">${price}</p>
         <div class="cart-item-actions">
             <button class="btn btn-sm btn-outline-secondary" onclick="decrementCartItem(this)">-</button>
-            <input class="cart-item-quantity" type="number" value="1" min="1" max="10000" oninput="validateQuantity(this)">
+            <input class="cart-item-quantity" type="number" value="1" min="1" max="100" oninput="validateQuantity(this)">
             <button class="btn btn-sm btn-outline-success" onclick="incrementCartItem(this)">+</button>
             <button class="btn btn-sm btn-outline-danger" onclick="deleteCartItem(this)"><i class="fa-solid fa-trash"></i></button>
         </div>
@@ -123,44 +126,19 @@ function deleteCartItem(button) {
     var cartItem = button.closest('.cart-item');
     cartItem.remove();
 
-    // Check if the BUY button should be visible
-    checkBuyButtonVisibility();
-
     // Update the total value
     updateTotalPrice();
+
+    // Trigger a custom event to notify the cart is updated
+    var event = new Event('cartUpdated');
+    document.dispatchEvent(event);
+
+    // Update the cart badge count
+    updateCartBadgeCount();
 }
 
-// Add this function to check the visibility of the BUY button
-function checkBuyButtonVisibility() {
-    var cartList = document.querySelector('.cart-list');
-    var buyButton = document.querySelector('.BUY-btn');
-    buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
-}
 
-// Initial setup to hide the BUY button
-document.addEventListener('DOMContentLoaded', function () {
-    var buyButton = document.querySelector('.BUY-btn');
-    buyButton.style.display = 'none';
-});
-
-// Update the visibility of the BUY button when the cart is updated
-document.addEventListener('cartUpdated', function () {
-    checkBuyButtonVisibility();
-});
-
-
-function decrementCartItem(button) {
-    var quantityInput = button.parentElement.querySelector('.cart-item-quantity');
-    var quantity = parseInt(quantityInput.value);
-
-    if (quantity > 1) {
-        // If quantity is more than 1, decrement it
-        quantityInput.value = quantity - 1;
-    }
-    // Update the total value
-    updateTotalPrice();
-}
-
+// Update the incrementCartItem function
 function incrementCartItem(button) {
     var quantityInput = button.parentElement.querySelector('.cart-item-quantity');
     var quantity = parseInt(quantityInput.value);
@@ -168,9 +146,40 @@ function incrementCartItem(button) {
     // Increment the quantity, but ensure it does not exceed the limit (10000)
     quantityInput.value = Math.min(quantity + 1, 100);
 
+    // Dispatch custom event when quantity is changed
+    dispatchQuantityChangeEvent();
+
     // Update the total value
     updateTotalPrice();
 }
+
+// Update the decrementCartItem function
+function decrementCartItem(button) {
+    var quantityInput = button.parentElement.querySelector('.cart-item-quantity');
+    var quantity = parseInt(quantityInput.value);
+
+    if (quantity > 1) {
+        // If quantity is more than 1, decrement it
+        quantityInput.value = quantity - 1;
+
+        // Dispatch custom event when quantity is changed
+        dispatchQuantityChangeEvent();
+    }
+
+    // Update the total value
+    updateTotalPrice();
+}
+
+// Function to dispatch custom event when quantity changes
+function dispatchQuantityChangeEvent() {
+    var event = new Event('quantityChanged');
+    document.dispatchEvent(event);
+}
+
+// Listen for the custom event and update the cart badge count
+document.addEventListener('quantityChanged', updateCartBadgeCount);
+
+
 
 var debouncedUpdateTotalPrice;
 
@@ -261,13 +270,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Add this line to hide the BUY button initially if the cart is empty
-clearCartModal();
+// Update the cart badge count for each item
+function updateCartBadgeCount() {
+    var cartItems = document.querySelectorAll('.cart-item');
+    var totalQuantity = 0;
 
+    cartItems.forEach(function (cartItem) {
+        var quantityInput = cartItem.querySelector('.cart-item-quantity');
+        var quantity = parseInt(quantityInput.value);
+
+        if (!isNaN(quantity)) {
+            totalQuantity += quantity;
+        }
+    });
+
+    updateCartBadge(totalQuantity);
+}
+
+// Add this function to update the cart badge
 function updateCartBadge(count) {
-    var cartBadge = document.getElementById('cartBadge');
-    cartBadge.textContent = count;
-    cartBadge.style.display = count > 0 ? 'inline-block' : 'none';
+    var badgeElement = document.getElementById('cart-badge');
+    if (badgeElement) {
+        badgeElement.textContent = count;
+        badgeElement.style.display = count > 0 ? 'inline' : 'none';
+    }
 }
 
 // Listen for the custom event
@@ -279,10 +305,47 @@ document.addEventListener('cartUpdated', function () {
 
 // Initial setup to update the cart badge count on page load
 document.addEventListener('DOMContentLoaded', function () {
+    updateCartBadgeCount();
+});
+
+// Add this line to hide the BUY button initially if the cart is empty
+clearCartModal();
+
+// Add this function to check the visibility of the BUY button
+function checkBuyButtonVisibility() {
+    var cartList = document.querySelector('.cart-list');
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = cartList.hasChildNodes() ? 'inline-block' : 'none';
+}
+
+// Update the visibility of the BUY button when the cart is updated
+document.addEventListener('cartUpdated', function () {
+    checkBuyButtonVisibility();
+});
+
+// Add this line to hide the BUY button initially if the cart is empty
+document.addEventListener('DOMContentLoaded', function () {
+    var buyButton = document.querySelector('.BUY-btn');
+    buyButton.style.display = 'none';
+});
+
+// Initial setup to update the cart badge count on page load
+document.addEventListener('DOMContentLoaded', function () {
     var cartItems = document.querySelectorAll('.cart-item');
     var cartItemCount = cartItems.length;
     updateCartBadge(cartItemCount);
 });
+
+// Add an event listener for the input event on quantity inputs
+document.addEventListener('input', function (event) {
+    if (event.target.classList.contains('cart-item-quantity')) {
+        // Dispatch a custom event when quantity is changed
+        dispatchQuantityChangeEvent();
+    }
+});
+// ... (rest of your existing script)
+
+updateCartBadgeCount();  
 
 // function showBuyToast() {
 //     // Trigger the toast
