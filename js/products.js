@@ -88,12 +88,3 @@ window.onload = function () {
         debounceSearch(searchTerm);
     });    
 };
-
-
-function getProductsHoodie() {
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' } )
-        .then(response => response.json())
-        .then(data => {
-            displayProducts(data, 'Hoodie');
-        });
-}

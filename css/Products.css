@@ -29,6 +29,7 @@ body{
   display: block;
   object-fit: contain;
   border-radius: 8px;
+  transition: transform 0.7s ease;
 }
 
 .img_item:hover {
