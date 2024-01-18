@@ -1,7 +1,7 @@
+const debounceSearch = debounce(searchProducts, 200);
 var divContainer = document.getElementById("containeritems");
 var searchForm = document.getElementById("searchForm");
 var searchInput = document.getElementById("searchInput");
-
 function loadApi() {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5')
         .then(response => response.json())
@@ -30,7 +30,7 @@ function createProductElement(title, price, thumbnail) {
     divPrd.innerHTML = `
         <div class="product-title">${title}</div>
         <div class="product-price">${price}</div>
-        <img class='img_item' src='${thumbnail}'>
+        <img class='img_item' src='${thumbnail}' loading='lazy'>
         <button class="add-to-cart-button" onclick="addToCart('${title}', '${price}', '${thumbnail}')">Add to Cart</button>
     `;
     return divPrd;
@@ -40,7 +40,7 @@ function searchProducts(query) {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
         .then(response => response.json())
         .then(Data => {
-            divContainer.innerHTML = ''; // Clear the existing content
+            divContainer.innerHTML = '';
 
             const filteredData = Data.filter(x => 
                 x.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -61,6 +61,16 @@ function searchProducts(query) {
         });
 }
 
+function debounce(func, delay) {
+    let timeout;
+    return function () {
+        const context = this;
+        const args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), delay);
+    };
+}
+
 window.onload = function () {
     // Load default products on page load
     loadApi();
@@ -75,8 +85,8 @@ window.onload = function () {
     // Add input event listener to the search input
     searchInput.addEventListener('input', function () {
         var searchTerm = searchInput.value;
-        searchProducts(searchTerm);
-    });
+        debounceSearch(searchTerm);
+    });    
 };
 
 
