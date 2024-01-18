@@ -65,7 +65,7 @@
   background-color: #c1d6f3;
   color: #1B082E;
   border: none;
-  padding: 30%; 
+  padding: 5%;
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.5rem;
@@ -75,9 +75,22 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   font-family: 'LilitaOne';
-  letter-spacing: 10%;
+  height: 30vw;
+  width: 15vw;
+  
+  /* Center the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-overlay-cs:hover {
   background-color: #FC84A4;
+}
+
+.card-title-Home-page {
+  letter-spacing: 1em;
+  font-size: 1.5em;
+  /* No need for flexbox here, as it's already centered in its parent */
 }
