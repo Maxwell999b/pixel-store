@@ -63,24 +63,30 @@ function createProductElement(title, price, thumbnail) {
     `;
     return divPrd;
 }
-
 function searchProducts(query) {
     fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
         .then(response => response.json())
         .then(Data => {
             divContainer.innerHTML = '';
 
-            const filteredData = Data.filter(x => 
-                x.name.toLowerCase().includes(query.toLowerCase()) ||
-                x.price.toString().includes(query)
+            const isProductsPage = window.location.pathname.includes('Products.html');
+            
+            const filteredData = Data.filter(item =>
+                (isProductsPage || item.category === pageCategory) &&
+                (item.name.toLowerCase().includes(query.toLowerCase()) ||
+                    item.price.toString().includes(query))
             );
 
             if (filteredData.length === 0) {
                 // No matching products found
-                divContainer.innerHTML = 'No products found.';
-                return;
+                if (isProductsPage) {
+                    // If it's the Products Page, display "No products found."
+                    divContainer.innerHTML = 'No products found.';
+                    return;
+                }
             }
-
+            
+            // If there are matching products, proceed to display them
             filteredData.forEach(item => {
                 const { name, price, imgSrc, category } = item;
                 const productElement = createProductElement(name, price, imgSrc, category);
@@ -122,13 +128,13 @@ window.onload = function () {
     });    
 };
 
-function getPageCategory() {
-    // Get the current page URL
-    const currentPageUrl = window.location.pathname;
-    
-    // Extract the category from the URL (assuming URLs like "Products.html" and "Hoodie.html")
-    const categoryMatch = currentPageUrl.match(/\/(\w+)\.html/);
-    
-    // Return the category or a default value (e.g., 'All' or 'Products')
-    return categoryMatch ? categoryMatch[1] : 'All';
+function getPageCategory() { 
+    // Get the current page URL 
+    const currentPageUrl = window.location.pathname; 
+     
+    // Extract the category from the URL (assuming URLs like "Products.html" and "Hoodie.html") 
+    const categoryMatch = currentPageUrl.match(/\/(\w+)\.html/); 
+     
+    // Return the category or a default value (e.g., 'All' or 'Products') 
+    return categoryMatch ? categoryMatch[1] : '/Products.html'; 
 }
