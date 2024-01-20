@@ -168,3 +168,7 @@ body{color: rgb(255, 255, 255);}
 #containeritems{
   margin-bottom: 8%;
 }
+
+a.link-secondary {
+  text-decoration: none; /* Remove Links underline on nav */
+}

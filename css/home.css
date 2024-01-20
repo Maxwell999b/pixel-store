@@ -92,5 +92,4 @@
 .card-title-Home-page {
   letter-spacing: 1em;
   font-size: 1.5em;
-  /* No need for flexbox here, as it's already centered in its parent */
 }
