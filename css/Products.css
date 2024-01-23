@@ -44,7 +44,7 @@ body{
   bottom: 10px; /* Adjust the positioning based on your design */
   left: 50%;
   transform: translateX(-50%);
-  background-color: #4CAF50;
+  background-color: #B993D6;
   color: white;
   border: none;
   padding: 10px;
@@ -64,18 +64,18 @@ body{
 
 .product-title {
   font-weight: lighter;
-  color: #ff5733;
+  color: #9D50BB;
   font-family: 'LilitaOne';
 }
 
 .product-price {
   font-weight: lighter;
-  color: #99cc99;
+  color: #ff6e7f;
   font-family: 'LilitaOne';
 }
 
 .add-to-cart-button:hover {
-  background-color: #45a049;
+  background-color: #b67be4;
 }
 .footer{
   border-radius: 25px 25px 0px 0px;

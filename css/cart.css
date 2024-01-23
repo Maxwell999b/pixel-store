@@ -64,21 +64,24 @@
     padding: 15px;
     line-height: 2;
 }
+div.cart-item{
+    background-color: #D3CCE3;
+}
 .cart-item-title{
     font-family: FjallaOne;
     font-weight: bold;
-    color: #f57f67;
+    color: #6E48AA;
 }
 .cart-item-price{
     font-family: FjallaOne;
     font-weight: bold;
-    color: #4CAF50;
+    color: #ff6e7f;
 }
 .cart-item-thumbnail{
-    background-color: #cacaca;
+    background-color: #4e4e4e;
 }
 .cart-item-quantity{
-    border: 1px solid #16191E;
+    border: 1px solid rgb(31, 31, 31);
 }
 .canvas-cart-body{
     background: #16191E;
