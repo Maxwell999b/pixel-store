@@ -1,5 +1,7 @@
-body{color: rgb(255, 255, 255);}
-
+body{
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+}
 .form-control:focus{border-color: #2c2c2c;  box-shadow:#f7f7f7}
 .tick-icon {color: rgb(22, 22, 22);font-size: 1rem}
 .tick-icon:hover {color: rgb(255, 255, 255);font-size: 1rem}
@@ -151,9 +153,6 @@ body{color: rgb(255, 255, 255);}
   color: #001f3f;
   font-weight: bold;
 }
-/* #special-page-bg,.special-page-bg{
-  background-color: #F0E7DB !important;
-} */
 #special-page-bg2,.special-page-bg2{
   background-color: #dbe4f0 !important;
 }
@@ -170,5 +169,25 @@ body{color: rgb(255, 255, 255);}
 }
 
 a.link-secondary {
-  text-decoration: none; /* Remove Links underline on nav */
+  text-decoration: none;
 }
+
+.search-btn{
+  background-color: #202023 !important;
+  color: #ffffff;
+}
+.search-btn:hover{
+  background-color: #ffffff !important;
+  color: #202023;
+}
+
+.icons-colors{
+  color: #323949 !important;
+}
+.container-icons-colors{
+  color: #202023;
+}
+.footer-brand-name {
+  text-decoration: none;
+}
+

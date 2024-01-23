@@ -14,7 +14,7 @@
   background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(148,187,233,1) 100%);
   opacity: 0.1;
   transition: opacity 2s;
-  z-index: 1; /* Adjust the z-index to control the stacking order */
+  z-index: 1;
 }
 
 .card-cs:hover {
@@ -30,7 +30,7 @@
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s;
-  z-index: 2; /* Ensure the overlay is on top of the shading effect */
+  z-index: 2;
 }
 
 .card-cs img {
@@ -60,16 +60,24 @@
 .card-cs2:hover img {
   content: url('/pics/product/pants-grey2.jpg');
 }
+@keyframes colorStopA {
+  0% {
+    background-position: 0%, 100%;
+  }
+  100% {
+    background-position: 100%, 0%;
+  }
+}
 
 .btn-overlay-cs {
-  background-color: #c1d6f3;
+  
+  background: linear-gradient(90deg,  #9CECFB, #65C7F7);
   color: #1B082E;
   border: none;
   padding: 5%;
   text-decoration: none;
   font-weight: bolder;
   font-size: 1.5rem;
-  transition: background-color 0.3s;
   position: relative;
   z-index: 1;
   writing-mode: vertical-lr;
@@ -77,8 +85,6 @@
   font-family: 'LilitaOne';
   height: 30vw;
   width: 15vw;
-  
-  /* Center the content */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,7 +92,7 @@
 }
 
 .btn-overlay-cs:hover {
-  background-color: #FC84A4;
+  background: linear-gradient(90deg,  #65C7F7, #0052D4);
 }
 
 .card-title-Home-page {
