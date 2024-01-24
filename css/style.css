@@ -173,12 +173,21 @@ a.link-secondary {
 }
 
 .search-btn{
-  background-color: #202023 !important;
-  color: #ffffff;
+  background-color: #f4c4f3 !important;
+  color: #424242;
+  border: none;
+  font-weight: bold;
 }
 .search-btn:hover{
-  background-color: #ffffff !important;
-  color: #202023;
+  background-color: #2980B9 !important;
+  color: #ffdde1;
+  font-weight: bold;
+}
+.search-click{
+  background-color: #ffdde1 !important;
+}
+.search-click::placeholder{
+  color: #2980B9;
 }
 
 .icons-colors{
