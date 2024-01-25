@@ -173,14 +173,15 @@ a.link-secondary {
 }
 
 .search-btn{
-  background-color: #f4c4f3 !important;
-  color: #424242;
+  background-color: #2980B9 !important;
+  color: #ffdde1;
   border: none;
   font-weight: bold;
 }
 .search-btn:hover{
-  background-color: #2980B9 !important;
-  color: #ffdde1;
+  background-color: #f4c4f3 !important;
+
+  color: #424242;
   font-weight: bold;
 }
 .search-click{
