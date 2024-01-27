@@ -99,3 +99,13 @@
   letter-spacing: 1em;
   font-size: 1.5em;
 }
+
+/* this is for the cart modal on the Home Page Only *Desktop Size only* */
+.canvas-cart-body {
+  min-height: 120px;
+  /* max-height: 100px; */
+  overflow-y: auto;
+}
+.custom-offcanvas {
+  bottom: 20vh; 
+}

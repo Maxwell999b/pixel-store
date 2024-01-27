@@ -11,6 +11,9 @@
     <link rel="stylesheet" type="" href="../css/home.css">
     <link rel="stylesheet" type="" href="../css/Fonts.css">
     <link rel="stylesheet" href="../css/mist-effect.css">
+    <link rel="stylesheet" type="" href="../css/mediaquery.css">
+    <link rel="stylesheet" type="" href="../css/cart.css">
+    <link rel="stylesheet" type="" href="../css/Products.css">
 </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top special-page-bg2">
@@ -104,20 +107,36 @@
           <div class="me-5 d-none d-lg-block text-dark">
             <span id="bold-text-bs-all">Get connected with us on social networks:</span>
           </div>
-          <!-- Left -->
-      
-          <!-- Right -->
+          <!-- cart modal -->
           <div>
-            <button class="btn btn-light btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa-solid fa-cart-shopping fa-fade" ></i>Product</button>
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel"><i class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body small">
-                ...
-              </div>
+            <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomOptions" aria-controls="offcanvasBottomOptions">
+                <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
+                <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="display: none;"></span>
+            </button>
+        
+            <div class="offcanvas offcanvas-bottom canvas-cart-heading custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasBottomOptions" aria-labelledby="offcanvasBottomOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasBottomOptionsLabel">Cart</h5>
+                    <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body small cart-list canvas-cart-body canvas-body-desktop">
+                    <!-- Your cart items go here -->
+                </div>
+                <div class="cart-total">
+                    <h6 id="cart-total-title">Total is :</h6>
+                    <span id="cart-total-value"></span>
+                </div>
+                <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
+                    <i class="fa-solid fa-credit-card"></i> BUY
+                </button>
+        
+                <!-- Alert BUY Message here -->
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
+                    <strong>Thank you for your purchase!</strong> Your order has been received.
+                </div>
             </div>
+        </div>
+        
             &nbsp;
             <a href="#" target="_blank" class="me-4 link-secondary">
               <i class="fa-brands fa-square-facebook"></i>
@@ -172,5 +191,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/home.js"></script>
     <script src="../js/search.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
   </body>
 </html>
