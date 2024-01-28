@@ -101,61 +101,49 @@
     
     
       <footer class="text-center text-lg-start bg-white text-muted text-fixed-bottom special-page-bg2">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block text-dark">
-            <span id="bold-text-bs-all">Get connected with us on social networks:</span>
+<!-- Section: Social media -->
+<section class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center p-4 border-bottom">
+  <!-- Title (Centered on mobile) -->
+  <div class="text-center text-lg-start mb-3 mb-lg-0">
+      <span id="bold-text-bs-all">Get connected with us on social networks:</span>
+  </div>
+
+  <!-- Cart and Social Links -->
+  <div class="d-flex align-items-center">
+      <!-- Cart Modal -->
+      <div class="me-3 mb-3 mb-lg-0">
+          <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomOptions" aria-controls="offcanvasBottomOptions">
+              <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
+              <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="display: none;"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-bottom canvas-cart-heading custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasBottomOptions" aria-labelledby="offcanvasBottomOptionsLabel">
+              <!-- Your Cart Modal Content -->
           </div>
-          <!-- cart modal -->
-          <div>
-            <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomOptions" aria-controls="offcanvasBottomOptions">
-                <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
-                <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill" style="display: none;"></span>
-            </button>
-        
-            <div class="offcanvas offcanvas-bottom canvas-cart-heading custom-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasBottomOptions" aria-labelledby="offcanvasBottomOptionsLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasBottomOptionsLabel">Cart</h5>
-                    <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body small cart-list canvas-cart-body canvas-body-desktop">
-                    <!-- Your cart items go here -->
-                </div>
-                <div class="cart-total">
-                    <h6 id="cart-total-title">Total is :</h6>
-                    <span id="cart-total-value"></span>
-                </div>
-                <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
-                    <i class="fa-solid fa-credit-card"></i> BUY
-                </button>
-        
-                <!-- Alert BUY Message here -->
-                <div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
-                    <strong>Thank you for your purchase!</strong> Your order has been received.
-                </div>
-            </div>
-        </div>
-        
-            &nbsp;
-            <a href="#" target="_blank" class="me-4 link-secondary">
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="d-flex justify-content-center justify-content-lg-end">
+          <a href="#" target="_blank" class="me-4 link-secondary">
               <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
+          </a>
+          <a href="#" target="_blank" class="me-4 link-secondary">
               <i class="fa-brands fa-square-twitter"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
+          </a>
+          <a href="#" target="_blank" class="me-4 link-secondary">
               <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
+          </a>
+          <a href="#" target="_blank" class="me-4 link-secondary">
               <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
+          </a>
+          <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
               <i class="fa-brands fa-square-github"></i>
-            </a>
-          </div>
-          <!-- Right -->
-        </section>
+          </a>
+      </div>
+  </div>
+</section>
+
+
         <!-- Section: Social media -->
       
         <!-- Section: Links  -->

@@ -128,9 +128,12 @@ body {
 .brand-prod{
   color: #d9a7c7 !important;
 }
+.brand-prod:hover{
+  color: #b67be4 !important;
+}
 #cart-badge{
   color: #000000 !important;
-  background-color: #ff6e7f !important;
+  background-color: #d9a7c7 !important;
 }
 .footer-products-fixed{
   background: linear-gradient(45deg,  #232526 0%, #414345 100%);
