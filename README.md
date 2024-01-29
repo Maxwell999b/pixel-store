@@ -1,3 +1,6 @@
+# pixel-store
+Men's Store For Hoodies and Pants
+
 **Project Name:** Pixel Store
 
 **Description:** Welcome to Pixel Store, your go-to destination for high-quality men's fashion. Explore our curated collection of stylish hoodies and comfortable pants designed for the modern gamer. Immerse yourself in the world of pixel-inspired fashion that blends gaming aesthetics with everyday comfort. From cozy hoodies that boast iconic gaming motifs to trendy pants that elevate your casual look, Pixel Store is where comfort meets style.
