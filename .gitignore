@@ -20,5 +20,14 @@ pics/assets/
 # TODO LIST
 TODO.md
 
+#folder structure
+folder_structure.txt
+
+#prepros config
+prepros.config
+
+# npm files
+/node_modules
+
 # Trash Files here
 Trash

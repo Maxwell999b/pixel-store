@@ -370,7 +370,6 @@ function showBuyAlert() {
 
 
 // Modify the clearCartModal function to update the visibility of the BUY button
-// Modify the clearCartModal function to update the visibility of the BUY button
 function clearCartModal() {
     var cartList = document.querySelector('.cart-list');
     cartList.innerHTML = ''; // Clear the cart items
