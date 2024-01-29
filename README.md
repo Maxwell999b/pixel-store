@@ -1,5 +1,5 @@
 # pixel-store
-Men's Store For Hoodies and Pants
+Men's Store For Hoodies and Pants | Online Fashion Shopping
 
 **Project Name:** Pixel Store
 
