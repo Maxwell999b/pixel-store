@@ -1,0 +1,203 @@
+body{
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 51, 51);
+}
+.form-control:focus{border-color: #2c2c2c;  box-shadow:#f7f7f7}
+.tick-icon {color: rgb(22, 22, 22);font-size: 1rem}
+.tick-icon:hover {color: rgb(255, 255, 255);font-size: 1rem}
+
+.can-white {color: rgb(22, 22, 22);font-size: 1rem}
+.can-white:hover {color: rgb(255, 255, 255);font-size: 1rem}
+
+.navbarcheck:hover {color: rgb(30, 103, 170)}
+
+.search-click {border-radius: 10px;width: 10em;transition: all 0.5s;}
+.search-click:focus {width: 18em;}
+.search-click {position: relative;overflow: hidden;}
+
+.hs {display: flex;justify-content: center}
+
+.logo-buttons-carousel {
+  background-color: rgba(0, 31, 24, 0.767);
+  border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-buttons-carousel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(44, 205, 226, 0.8) 0%, transparent 80%);
+    opacity: 0;
+    border-radius: 2%;
+    animation: glow 2s infinite;
+    pointer-events: none;
+}
+
+.logo-buttons-carousel:hover::before {
+    opacity: 1;
+}
+
+@keyframes glow {
+    0% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.7);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.4);
+    }
+}
+
+  .form-control {
+    resize: none;  /* Disable textarea resizing */
+  }
+
+  .textarea-wrapper {
+    position: relative;
+  }
+
+  .textarea-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 10px;
+    line-height: 1.5;
+    color: #212529; /* Text color */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+/* Hover background color for fields */
+#emailInput:hover,
+#messageTextarea:hover,
+#fullnameInput:hover {
+  background-color: rgba(106, 192, 192, 0.247) !important; /* Added !important to ensure it overrides other styles */
+}
+
+/* Hover color for @ symbol in emailInput */
+#emailInput::after {
+  content: "@";
+  color: #F8CB84 !important; /* Added !important to ensure it overrides other styles */
+}
+
+/* Hover background color for Clear */
+#Clear_button_form:hover {
+  background-color: #292929 !important; /* Added !important to ensure it overrides other styles */
+}
+/* Hover background color for Send */
+#Send_button_form:hover {
+  background-color: #f5d184 !important; /* Added !important to ensure it overrides other styles */
+}
+
+.modal-dialog.modal-dialog-top {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+.modal.show .modal-dialog.modal-dialog-top {
+  transform: translateY(0);
+}
+#bold-text-bs-all,.nav-link,.nav-link-menu{
+  font-weight: bold;
+}
+.nav-link{
+  color: #202023 !important;
+}
+.nav-link:hover{
+  color: #99abc7 !important;
+}
+
+#h-title-1,#h-title-2 {
+  color: #2B2B2B;
+  font-weight: bolder;
+}
+
+#p-title-1,#p-title-2{
+  color: #444444;
+  font-weight: 500;
+}
+#s-title-1{
+  color: #FBD434;
+  font-weight: bold;
+}
+#s-title-2{
+  color: #FF6F61;
+  font-weight: bold;
+  }
+/* #blur-bg-image-hc{
+  filter: blur(1.9px);
+} */
+
+.brand-text {
+  color: #333333;
+  font-weight: bold;
+}
+.lead{
+  color: #000000;
+  font-weight: lighter;
+}
+.hf-text {
+  color: #001f3f;
+  font-weight: bold;
+}
+#special-page-bg2,.special-page-bg2{
+  background-color: #dbe4f0 !important;
+}
+#special-footer-bg,.special-footer-bg2{
+  background-color: #111111 !important;
+}
+.cards-home-cat{
+  color: #005b96;
+  font-weight: bold;
+  background-color: #F0E7DB !important;
+}
+#containeritems{
+  margin-bottom: 8%;
+}
+
+a.link-secondary {
+  text-decoration: none;
+}
+
+.search-btn{
+  background-color: #2980B9 !important;
+  color: #ffdde1;
+  border: none;
+  font-weight: bold;
+}
+.search-btn:hover{
+  background-color: #f4c4f3 !important;
+
+  color: #424242;
+  font-weight: bold;
+}
+.search-click{
+  background-color: #ffdde1 !important;
+}
+.search-click::placeholder{
+  color: #2980B9;
+}
+
+.icons-colors{
+  color: #323949 !important;
+}
+.container-icons-colors{
+  color: #202023;
+}
+.footer-brand-name {
+  text-decoration: none;
+}
+

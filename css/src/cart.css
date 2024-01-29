@@ -1,0 +1,134 @@
+.cart-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cart-item-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-item-price {
+    margin: 0;
+}
+
+.cart-item-actions {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.cart-item-quantity {
+    font-weight: bold;
+}
+#cart-total-title {
+    font-family: PoppinsBlack;
+    font-weight: bold;
+    margin-right: 50px;
+    color: #f57f67;
+}
+
+#cart-total-value {
+    font-family: FjallaOne;
+    font-weight: bold;
+    margin-top: -5px;
+    color: #4CAF50;
+}
+
+.cart-total {
+    display: flex;
+    align-items: center;
+    background-color: #181C22;
+    padding: 15px;
+    line-height: 2;
+}
+div.cart-item{
+    background-color: #D3CCE3;
+}
+.cart-item-title{
+    font-family: FjallaOne;
+    font-weight: bold;
+    color: #6E48AA;
+}
+.cart-item-price{
+    font-family: FjallaOne;
+    font-weight: bold;
+    color: #ff6e7f;
+}
+.cart-item-thumbnail{
+    background-color: #4e4e4e;
+}
+.cart-item-quantity{
+    border: 1px solid rgb(31, 31, 31);
+}
+.canvas-cart-body{
+    background: #16191E;
+}
+.canvas-cart-heading{
+    background: #181C22;
+}
+.canvas-cart-heading-title{
+    font-family: PoppinsBold;
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: xx-large;
+}
+.BUY-btn{
+    font-family: LilitaOne;
+    color: #181C22;
+    background-color: #5dbea3;
+    font-weight: lighter;
+    border-color: #5adbb5;
+    letter-spacing: 1.1rem;
+}
+.BUY-btn:hover{
+    color: #181C22;
+    background-color: #ffe169;
+    border-color: #5adbb5;
+    font-weight: bolder;
+}
+.BUY-btn:focus{
+    color: #ececec;
+    background-color: #33b249;
+    font-weight: bolder;
+    border-color: #5adbb5;
+}
+#buyAlert{
+    animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+

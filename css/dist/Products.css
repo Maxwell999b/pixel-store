@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(45deg,  #20002c 0%, #cbb4d4 100%);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  position: relative;
+  color: rgb(20, 20, 20);
+}
+
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+#containeritems {
+  display: grid;
+  gap: 0.5rem;
+  font-size: 15px;
+}
+
+.item {
+  position: relative; /* Add this to enable positioning of the button */
+  padding: 5px;
+  border-radius: 8px;
+  row-gap: 0.3rem;
+  color: #ffffff;
+  background: linear-gradient(45deg,  #000000 0%, #434343 100%);
+  margin: 0;
+  overflow-x: hidden;
+  background-size: 200% 200%;
+  overflow-y: hidden;
+  animation: gradientAnimation 8s ease infinite;
+  font-size: 110%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  opacity: 0.95;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+
+.img_item {
+  width: 60%;
+  margin: auto 20%;
+  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.7s ease;
+}
+
+.img_item:hover {
+  transform: scale(1.07);
+  transition: 0.8s all;
+}
+
+
+.add-to-cart-button {
+  display: none;
+  position: absolute;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #B993D6;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 70%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 15px 50px 30px;
+}
+
+/* Display the button on hover */
+.item:hover .add-to-cart-button {
+  display: block;
+}
+
+.product-title {
+  font-weight: lighter;
+  color: #9D50BB;
+  font-family: 'LilitaOne';
+}
+
+.product-price {
+  font-weight: lighter;
+  color: #ff6e7f;
+  font-family: 'LilitaOne';
+}
+
+.add-to-cart-button:hover {
+  background-color: #b67be4;
+}
+.footer{
+  border-radius: 25px 25px 0px 0px;
+}
+#cartButton{
+  color: hsla(0, 0%, 100%, 0.9);
+  font-family: LilitaOne;
+  font-weight: light;
+  background-color: #B993D6;
+  border-radius: 10px 5px 10px 5px !important;
+}
+#cartButton:hover{
+  background-color: #b67be4;
+}
+.brand-prod{
+  color: #d9a7c7 !important;
+}
+.brand-prod:hover{
+  color: #b67be4 !important;
+}
+#cart-badge{
+  color: #000000 !important;
+  background-color: #d9a7c7 !important;
+}
+.footer-products-fixed{
+  background: linear-gradient(45deg,  #232526 0%, #414345 100%);
+  overflow-x: hidden;
+  background-size: 200% 200%;
+  overflow-y: hidden;
+  animation: gradientAnimation 8s ease infinite;
+  border-radius: 35px 35px 0 0;
+}
