@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="" href="../css/dist/mediaquery.css">
     <link rel="stylesheet" type="" href="../css/dist/cart.css">
     <link rel="stylesheet" type="" href="../css/dist/Products.css">
+    <link rel="stylesheet" type="" href="../css/dist/toast.css">
 </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top special-page-bg2">
@@ -179,9 +180,21 @@
             </div>
           </div>
         </section>
-        <!-- Section: Links  -->
+        <!-- Toast  -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+              <span class="toast-body-title">Welcome to Pixel Store!</span>
+                <span class="toast-body-title2">Browse our collection of hoodies and pants.</span>
+              <div class="mt-2 pt-2 border-top">
+                <a href="Products.html" class="btn btn-toast btn-sm">Explore Now</a>
+                <button type="button" class="btn btn-toast2 btn-sm" data-bs-dismiss="toast">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </Footer>
-      <footer class="special-footer-bg footer-rounded-edges main-container-home">
+      <footer class="special-footer-bg footer-rounded-edges main-container-home" id="toastfooter">
         <div class="text-center p-4 container-icons-colors">
           © 2023 Copyright:
           <a class="text-reset fw-bold footer-brand-name" href="Home.html">プレイステーション</a>&nbsp;&nbsp;
@@ -196,5 +209,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="../js/search.js"></script>
     <script src="../js/cart.js"></script>
+    <script src="../js/toast.js"></script>
   </body>
 </html>

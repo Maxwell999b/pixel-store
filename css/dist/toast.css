@@ -1,0 +1,33 @@
+
+.toast-body {
+    text-align: center;
+    background-color: rgba(148,187,233, 0.3);
+  }
+  .toast-body-title {
+    color: #1B082E; 
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .toast-body-title2 {
+    color: #3498db; 
+    margin-bottom: 10px;
+  }
+  .btn-toast{
+    color: #B993D6;
+    background-color: #1B082E;
+    font-weight: bold;
+  }
+  .btn-toast:hover{
+    color: #e5c4ff;
+    background-color: #371a55;
+    font-weight: bold;
+  }
+  
+  .btn-toast2{
+    color: #d9a7c7;
+    background-color: #1b1b1b;
+  }
+  .btn-toast2:hover{
+    color: rgba(148,187,233,1);
+    background-color: #1B082E;
+  }
