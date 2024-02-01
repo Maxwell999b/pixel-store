@@ -10,11 +10,30 @@
     <link rel="stylesheet" type="" href="../css/dist/Fonts.css">
     <link rel="stylesheet" type="" href="../css/dist/mist-effect.css">
     <link rel="stylesheet" type="" href="../css/dist/toast.css">
-</head>
+<style>
+      /* Add the styles to ensure same height for images and titles */
+      .main-container img {
+      width: 100%; /* Make images responsive */
+      height: 100%; /* Set the height as per your design */
+      object-fit: cover; /* Maintain aspect ratio */
+      border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+    }
+
+    .main-container .col-6 {
+      position: relative;
+    }
+
+    .main-container .col-6 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+</style>
+  </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top special-page-bg2">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/black-logo-small.png" width="50em"></a>
+          <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/logo/black-logo-small.png" width="50em"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -50,26 +69,66 @@
             <div class="custom-carousel-container">
             <div class="carousel-inner custom-carousel-inner">
               <div class="carousel-item active" data-bs-interval="3000">
-                <img src="../pics/banner/au1.jpg" class="d-block w-100" alt="...">
+                <img src="../pics/banner/5-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/white-logo-small.png"></a>
+                  <img src="../pics/logo/white-logo-small.png"></a>
                   </button>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/au2.jpg" class="d-block w-100" alt="...">
+                <img src="../pics/banner/5-2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/white-logo-small.png"></a>
+                  <img src="../pics/logo/white-logo-small.png"></a>
                   </button>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/au3.jpg" class="d-block w-100" alt="...">
+                <img src="../pics/banner/5-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/white-logo-small.png"></a>
+                  <img src="../pics/logo/white-logo-small.png"></a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/5-4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/5-5.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/5-6.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/5-7.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+                  </button>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="../pics/banner/5-8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
                   </button>
                 </div>
               </div>
@@ -133,32 +192,48 @@
                   <div class="lead m-2 p-2 center-content-us-div main-container">
                     <h3 class="hf-text">welcome to <span class="brand-text m-1 p-1">プレイステーション</span> - Your Pixel Playground for Hoodies and Pants!</h3>
                     <br>
-                    Level up your wardrobe game at
-                    <span class="brand-text m-1 p-1">プレイステーション</span>, where fashion meets pixels in a playground designed for gamers and the young at heart.<br>
+                    <div class="row">
+                      <div class="col-8">
+                    <span>Level up your wardrobe game at
+                    <span class="brand-text m-1 p-1">プレイステーション</span>, where fashion meets pixels in a playground designed for gamers and the young at heart.<br><br>
                     Step into our digital realm, where every hoodie and pair of pants is a power-up for your style journey.<br>
                     Dress the part with our curated
-                    collection that transcends the virtual and real worlds.<br><br>
+                    collection that transcends the virtual and real worlds.</span>
+                    <br><br>
                     From comfy hoodies adorned with gaming motifs to pants that effortlessly blend
                     street style with a touch of joystick flair,
                     <span class="brand-text">プレイステーション</span> is your go-to destination for leveling up your streetwear.<br>
+                    </div>
+                    <div class="col-4 p-0 m-0"><img src="../pics/cards/1.jpg" alt=""></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4 p-0 m-0"><img src="../pics/cards/2.jpg" alt=""></div>
+                      <div class="col-8">
+                    <span>
                     Immerse yourself in the aesthetics
-                    of our virtual aisles, where the language of pixels converges with urban fashion.<br>
+                    of our virtual aisles, where the language of pixels converges with urban fashion.<br><br>
                     Each piece in our collection is not just an article of
                     clothing; it's a cheat code to unlocking your unique style.<br>
                     Whether you're conquering virtual realms or navigating real-life adventures,
-                    <span class="brand-text">プレイステーション</span> ensures you do it in style.<br>
+                    <span class="brand-text">プレイステーション</span> ensures you do it in style.<br><br>
                     Embrace the controller in your hands and the joystick in your
                     heart as you explore the dynamic designs that resonate with gamers and the young, bold, and unapologetic.<br><br>
+                    </span>
+                  </div>
+                  </div>
+                  <span>
                     At
                     <span class="brand-text">プレイステーション</span>, fashion isn't just about what you wear; it's about making a statement that speaks the
-                    language of your gaming soul.<br>
+                    language of your gaming soul.<br><br>
                     Join us in crafting a style narrative that blends the pixelated nostalgia of gaming with the street-smart
                     swagger of today.<br>
                     Our hoodies and pants aren't just clothing; they're power-ups for your wardrobe, enhancing your presence with a touch
                     of gaming charisma.<br>
+                  </span>
                     <br><br><div class="hf-text">Get ready to level up your fashion game at
                     <span class="brand-text">プレイステーション</span> – because in this pixelated playground, your style adventure awaits, and every piece is a
                     respawn of your unique identity!
+                  
                 </div>
                   </div>
                 </div>
