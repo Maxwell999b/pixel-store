@@ -278,5 +278,138 @@
         "price" : "320 EGP",
         "imgSrc" : "../pics/product/pants/pants (20).png",
         "Code" : "819"
+    },
+    {
+        "name": "ShadowStride Backpack",
+        "category": "Backpack",
+        "price": "350 EGP",
+        "imgSrc": "../pics/product/bags/bag (1).png",
+        "Code": "600"
+    },
+    {
+        "name": "LunaLuxe Tote Backpack",
+        "category": "Backpack",
+        "price": "360 EGP",
+        "imgSrc": "../pics/product/bags/bag (2).png",
+        "Code": "601"
+    },
+    {
+        "name": "NovaNest Explorer Backpack",
+        "category": "Backpack",
+        "price": "375 EGP",
+        "imgSrc": "../pics/product/bags/bag (3).png",
+        "Code": "602"
+    },
+    {
+        "name": "UrbanExplorer Backpack",
+        "category": "Backpack",
+        "price": "390 EGP",
+        "imgSrc": "../pics/product/bags/bag (4).png",
+        "Code": "603"
+    },
+    {
+        "name": "TrailBlazer Rucksack",
+        "category": "Backpack",
+        "price": "410 EGP",
+        "imgSrc": "../pics/product/bags/bag (5).png",
+        "Code": "604"
+    },
+    {
+        "name": "TerraTrek Backpack",
+        "category": "Backpack",
+        "price": "510 EGP",
+        "imgSrc": "../pics/product/bags/bag (6).png",
+        "Code": "605"
+    },
+    {
+        "name": "MetroNomad Backpack",
+        "category": "Backpack",
+        "price": "450 EGP",
+        "imgSrc": "../pics/product/bags/bag (7).png",
+        "Code": "606"
+    },
+    {
+        "name": "CityScape Explorer Backpack",
+        "category": "Backpack",
+        "price": "460 EGP",
+        "imgSrc": "../pics/product/bags/bag (8).png",
+        "Code": "607"
+    },
+    {
+        "name": "SummitStrider Backpack",
+        "category": "Backpack",
+        "price": "320 EGP",
+        "imgSrc": "../pics/product/bags/bag (9).png",
+        "Code": "608"
+    },
+    {
+        "name": "SwiftTrail Rucksack Backpack",
+        "category": "Backpack",
+        "price": "390 EGP",
+        "imgSrc": "../pics/product/bags/bag (10).png",
+        "Code": "609"
+    },
+    {
+        "name": "TrekTech Adventure Backpack",
+        "category": "Backpack",
+        "price": "510 EGP",
+        "imgSrc": "../pics/product/bags/bag (11).png",
+        "Code": "610"
+    },
+    {
+        "name": "UrbanVibe Backpack",
+        "category": "Backpack",
+        "price": "520 EGP",
+        "imgSrc": "../pics/product/bags/bag (12).png",
+        "Code": "611"
+    },
+    {
+        "name": "PinnaclePacker Rucksack Backpack",
+        "category": "Backpack",
+        "price": "900 EGP",
+        "imgSrc": "../pics/product/bags/bag (13).png",
+        "Code": "612"
+    },
+    {
+        "name": "GrandGlam Backpack",
+        "category": "Backpack",
+        "price": "500 EGP",
+        "imgSrc": "../pics/product/bags/bag (14).png",
+        "Code": "613"
+    },
+    {
+        "name": "EliteExplorer Backpack",
+        "category": "Backpack",
+        "price": "415 EGP",
+        "imgSrc": "../pics/product/bags/bag (15).png",
+        "Code": "614"
+    },
+    {
+        "name": "TerraTrail Hiker Backpack",
+        "category": "Backpack",
+        "price": "412 EGP",
+        "imgSrc": "../pics/product/bags/bag (16).png",
+        "Code": "615"
+    },
+    {
+        "name": "VogueVenture Backpack",
+        "category": "Backpack",
+        "price": "499 EGP",
+        "imgSrc": "../pics/product/bags/bag (17).png",
+        "Code": "616"
+    },
+    {
+        "name": "TrendTrek Traveler Backpack",
+        "category": "Backpack",
+        "price": "399 EGP",
+        "imgSrc": "../pics/product/bags/bag (18).png",
+        "Code": "617"
+    },
+    {
+        "name": "UrbanUmbra Daypack Backpack",
+        "category": "Backpack",
+        "price": "385 EGP",
+        "imgSrc": "../pics/product/bags/bag (19).png",
+        "Code": "618"
     }
 ]
