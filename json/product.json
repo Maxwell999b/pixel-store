@@ -558,5 +558,194 @@
         "price": "310 EGP",
         "imgSrc": "../pics/product/belts/belt (21).png",
         "Code": "720"
+    },
+    {
+        "name": "VelocityVogue Shoes",
+        "category": "Shoes",
+        "price": "580 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (1).png",
+        "Code": "900"
+    },
+    {
+        "name": "SprintStyle Shoes",
+        "category": "Shoes",
+        "price": "710 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (2).png",
+        "Code": "901"
+    },
+    {
+        "name": "VelvetVoyage Shoes",
+        "category": "Shoes",
+        "price": "635 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (3).png",
+        "Code": "902"
+    },
+    {
+        "name": "MysticMotion Shoes",
+        "category": "Shoes",
+        "price": "815 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (4).png",
+        "Code": "903"
+    },
+    {
+        "name": "EtherealElegance Shoes",
+        "category": "Shoes",
+        "price": "590 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (5).png",
+        "Code": "904"
+    },
+    {
+        "name": "SereneStride Shoes",
+        "category": "Shoes",
+        "price": "680 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (6).png",
+        "Code": "905"
+    },
+    {
+        "name": "GildedGait Shoes",
+        "category": "Shoes",
+        "price": "770 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (7).png",
+        "Code": "906"
+    },
+    {
+        "name": "RusticRhythm Shoes",
+        "category": "Shoes",
+        "price": "655 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (8).png",
+        "Code": "907"
+    },
+    {
+        "name": "WhisperWalk Shoes",
+        "category": "Shoes",
+        "price": "725 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (9).png",
+        "Code": "908"
+    },
+    {
+        "name": "SilkStroll Shoes",
+        "category": "Shoes",
+        "price": "600 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (10).png",
+        "Code": "909"
+    },
+    {
+        "name": "VelourVenture Shoes",
+        "category": "Shoes",
+        "price": "695 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (11).png",
+        "Code": "910"
+    },
+    {
+        "name": "LustrousLeap Shoes",
+        "category": "Shoes",
+        "price": "780 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (12).png",
+        "Code": "911"
+    },
+    {
+        "name": "OpulentOutfit Shoes",
+        "category": "Shoes",
+        "price": "640 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (13).png",
+        "Code": "912"
+    },
+    {
+        "name": "GoldenGlide Shoes",
+        "category": "Shoes",
+        "price": "820 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (14).png",
+        "Code": "913"
+    },
+    {
+        "name": "EmberElegance Shoes",
+        "category": "Shoes",
+        "price": "705 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (15).png",
+        "Code": "914"
+    },
+    {
+        "name": "IvoryImpression Shoes",
+        "category": "Shoes",
+        "price": "770 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (16).png",
+        "Code": "915"
+    },
+    {
+        "name": "CelestialCruise Shoes",
+        "category": "Shoes",
+        "price": "655 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (17).png",
+        "Code": "916"
+    },
+    {
+        "name": "SapphireStride Shoes",
+        "category": "Shoes",
+        "price": "790 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (18).png",
+        "Code": "917"
+    },
+    {
+        "name": "OnyxDance Shoes",
+        "category": "Shoes",
+        "price": "600 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (19).png",
+        "Code": "918"
+    },
+    {
+        "name": "VelvetVoyager Shoes",
+        "category": "Shoes",
+        "price": "670 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (20).png",
+        "Code": "919"
+    },
+    {
+        "name": "RadiantRhythm Shoes",
+        "category": "Shoes",
+        "price": "715 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (21).png",
+        "Code": "920"
+    },
+    {
+        "name": "SprintStride Shoes",
+        "category": "Shoes",
+        "price": "850 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (22).png",
+        "Code": "921"
+    },
+    {
+        "name": "MysticMove Shoes",
+        "category": "Shoes",
+        "price": "760 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (23).png",
+        "Code": "922"
+    },
+    {
+        "name": "EtherealEclipse Shoes",
+        "category": "Shoes",
+        "price": "895 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (24).png",
+        "Code": "923"
+    },
+    {
+        "name": "SereneStride Shoes",
+        "category": "Shoes",
+        "price": "650 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (25).png",
+        "Code": "924"
+    },
+    {
+        "name": "GildedGlide Shoes",
+        "category": "Shoes",
+        "price": "780 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (26).png",
+        "Code": "925"
+    },
+    {
+        "name": "DuskDance Shoes",
+        "category": "Shoes",
+        "price": "725 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (27).png",
+        "Code": "926"
     }
 ]
