@@ -747,5 +747,166 @@
         "price": "725 EGP",
         "imgSrc": "../pics/product/shoes/shoes (27).png",
         "Code": "926"
+    },
+    {
+        "name": "WarmWoven Socks",
+        "category": "Socks",
+        "price": "150 EGP",
+        "imgSrc": "../pics/product/socks/socks (1).png",
+        "Code": "400"
+    },
+    {
+        "name": "VelvetVista Socks",
+        "category": "Socks",
+        "price": "200 EGP",
+        "imgSrc": "../pics/product/socks/socks (2).png",
+        "Code": "401"
+    },
+    {
+        "name": "CozyCotton Socks",
+        "category": "Socks",
+        "price": "180 EGP",
+        "imgSrc": "../pics/product/socks/socks (3).png",
+        "Code": "402"
+    },
+    {
+        "name": "SilkenStride Socks",
+        "category": "Socks",
+        "price": "250 EGP",
+        "imgSrc": "../pics/product/socks/socks (4).png",
+        "Code": "403"
+    },
+    {
+        "name": "FluffyFeather Socks",
+        "category": "Socks",
+        "price": "120 EGP",
+        "imgSrc": "../pics/product/socks/socks (5).png",
+        "Code": "404"
+    },
+    {
+        "name": "WarmWhirl Socks",
+        "category": "Socks",
+        "price": "220 EGP",
+        "imgSrc": "../pics/product/socks/socks (6).png",
+        "Code": "405"
+    },
+    {
+        "name": "CottonCraze Socks",
+        "category": "Socks",
+        "price": "160 EGP",
+        "imgSrc": "../pics/product/socks/socks (7).png",
+        "Code": "406"
+    },
+    {
+        "name": "FlannelFlow Socks",
+        "category": "Socks",
+        "price": "190 EGP",
+        "imgSrc": "../pics/product/socks/socks (8).png",
+        "Code": "407"
+    },
+    {
+        "name": "PlushPulse Socks",
+        "category": "Socks",
+        "price": "230 EGP",
+        "imgSrc": "../pics/product/socks/socks (9).png",
+        "Code": "408"
+    },
+    {
+        "name": "SatinStride Socks",
+        "category": "Socks",
+        "price": "140 EGP",
+        "imgSrc": "../pics/product/socks/socks (10).png",
+        "Code": "409"
+    },
+    {
+        "name": "CosyCraft Socks",
+        "category": "Socks",
+        "price": "170 EGP",
+        "imgSrc": "../pics/product/socks/socks (11).png",
+        "Code": "410"
+    },
+    {
+        "name": "SnugStyle Socks",
+        "category": "Socks",
+        "price": "200 EGP",
+        "imgSrc": "../pics/product/socks/socks (12).png",
+        "Code": "411"
+    },
+    {
+        "name": "FleeceFlair Socks",
+        "category": "Socks",
+        "price": "180 EGP",
+        "imgSrc": "../pics/product/socks/socks (13).png",
+        "Code": "412"
+    },
+    {
+        "name": "SoftStrand Socks",
+        "category": "Socks",
+        "price": "270 EGP",
+        "imgSrc": "../pics/product/socks/socks (14).png",
+        "Code": "413"
+    },
+    {
+        "name": "CushionCraze Socks",
+        "category": "Socks",
+        "price": "150 EGP",
+        "imgSrc": "../pics/product/socks/socks (15).png",
+        "Code": "414"
+    },
+    {
+        "name": "PlaidPulse Socks",
+        "category": "Socks",
+        "price": "210 EGP",
+        "imgSrc": "../pics/product/socks/socks (16).png",
+        "Code": "415"
+    },
+    {
+        "name": "LuxeLoom Socks",
+        "category": "Socks",
+        "price": "190 EGP",
+        "imgSrc": "../pics/product/socks/socks (17).png",
+        "Code": "416"
+    },
+    {
+        "name": "VelourVista Socks",
+        "category": "Socks",
+        "price": "230 EGP",
+        "imgSrc": "../pics/product/socks/socks (18).png",
+        "Code": "417"
+    },
+    {
+        "name": "SnuggleStride Socks",
+        "category": "Socks",
+        "price": "120 EGP",
+        "imgSrc": "../pics/product/socks/socks (19).png",
+        "Code": "418"
+    },
+    {
+        "name": "CozyCraft Socks",
+        "category": "Socks",
+        "price": "250 EGP",
+        "imgSrc": "../pics/product/socks/socks (20).png",
+        "Code": "419"
+    },
+    {
+        "name": "SoftSole Socks",
+        "category": "Socks",
+        "price": "160 EGP",
+        "imgSrc": "../pics/product/socks/socks (21).png",
+        "Code": "420"
+    },
+    {
+        "name": "SilkStitch Socks",
+        "category": "Socks",
+        "price": "180 EGP",
+        "imgSrc": "../pics/product/socks/socks (22).png",
+        "Code": "421"
+    },
+    {
+        "name": "SilkArk Socks",
+        "category": "Socks",
+        "price": "190 EGP",
+        "imgSrc": "../pics/product/socks/socks (23).png",
+        "Code": "422"
     }
 ]
