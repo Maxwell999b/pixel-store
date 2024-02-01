@@ -5,7 +5,7 @@ var searchInput = document.getElementById("searchInput");
 const pageCategory = getPageCategory();
 
 function loadApi() {
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5')
+    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27')
         .then(response => response.json())
         .then(data => {
             if (pageCategory === 'Hoodie') {
@@ -19,7 +19,7 @@ function loadApi() {
 }
 
 function getProductsHoodie() {
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
         .then(response => response.json())
         .then(data => {
             // Display only Hoodie products
@@ -28,7 +28,7 @@ function getProductsHoodie() {
 }
 
 function getProductsPants() {
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
         .then(response => response.json())
         .then(data => {
             // Display only Pants products
@@ -64,7 +64,7 @@ function createProductElement(title, price, thumbnail) {
     return divPrd;
 }
 function searchProducts(query) {
-    fetch('https://mocki.io/v1/7418b292-1c64-4a7c-ab89-3a69b0191ec5', { method: 'get' })
+    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
         .then(response => response.json())
         .then(Data => {
             divContainer.innerHTML = '';
