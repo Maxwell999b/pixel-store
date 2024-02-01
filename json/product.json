@@ -411,5 +411,152 @@
         "price": "385 EGP",
         "imgSrc": "../pics/product/bags/bag (19).png",
         "Code": "618"
+    },
+    {
+        "name": "CrimsonCraze Belt",
+        "category": "Belts",
+        "price": "425 EGP",
+        "imgSrc": "../pics/product/belts/belt (1).png",
+        "Code": "700"
+    },
+    {
+        "name": "AzureAdorn Belt",
+        "category": "Belts",
+        "price": "290 EGP",
+        "imgSrc": "../pics/product/belts/belt (2).png",
+        "Code": "701"
+    },
+    {
+        "name": "VelvetVista Belt",
+        "category": "Belts",
+        "price": "365 EGP",
+        "imgSrc": "../pics/product/belts/belt (3).png",
+        "Code": "702"
+    },
+    {
+        "name": "MysticMingle Belt",
+        "category": "Belts",
+        "price": "155 EGP",
+        "imgSrc": "../pics/product/belts/belt (4).png",
+        "Code": "703"
+    },
+    {
+        "name": "EtherealEmbrace Belt",
+        "category": "Belts",
+        "price": "480 EGP",
+        "imgSrc": "../pics/product/belts/belt (5).png",
+        "Code": "704"
+    },
+    {
+        "name": "SereneSash Belt",
+        "category": "Belts",
+        "price": "210 EGP",
+        "imgSrc": "../pics/product/belts/belt (6).png",
+        "Code": "705"
+    },
+    {
+        "name": "GildedGlamour Belt",
+        "category": "Belts",
+        "price": "320 EGP",
+        "imgSrc": "../pics/product/belts/belt (7).png",
+        "Code": "706"
+    },
+    {
+        "name": "RusticRibbon Belt",
+        "category": "Belts",
+        "price": "180 EGP",
+        "imgSrc": "../pics/product/belts/belt (8).png",
+        "Code": "707"
+    },
+    {
+        "name": "WhisperWeave Belt",
+        "category": "Belts",
+        "price": "450 EGP",
+        "imgSrc": "../pics/product/belts/belt (9).png",
+        "Code": "708"
+    },
+    {
+        "name": "SilkSymphony Belt",
+        "category": "Belts",
+        "price": "260 EGP",
+        "imgSrc": "../pics/product/belts/belt (10).png",
+        "Code": "709"
+    },
+    {
+        "name": "VelourVogue Belt",
+        "category": "Belts",
+        "price": "375 EGP",
+        "imgSrc": "../pics/product/belts/belt (11).png",
+        "Code": "710"
+    },
+    {
+        "name": "LustrousLine Belt",
+        "category": "Belts",
+        "price": "420 EGP",
+        "imgSrc": "../pics/product/belts/belt (12).png",
+        "Code": "711"
+    },
+    {
+        "name": "OpulentOrnament Belt",
+        "category": "Belts",
+        "price": "325 EGP",
+        "imgSrc": "../pics/product/belts/belt (13).png",
+        "Code": "712"
+    },
+    {
+        "name": "GoldenGirdle Belt",
+        "category": "Belts",
+        "price": "490 EGP",
+        "imgSrc": "../pics/product/belts/belt (14).png",
+        "Code": "713"
+    },
+    {
+        "name": "EmberEssence Belt",
+        "category": "Belts",
+        "price": "295 EGP",
+        "imgSrc": "../pics/product/belts/belt (15).png",
+        "Code": "714"
+    },
+    {
+        "name": "IvoryIntrigue Belt",
+        "category": "Belts",
+        "price": "400 EGP",
+        "imgSrc": "../pics/product/belts/belt (16).png",
+        "Code": "715"
+    },
+    {
+        "name": "CelestialCord Belt",
+        "category": "Belts",
+        "price": "230 EGP",
+        "imgSrc": "../pics/product/belts/belt (17).png",
+        "Code": "716"
+    },
+    {
+        "name": "SapphireStrap Belt",
+        "category": "Belts",
+        "price": "440 EGP",
+        "imgSrc": "../pics/product/belts/belt (18).png",
+        "Code": "717"
+    },
+    {
+        "name": "OnyxOrbit Belt",
+        "category": "Belts",
+        "price": "350 EGP",
+        "imgSrc": "../pics/product/belts/belt (19).png",
+        "Code": "718"
+    },
+    {
+        "name": "VelvetVortex Belt",
+        "category": "Belts",
+        "price": "270 EGP",
+        "imgSrc": "../pics/product/belts/belt (20).png",
+        "Code": "719"
+    },
+    {
+        "name": "RadiantRibbon Belt",
+        "category": "Belts",
+        "price": "310 EGP",
+        "imgSrc": "../pics/product/belts/belt (21).png",
+        "Code": "720"
     }
 ]
