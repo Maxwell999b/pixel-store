@@ -53,12 +53,12 @@
 }
 
 .card-cs1:hover img {
-  content: url('/pics/product/black-hoodie.jpg');
+  content: url('/pics/category/hoodie (2).jpg');
   opacity: 0.8;
 }
 
 .card-cs2:hover img {
-  content: url('/pics/product/pants-grey2.jpg');
+  content: url('/pics/category/pants (2).jpg');
 }
 @keyframes colorStopA {
   0% {
