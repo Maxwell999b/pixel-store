@@ -143,140 +143,140 @@
         "name" : "Pants-sports Blue ",
         "category" : "Pants",
         "price" : "280 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (1).png",
+        "imgSrc" : "../pics/product/pants/pants (1).png",
         "Code" : "800"
     },
     {
         "name" : "Pants-sports Dark",
         "category" : "Pants",
         "price" : "450 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (2).png",
+        "imgSrc" : "../pics/product/pants/pants (2).png",
         "Code" : "801"
     },
     {
         "name" : "Pants-sports Grey",
         "category" : "Pants",
         "price" : "415 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (3).png",
+        "imgSrc" : "../pics/product/pants/pants (3).png",
         "Code" : "802"
     },
     {
         "name" : "Pants Black",
         "category" : "Pants",
         "price" : "315 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (4).png",
+        "imgSrc" : "../pics/product/pants/pants (4).png",
         "Code" : "803"
     },
     {
         "name" : "Pants Dark Black",
         "category" : "Pants",
         "price" : "520 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (5).png",
+        "imgSrc" : "../pics/product/pants/pants (5).png",
         "Code" : "804"
     },
     {
         "name" : "Pants-sports Red",
         "category" : "Pants",
         "price" : "415 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (6).png",
+        "imgSrc" : "../pics/product/pants/pants (6).png",
         "Code" : "805"
     },
     {
         "name" : "Pants-sports Brown",
         "category" : "Pants",
         "price" : "415 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (7).png",
+        "imgSrc" : "../pics/product/pants/pants (7).png",
         "Code" : "806"
     },
     {
         "name" : "Pants-sports A-Black",
         "category" : "Pants",
         "price" : "215 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (8).png",
+        "imgSrc" : "../pics/product/pants/pants (8).png",
         "Code" : "807"
     },
     {
         "name" : "Pants-sports White",
         "category" : "Pants",
         "price" : "350 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (9).png",
+        "imgSrc" : "../pics/product/pants/pants (9).png",
         "Code" : "808"
     },
     {
         "name" : "Pants-sports S-Black",
         "category" : "Pants",
         "price" : "415 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (10).png",
+        "imgSrc" : "../pics/product/pants/pants (10).png",
         "Code" : "809"
     },
     {
         "name" : "Pants-sports H-Black",
         "category" : "Pants",
         "price" : "300 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (11).png",
+        "imgSrc" : "../pics/product/pants/pants (11).png",
         "Code" : "810"
     },
     {
         "name" : "Pants-sports B-Brown",
         "category" : "Pants",
         "price" : "450 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (12).png",
+        "imgSrc" : "../pics/product/pants/pants (12).png",
         "Code" : "811"
     },
     {
         "name" : "Pants-sports Army",
         "category" : "Pants",
         "price" : "250 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (13).png",
+        "imgSrc" : "../pics/product/pants/pants (13).png",
         "Code" : "812"
     },
     {
         "name" : "Pants-sports R-Brown",
         "category" : "Pants",
         "price" : "360 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (14).png",
+        "imgSrc" : "../pics/product/pants/pants (14).png",
         "Code" : "813"
     },
     {
         "name" : "Pants-sports R-Click",
         "category" : "Pants",
         "price" : "360 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (15).png",
+        "imgSrc" : "../pics/product/pants/pants (15).png",
         "Code" : "814"
     },
     {
         "name" : "Pants-2000 Black",
         "category" : "Pants",
         "price" : "600 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (16).png",
+        "imgSrc" : "../pics/product/pants/pants (16).png",
         "Code" : "815"
     },
     {
         "name" : "Pants-sports B-BlueSky",
         "category" : "Pants",
         "price" : "350 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (17).png",
+        "imgSrc" : "../pics/product/pants/pants (17).png",
         "Code" : "816"
     },
     {
         "name" : "Pants-sports G-Dark",
         "category" : "Pants",
         "price" : "500 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (18).png",
+        "imgSrc" : "../pics/product/pants/pants (18).png",
         "Code" : "817"
     },
     {
         "name" : "Pants-sports A-Yellow",
         "category" : "Pants",
         "price" : "350 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (19).png",
+        "imgSrc" : "../pics/product/pants/pants (19).png",
         "Code" : "818"
     },
     {
         "name" : "Pants-sports N-Black",
         "category" : "Pants",
         "price" : "320 EGP",
-        "imgSrc" : "../pics/product/Pants/pants (20).png",
+        "imgSrc" : "../pics/product/pants/pants (20).png",
         "Code" : "819"
     }
 ]
