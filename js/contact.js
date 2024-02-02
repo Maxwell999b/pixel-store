@@ -14,7 +14,7 @@
       // Check if the message has at least 15 characters
       return message.length >= 15;
     }
-
+    // ignore this warning error
     function sendMessage() {
       var fullnameInput = document.getElementById('fullnameInput');
       var emailInput = document.getElementById('emailInput');

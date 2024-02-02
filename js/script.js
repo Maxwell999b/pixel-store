@@ -1,7 +1,7 @@
 var divContainer = document.getElementById("containeritems");
 
 function fetchProducts() {
-    return fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
+    return fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
         .then(response => response.json());
 }
 

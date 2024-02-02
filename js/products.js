@@ -5,13 +5,21 @@ var searchInput = document.getElementById("searchInput");
 const pageCategory = getPageCategory();
 
 function loadApi() {
-    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27')
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168')
         .then(response => response.json())
         .then(data => {
             if (pageCategory === 'Hoodie') {
                 displayProducts(data.filter(item => item.category === 'Hoodie'));
             } else if (pageCategory === 'Pants') {
                 displayProducts(data.filter(item => item.category === 'Pants'));
+            } else if (pageCategory === 'Backpack') {
+                displayProducts(data.filter(item => item.category === 'Backpack'));
+            } else if (pageCategory === 'Belts') {
+                displayProducts(data.filter(item => item.category === 'Belts'));
+            } else if (pageCategory === 'Shoes') {
+                displayProducts(data.filter(item => item.category === 'Shoes'));
+            } else if (pageCategory === 'Socks') {
+                displayProducts(data.filter(item => item.category === 'Socks'));
             } else {
                 displayProducts(data);
             }
@@ -19,7 +27,7 @@ function loadApi() {
 }
 
 function getProductsHoodie() {
-    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
         .then(response => response.json())
         .then(data => {
             // Display only Hoodie products
@@ -28,11 +36,47 @@ function getProductsHoodie() {
 }
 
 function getProductsPants() {
-    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
         .then(response => response.json())
         .then(data => {
             // Display only Pants products
             displayProducts(data.filter(item => item.category === 'Pants'));
+        });
+}
+
+function getProductsBackpack() {
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Pants Backpack
+            displayProducts(data.filter(item => item.category === 'Backpack'));
+        });
+}
+
+function getProductsBelts() {
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Belts products
+            displayProducts(data.filter(item => item.category === 'Belts'));
+        });
+}
+
+function getProductsShoes() {
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Shoes products
+            displayProducts(data.filter(item => item.category === 'Shoes'));
+        });
+}
+
+function getProductsSocks() {
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
+        .then(response => response.json())
+        .then(data => {
+            // Display only Socks products
+            displayProducts(data.filter(item => item.category === 'Socks'));
         });
 }
 
@@ -64,7 +108,7 @@ function createProductElement(title, price, thumbnail) {
     return divPrd;
 }
 function searchProducts(query) {
-    fetch('https://mocki.io/v1/b3cdb459-99a7-4b68-aa18-805ecb949e27', { method: 'get' })
+    fetch('https://mocki.io/v1/5c698084-1e13-4abb-be1d-360d47c5a168', { method: 'get' })
         .then(response => response.json())
         .then(Data => {
             divContainer.innerHTML = '';
@@ -110,6 +154,14 @@ window.onload = function () {
         getProductsHoodie();
     } else if (pageCategory === 'Pants') {
         getProductsPants();
+    }else if (pageCategory === 'Backpack') {
+        getProductsBackpack();
+    }else if (pageCategory === 'Belts') {
+        getProductsBelts();
+    }else if (pageCategory === 'Shoes') {
+        getProductsShoes();
+    }else if (pageCategory === 'Socks') {
+        getProductsSocks();
     } else {
         loadApi();
     }
