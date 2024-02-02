@@ -413,6 +413,41 @@
         "Code": "618"
     },
     {
+        "name": "VentureVibe Backpack",
+        "category": "Backpack",
+        "price": "385 EGP",
+        "imgSrc": "../pics/product/bags/bag (20).png",
+        "Code": "619"
+    },
+    {
+        "name": "TrekTrail Explorer Backpack",
+        "category": "Backpack",
+        "price": "415 EGP",
+        "imgSrc": "../pics/product/bags/bag (21).png",
+        "Code": "620"
+    },
+    {
+        "name": "UrbanPulse Rucksack",
+        "category": "Backpack",
+        "price": "465 EGP",
+        "imgSrc": "../pics/product/bags/bag (22).png",
+        "Code": "621"
+    },
+    {
+        "name": "CitySculpt Backpack",
+        "category": "Backpack",
+        "price": "475 EGP",
+        "imgSrc": "../pics/product/bags/bag (23).png",
+        "Code": "622"
+    },
+    {
+        "name": "TechTrek Voyager Backpack",
+        "category": "Backpack",
+        "price": "485 EGP",
+        "imgSrc": "../pics/product/bags/bag (24).png",
+        "Code": "623"
+    },
+    {
         "name": "CrimsonCraze Belt",
         "category": "Belts",
         "price": "425 EGP",
@@ -749,6 +784,20 @@
         "Code": "926"
     },
     {
+        "name": "VelvetVortex Shoes",
+        "category": "Shoes",
+        "price": "465 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (28).png",
+        "Code": "927"
+    },
+    {
+        "name": "EtherealEcho Shoes",
+        "category": "Shoes",
+        "price": "495 EGP",
+        "imgSrc": "../pics/product/shoes/shoes (29).png",
+        "Code": "928"
+    },
+    {
         "name": "WarmWoven Socks",
         "category": "Socks",
         "price": "150 EGP",
@@ -901,12 +950,5 @@
         "price": "180 EGP",
         "imgSrc": "../pics/product/socks/socks (22).png",
         "Code": "421"
-    },
-    {
-        "name": "SilkArk Socks",
-        "category": "Socks",
-        "price": "190 EGP",
-        "imgSrc": "../pics/product/socks/socks (23).png",
-        "Code": "422"
     }
 ]
