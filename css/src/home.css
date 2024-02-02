@@ -16,7 +16,7 @@
   transition: opacity 2s;
   z-index: 1;
 }
-
+  
 .card-cs:hover {
   transform: scale(1.019);
   filter: brightness(70%);
@@ -53,12 +53,28 @@
 }
 
 .card-cs1:hover img {
-  content: url('/pics/category/hoodie (2).jpg');
+  content: url('/pics/category/hoodie (1).jpg');
   opacity: 0.8;
 }
 
 .card-cs2:hover img {
   content: url('/pics/category/pants (2).jpg');
+}
+
+.card-cs3:hover img {
+  content: url('/pics/category/backpack (1).jpg');
+}
+
+.card-cs4:hover img {
+  content: url('/pics/category/belt (2).jpg');
+}
+
+.card-cs5:hover img {
+  content: url('/pics/category/shoes (1).jpg');
+}
+
+.card-cs6:hover img {
+  content: url('/pics/category/socks (2).jpg');
 }
 @keyframes colorStopA {
   0% {
@@ -70,7 +86,7 @@
 }
 
 .btn-overlay-cs {
-  background: linear-gradient(90deg,  #9CECFB, #65C7F7);
+  background: linear-gradient(135deg, rgba(255, 254, 176, 0.7), rgba(255, 127, 1, 0.7));
   color: #1B082E;
   padding: 5%;
   font-weight: bolder;
@@ -92,7 +108,8 @@
 }
 
 .btn-overlay-cs:hover {
-  background: linear-gradient(90deg,  #65C7F7, #0052D4);
+  background: linear-gradient(135deg, rgba(255, 254, 192, 0.9), rgba(255, 141, 27, 0.9));
+  color: #775896;
 }
 
 /* this is for the cart modal on the Home Page Only *Desktop Size only* */
@@ -103,4 +120,10 @@
 }
 .custom-offcanvas {
   bottom: 20vh; 
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 2rem;
+  color: #d9a7c7;
 }

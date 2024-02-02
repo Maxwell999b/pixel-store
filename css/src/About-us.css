@@ -1,0 +1,16 @@
+.main-container img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .main-container .col-6 {
+    position: relative;
+  }
+
+  .main-container .col-6 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

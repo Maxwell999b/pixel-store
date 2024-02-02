@@ -36,8 +36,12 @@
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodie's Category</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants's Category</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodies</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Backpack.html" target="_Self">Backpacks</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Belts.html" target="_Self">Belts</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Shoes.html" target="_Self">Shoes</a></li>
+                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Socks.html" target="_Self">Socks</a></li>
                   </ul>
               </li>
               </li>
@@ -166,18 +170,73 @@
       
         <!-- Section: Links  -->
         <section class="container-fluid p-4 d-flex justify-content-center">
-          <div class="card col-5 me-3 card-cs card-cs1 card-cs-sp">
-            <img src="../pics/category/hoodie (1).jpg" class="card-img-top" alt="Hoodie's Category">
-            <div class="card-img-overlay card-img-overlay-cs">
-              <a href="Hoodie.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Hoodie</a>
-            </div>
-          </div>
+          <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <!-- First Carousel Item -->
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div class="card col-5 me-3 card-cs card-cs1 card-cs-sp">
+                    <img src="../pics/category/hoodie (2).jpg" class="card-img-top" alt="Hoodie's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Hoodie.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Hoodies</a>
+                    </div>
+                  </div>
+                  <div class="card col-5 me-3 card-cs card-cs2">
+                    <img src="../pics/category/pants (1).jpg" class="card-img-top" alt="Pants's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Pants.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Pants</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         
-          <div class="card col-5 me-3 card-cs card-cs2">
-            <img src="../pics/category/pants (1).jpg" class="card-img-top" alt="Pants's Category">
-            <div class="card-img-overlay card-img-overlay-cs">
-              <a href="Pants.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Pants</a>
+              <!-- Second Carousel Item -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card col-5 me-3 card-cs card-cs3">
+                    <img src="../pics/category/backpack (2).jpg" class="card-img-top" alt="Backpack's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Backpack.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Backpacks</a>
+                    </div>
+                  </div>
+                  <div class="card col-5 me-3 card-cs card-cs4">
+                    <img src="../pics/category/belt (1).jpg" class="card-img-top" alt="Belts's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Belts.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Belts</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Third Carousel Item -->
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div class="card col-5 me-3 card-cs card-cs5">
+                    <img src="../pics/category/shoes (2).jpg" class="card-img-top" alt="Shoes's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Shoes.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Shoes</a>
+                    </div>
+                  </div>
+                  <div class="card col-5 me-3 card-cs card-cs6">
+                    <img src="../pics/category/socks (1).jpg" class="card-img-top" alt="Socks's Category">
+                    <div class="card-img-overlay card-img-overlay-cs">
+                      <a href="Socks.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Socks</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+        
             </div>
+            <!-- carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#categoryCarousel" data-bs-slide="prev">
+              <i class="fa-solid fa-circle-chevron-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#categoryCarousel" data-bs-slide="next">
+              <i class="fa-solid fa-circle-chevron-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </section>
         <!-- Toast  -->
