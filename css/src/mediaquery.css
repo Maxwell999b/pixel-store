@@ -1,12 +1,19 @@
 /* Extra Small Devices (phones (phones)) -CSS rules for extra small screens */
 @media (max-width: 575.98px) {
-  
+  .btn-overlay-cs {
+    letter-spacing: 3px;
+    font-size: 0.6rem;
+  }
 }
 
 /* Small Devices (tablets (tablets)) -CSS rules for small screens */
 @media (min-width: 576px) and (max-width: 767.98px) {
   #cartButton {
     margin-bottom: -10px;
+  }
+  .btn-overlay-cs {
+    letter-spacing: 7px;
+    font-size: 1rem;
   }
 }
 
