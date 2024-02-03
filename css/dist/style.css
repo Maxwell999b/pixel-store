@@ -204,3 +204,31 @@ a.link-secondary {
   text-decoration: none;
 }
 
+/* Standard scrollbar styling (for Firefox and other browsers) */
+* {
+  scrollbar-color: #b993d6 #414345; /* thumb and track colors */
+  scrollbar-width: thin;
+}
+
+/* Optionally, you can style the scrollbar on hover for better visibility */
+* {
+  scrollbar-color: #b993d6 #414345; /* thumb and track colors */
+  scrollbar-width: thin;
+}
+
+* {
+  scrollbar-color: #b993d6 #414345; /* thumb and track colors */
+  scrollbar-width: thin;
+}
+
+/* Optionally, you can style the scrollbar on hover for better visibility */
+* {
+  scrollbar-color: #b993d6 #414345; /* thumb and track colors */
+  scrollbar-width: thin;
+}
+
+/* Optionally, you can style the scrollbar on hover for better visibility */
+* {
+  scrollbar-color: #b993d6 #414345; /* thumb and track colors */
+  scrollbar-width: thin;
+}
