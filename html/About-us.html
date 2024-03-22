@@ -1,203 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-us Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" type="" href="../css/dist/style.css">
-    <link rel="stylesheet" type="" href="../css/dist/Fonts.css">
-    <link rel="stylesheet" type="" href="../css/dist/mist-effect.css">
-    <link rel="stylesheet" type="" href="../css/dist/toast.css">
-    <link rel="stylesheet" type="" href="../css/dist/About-us.css">
-<style>
-</style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top special-page-bg2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/logo/black-logo-small.png" width="50em"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone fa-shake"></i>Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active nav-link" aria-current="page" role="button" href="About-us.html" target="_self"><i class="fa-solid fa-circle-info fa-bounce"></i>About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self" onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodies</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Backpack.html" target="_Self">Backpacks</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Belts.html" target="_Self">Belts</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Shoes.html" target="_Self">Shoes</a></li>
-                    <li><a class="dropdown-item navbarcheck nav-link-menu" href="Socks.html" target="_Self">Socks</a></li>
-                  </ul>
-              </li>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="Type your search here..." aria-label="Search" id="searchInput">
-              <button class="btn btn-outline-dark search-btn" type="button" id="toggleButton"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
-            </form>
-            </div>
-        </div>
-      </nav>
-      <header class="hero-section">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="custom-carousel-container">
-            <div class="carousel-inner custom-carousel-inner">
-              <div class="carousel-item active" data-bs-interval="3000">
-                <img src="../pics/banner/5-1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-4.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-5.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-6.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-7.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="3000">
-                <img src="../pics/banner/5-8.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
-                  <img src="../pics/logo/white-logo-small.png"></a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-      </header>
-      <footer class="text-center text-lg-start bg-white text-muted text-fixed-bottom special-page-bg2">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block text-dark">
-            <span id="bold-text-bs-all">Get connected with us on social networks:</span>
-          </div>
-          <!-- Left -->
-      
-          <!-- Right -->
-          <div>
 
-            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel"><i class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body small">
-                ...
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About-us Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="" href="../css/dist/style.css">
+  <link rel="stylesheet" type="" href="../css/dist/Fonts.css">
+  <link rel="stylesheet" type="" href="../css/dist/mist-effect.css">
+  <link rel="stylesheet" type="" href="../css/dist/toast.css">
+  <link rel="stylesheet" type="" href="../css/dist/About-us.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top special-page-bg2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/logo/black-logo-small.png"
+          width="50em"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i
+                class="fa-solid fa-phone fa-shake"></i>Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-link" aria-current="page" role="button" href="About-us.html" target="_self"><i
+                class="fa-solid fa-circle-info fa-bounce"></i>About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self"
+              onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodies</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Backpack.html" target="_Self">Backpacks</a>
+              </li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Belts.html" target="_Self">Belts</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Shoes.html" target="_Self">Shoes</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Socks.html" target="_Self">Socks</a></li>
+            </ul>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 search-click visually-hidden" type="search"
+            placeholder="Type your search here..." aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-dark search-btn" type="button" id="toggleButton"><i
+              class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <header class="hero-section">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="custom-carousel-container">
+        <div class="carousel-inner custom-carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="../pics/banner/5-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
             </div>
-            &nbsp;
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-square-facebook"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-square-twitter"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-square-github"></i>
-            </a>
           </div>
-          <!-- Right -->
-        </section>
-        <!-- Section: Social media -->
-      
-        <!-- Section: Links  -->
-        <section class="container-fluid">
-          <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
-              <!-- Grid column -->
-              <div class="row align-items-center">
-                <!-- Content -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fa-solid fa-cog fa-spin"></i>プレイステーション PS
-                </h6>
-                <div class="container">
-                  <div class="lead m-2 p-2 center-content-us-div main-container">
-                    <h3 class="hf-text">welcome to <span class="brand-text m-1 p-1">プレイステーション</span> - Your Pixel Playground for Hoodies and Pants!</h3>
-                    <br>
-                    <div class="row">
-                      <div class="col-8">
-                    <span>Level up your wardrobe game at
-                    <span class="brand-text m-1 p-1">プレイステーション</span>, where fashion meets pixels in a playground designed for gamers and the young at heart.<br><br>
-                    Step into our digital realm, where every hoodie and pair of pants is a power-up for your style journey.<br>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-5.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-6.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-7.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="../pics/banner/5-8.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html">
+                  <img src="../pics/logo/white-logo-small.png"></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <footer class="text-center text-lg-start bg-white text-muted text-fixed-bottom special-page-bg2">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block text-dark">
+        <span id="bold-text-bs-all">Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel"><i
+                class="fa-solid fa-cart-arrow-down fa-fade"></i>Loading...</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body small">
+            ...
+          </div>
+        </div>
+        &nbsp;
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-square-twitter"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <!-- Grid column -->
+        <div class="row align-items-center">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fa-solid fa-cog fa-spin"></i>プレイステーション PS
+          </h6>
+          <div class="container">
+            <div class="lead m-2 p-2 center-content-us-div main-container">
+              <h3 class="hf-text">welcome to <span class="brand-text m-1 p-1">プレイステーション</span> - Your Pixel Playground
+                for Hoodies and Pants!</h3>
+              <br>
+              <div class="row">
+                <div class="col-8">
+                  <span>Level up your wardrobe game at
+                    <span class="brand-text m-1 p-1">プレイステーション</span>, where fashion meets pixels in a playground
+                    designed for gamers and the young at heart.<br><br>
+                    Step into our digital realm, where every hoodie and pair of pants is a power-up for your style
+                    journey.<br>
                     Dress the part with our curated
                     collection that transcends the virtual and real worlds.</span>
-                    <br><br>
-                    From comfy hoodies adorned with gaming motifs to pants that effortlessly blend
-                    street style with a touch of joystick flair,
-                    <span class="brand-text">プレイステーション</span> is your go-to destination for leveling up your streetwear.<br>
-                    </div>
-                    <div class="col-4 p-0 m-0"><img src="../pics/cards/1.jpg" alt=""></div>
-                    </div>
-                    <div class="row">
-                      <div class="col-4 p-0 m-0"><img src="../pics/cards/2.jpg" alt=""></div>
-                      <div class="col-8">
-                    <span>
+                  <br><br>
+                  From comfy hoodies adorned with gaming motifs to pants that effortlessly blend
+                  street style with a touch of joystick flair,
+                  <span class="brand-text">プレイステーション</span> is your go-to destination for leveling up your
+                  streetwear.<br>
+                </div>
+                <div class="col-4 p-0 m-0"><img src="../pics/cards/1.jpg" alt=""></div>
+              </div>
+              <div class="row">
+                <div class="col-4 p-0 m-0"><img src="../pics/cards/2.jpg" alt=""></div>
+                <div class="col-8">
+                  <span>
                     Immerse yourself in the aesthetics
                     of our virtual aisles, where the language of pixels converges with urban fashion.<br><br>
                     Each piece in our collection is not just an article of
@@ -205,55 +222,67 @@
                     Whether you're conquering virtual realms or navigating real-life adventures,
                     <span class="brand-text">プレイステーション</span> ensures you do it in style.<br><br>
                     Embrace the controller in your hands and the joystick in your
-                    heart as you explore the dynamic designs that resonate with gamers and the young, bold, and unapologetic.<br><br>
-                    </span>
-                  </div>
-                  </div>
-                  <span>
-                    At
-                    <span class="brand-text">プレイステーション</span>, fashion isn't just about what you wear; it's about making a statement that speaks the
-                    language of your gaming soul.<br><br>
-                    Join us in crafting a style narrative that blends the pixelated nostalgia of gaming with the street-smart
-                    swagger of today.<br>
-                    Our hoodies and pants aren't just clothing; they're power-ups for your wardrobe, enhancing your presence with a touch
-                    of gaming charisma.<br>
+                    heart as you explore the dynamic designs that resonate with gamers and the young, bold, and
+                    unapologetic.<br><br>
                   </span>
-                    <br><br><div class="hf-text">Get ready to level up your fashion game at
-                    <span class="brand-text">プレイステーション</span> – because in this pixelated playground, your style adventure awaits, and every piece is a
-                    respawn of your unique identity!
-                  
-                </div>
-                  </div>
                 </div>
               </div>
-        </section>
-        <!-- Toast  -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-3">
-          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-body">
-              <span class="toast-body-title">Have a Question or Feedback?</span>
-                <span class="toast-body-title2">Reach out to us for assistance or share your thoughts!</span>
-              <div class="mt-2 pt-2 border-top">
-                <a href="Contact-us.html" class="btn btn-toast btn-sm">Contact Us</a>
-                <button type="button" class="btn btn-toast2 btn-sm" data-bs-dismiss="toast">Close</button>
+              <span>
+                At
+                <span class="brand-text">プレイステーション</span>, fashion isn't just about what you wear; it's about making a
+                statement that speaks the
+                language of your gaming soul.<br><br>
+                Join us in crafting a style narrative that blends the pixelated nostalgia of gaming with the
+                street-smart
+                swagger of today.<br>
+                Our hoodies and pants aren't just clothing; they're power-ups for your wardrobe, enhancing your presence
+                with a touch
+                of gaming charisma.<br>
+              </span>
+              <br><br>
+              <div class="hf-text">Get ready to level up your fashion game at
+                <span class="brand-text">プレイステーション</span> – because in this pixelated playground, your style adventure
+                awaits, and every piece is a
+                respawn of your unique identity!
+
               </div>
             </div>
           </div>
         </div>
-        <footer id="toastfooter">
-          <div class="text-center p-4">
-            © 2023 Copyright:
-            <a class="text-reset fw-bold footer-brand-name" href="Home.html">プレイステーション</a>&nbsp;&nbsp;
-            <span><i class="fas fa-print text-secondary icons-colors"></i> + 01 234 567 89</span>&nbsp;&nbsp;
-            <span><i class="fas fa-phone me-1 text-secondary icons-colors"></i> + 01 234 567 89</span>&nbsp;&nbsp;
-            <span><i class="fas fa-envelope me-1 text-secondary icons-colors"></i>info@example.com</span>&nbsp;&nbsp;
-            <span><i class="fas fa-home me-1 text-secondary icons-colors"></i> Tōkyō, Japan</span>&nbsp;&nbsp;
+      </div>
+    </section>
+    <!-- Toast  -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+          <span class="toast-body-title">Have a Question or Feedback?</span>
+          <span class="toast-body-title2">Reach out to us for assistance or share your thoughts!</span>
+          <div class="mt-2 pt-2 border-top">
+            <a href="Contact-us.html" class="btn btn-toast btn-sm">Contact Us</a>
+            <button type="button" class="btn btn-toast2 btn-sm" data-bs-dismiss="toast">Close</button>
           </div>
-      </footer>
-        <!-- Copyright -->
-    <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/toast.js"></script>
-  </body>
+        </div>
+      </div>
+    </div>
+
+    <footer id="toastfooter">
+      <div class="text-center p-4">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold footer-brand-name" href="Home.html">プレイステーション</a>&nbsp;&nbsp;
+        <span><i class="fas fa-print text-secondary icons-colors"></i> + 01 234 567 89</span>&nbsp;&nbsp;
+        <span><i class="fas fa-phone me-1 text-secondary icons-colors"></i> + 01 234 567 89</span>&nbsp;&nbsp;
+        <span><i class="fas fa-envelope me-1 text-secondary icons-colors"></i>info@example.com</span>&nbsp;&nbsp;
+        <span><i class="fas fa-home me-1 text-secondary icons-colors"></i> Tōkyō, Japan</span>&nbsp;&nbsp;
+      </div>
+    </footer>
+  </footer>
+  <!-- Copyright -->
+  <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/toast.js"></script>
+</body>
+
 </html>
