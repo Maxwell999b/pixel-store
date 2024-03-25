@@ -1,954 +1,954 @@
-    [
-    {
-        "name" : "Black Hoodie",
-        "category" : "Hoodie",
-        "price" : "215 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (1).png",
-        "Code" : "500"
-    },
-    {
-        "name" : "Black Hoodie skull",
-        "category" : "Hoodie",
-        "price" : "215 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (2).png",
-        "Code" : "501"
-    },
-    {
-        "name" : "Black Hoodie pirates bay",
-        "category" : "Hoodie",
-        "price" : "250 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (3).png",
-        "Code" : "502"
-    },
-    {
-        "name" : "White Hoodie",
-        "category" : "Hoodie",
-        "price" : "215 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (4).png",
-        "Code" : "503"
-    },
-    {
-        "name" : "White S-shirt",
-        "category" : "Hoodie",
-        "price" : "300 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (5).png",
-        "Code" : "504"
-    },
-    {
-        "name" : "Black S-shirt",
-        "category" : "Hoodie",
-        "price" : "215 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (6).png",
-        "Code" : "505"
-    },
-    {
-        "name" : "Grey S-shirt",
-        "category" : "Hoodie",
-        "price" : "250 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (7).png",
-        "Code" : "506"
-    },
-    {
-        "name" : "Black SS-shirt",
-        "category" : "Hoodie",
-        "price" : "230 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (8).png",
-        "Code" : "507"
-    },
-    {
-        "name" : "White SS-shirt",
-        "category" : "Hoodie",
-        "price" : "315 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (9).png",
-        "Code" : "508"
-    },
-    {
-        "name" : "Black Dragon S-shirt",
-        "category" : "Hoodie",
-        "price" : "225 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (10).png",
-        "Code" : "509"
-    },
-    {
-        "name" : "Black Skull S-shirt",
-        "category" : "Hoodie",
-        "price" : "280 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (11).png",
-        "Code" : "510"
-    },
-    {
-        "name" : "Black SD S-shirt",
-        "category" : "Hoodie",
-        "price" : "310 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (12).png",
-        "Code" : "511"
-    },
-    {
-        "name" : "Black BO S-shirt",
-        "category" : "Hoodie",
-        "price" : "210 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (13).png",
-        "Code" : "512"
-    },
-    {
-        "name" : "Black D S-shirt",
-        "category" : "Hoodie",
-        "price" : "200 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (14).png",
-        "Code" : "513"
-    },
-    {
-        "name" : "Black L S-shirt",
-        "category" : "Hoodie",
-        "price" : "245 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (15).png",
-        "Code" : "514"
-    },
-    {
-        "name" : "White HF S-shirt",
-        "category" : "Hoodie",
-        "price" : "200 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (16).png",
-        "Code" : "515"
-    },
-    {
-        "name" : "Black Grim SS-shirt Hoodie",
-        "category" : "Hoodie",
-        "price" : "260 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (17).png",
-        "Code" : "516"
-    },
-    {
-        "name" : "White G. S-shirt",
-        "category" : "Hoodie",
-        "price" : "260 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (18).png",
-        "Code" : "517"
-    },
-    {
-        "name" : "Black S. SS-shirt",
-        "category" : "Hoodie",
-        "price" : "280 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (19).png",
-        "Code" : "518"
-    },
-    {
-        "name" : "Red SS-shirt",
-        "category" : "Hoodie",
-        "price" : "280 EGP",
-        "imgSrc" : "../pics/product/shirts/shirt (20).png",
-        "Code" : "519"
-    },
-    {
-        "name" : "Pants-sports Blue ",
-        "category" : "Pants",
-        "price" : "280 EGP",
-        "imgSrc" : "../pics/product/pants/pants (1).png",
-        "Code" : "800"
-    },
-    {
-        "name" : "Pants-sports Dark",
-        "category" : "Pants",
-        "price" : "450 EGP",
-        "imgSrc" : "../pics/product/pants/pants (2).png",
-        "Code" : "801"
-    },
-    {
-        "name" : "Pants-sports Grey",
-        "category" : "Pants",
-        "price" : "415 EGP",
-        "imgSrc" : "../pics/product/pants/pants (3).png",
-        "Code" : "802"
-    },
-    {
-        "name" : "Pants Black",
-        "category" : "Pants",
-        "price" : "315 EGP",
-        "imgSrc" : "../pics/product/pants/pants (4).png",
-        "Code" : "803"
-    },
-    {
-        "name" : "Pants Dark Black",
-        "category" : "Pants",
-        "price" : "520 EGP",
-        "imgSrc" : "../pics/product/pants/pants (5).png",
-        "Code" : "804"
-    },
-    {
-        "name" : "Pants-sports Red",
-        "category" : "Pants",
-        "price" : "415 EGP",
-        "imgSrc" : "../pics/product/pants/pants (6).png",
-        "Code" : "805"
-    },
-    {
-        "name" : "Pants-sports Brown",
-        "category" : "Pants",
-        "price" : "415 EGP",
-        "imgSrc" : "../pics/product/pants/pants (7).png",
-        "Code" : "806"
-    },
-    {
-        "name" : "Pants-sports A-Black",
-        "category" : "Pants",
-        "price" : "215 EGP",
-        "imgSrc" : "../pics/product/pants/pants (8).png",
-        "Code" : "807"
-    },
-    {
-        "name" : "Pants-sports White",
-        "category" : "Pants",
-        "price" : "350 EGP",
-        "imgSrc" : "../pics/product/pants/pants (9).png",
-        "Code" : "808"
-    },
-    {
-        "name" : "Pants-sports S-Black",
-        "category" : "Pants",
-        "price" : "415 EGP",
-        "imgSrc" : "../pics/product/pants/pants (10).png",
-        "Code" : "809"
-    },
-    {
-        "name" : "Pants-sports H-Black",
-        "category" : "Pants",
-        "price" : "300 EGP",
-        "imgSrc" : "../pics/product/pants/pants (11).png",
-        "Code" : "810"
-    },
-    {
-        "name" : "Pants-sports B-Brown",
-        "category" : "Pants",
-        "price" : "450 EGP",
-        "imgSrc" : "../pics/product/pants/pants (12).png",
-        "Code" : "811"
-    },
-    {
-        "name" : "Pants-sports Army",
-        "category" : "Pants",
-        "price" : "250 EGP",
-        "imgSrc" : "../pics/product/pants/pants (13).png",
-        "Code" : "812"
-    },
-    {
-        "name" : "Pants-sports R-Brown",
-        "category" : "Pants",
-        "price" : "360 EGP",
-        "imgSrc" : "../pics/product/pants/pants (14).png",
-        "Code" : "813"
-    },
-    {
-        "name" : "Pants-sports R-Click",
-        "category" : "Pants",
-        "price" : "360 EGP",
-        "imgSrc" : "../pics/product/pants/pants (15).png",
-        "Code" : "814"
-    },
-    {
-        "name" : "Pants-2000 Black",
-        "category" : "Pants",
-        "price" : "600 EGP",
-        "imgSrc" : "../pics/product/pants/pants (16).png",
-        "Code" : "815"
-    },
-    {
-        "name" : "Pants-sports B-BlueSky",
-        "category" : "Pants",
-        "price" : "350 EGP",
-        "imgSrc" : "../pics/product/pants/pants (17).png",
-        "Code" : "816"
-    },
-    {
-        "name" : "Pants-sports G-Dark",
-        "category" : "Pants",
-        "price" : "500 EGP",
-        "imgSrc" : "../pics/product/pants/pants (18).png",
-        "Code" : "817"
-    },
-    {
-        "name" : "Pants-sports A-Yellow",
-        "category" : "Pants",
-        "price" : "350 EGP",
-        "imgSrc" : "../pics/product/pants/pants (19).png",
-        "Code" : "818"
-    },
-    {
-        "name" : "Pants-sports N-Black",
-        "category" : "Pants",
-        "price" : "320 EGP",
-        "imgSrc" : "../pics/product/pants/pants (20).png",
-        "Code" : "819"
-    },
-    {
-        "name": "ShadowStride Backpack",
-        "category": "Backpack",
-        "price": "350 EGP",
-        "imgSrc": "../pics/product/bags/bag (1).png",
-        "Code": "600"
-    },
-    {
-        "name": "LunaLuxe Tote Backpack",
-        "category": "Backpack",
-        "price": "360 EGP",
-        "imgSrc": "../pics/product/bags/bag (2).png",
-        "Code": "601"
-    },
-    {
-        "name": "NovaNest Explorer Backpack",
-        "category": "Backpack",
-        "price": "375 EGP",
-        "imgSrc": "../pics/product/bags/bag (3).png",
-        "Code": "602"
-    },
-    {
-        "name": "UrbanExplorer Backpack",
-        "category": "Backpack",
-        "price": "390 EGP",
-        "imgSrc": "../pics/product/bags/bag (4).png",
-        "Code": "603"
-    },
-    {
-        "name": "TrailBlazer Rucksack",
-        "category": "Backpack",
-        "price": "410 EGP",
-        "imgSrc": "../pics/product/bags/bag (5).png",
-        "Code": "604"
-    },
-    {
-        "name": "TerraTrek Backpack",
-        "category": "Backpack",
-        "price": "510 EGP",
-        "imgSrc": "../pics/product/bags/bag (6).png",
-        "Code": "605"
-    },
-    {
-        "name": "MetroNomad Backpack",
-        "category": "Backpack",
-        "price": "450 EGP",
-        "imgSrc": "../pics/product/bags/bag (7).png",
-        "Code": "606"
-    },
-    {
-        "name": "CityScape Explorer Backpack",
-        "category": "Backpack",
-        "price": "460 EGP",
-        "imgSrc": "../pics/product/bags/bag (8).png",
-        "Code": "607"
-    },
-    {
-        "name": "SummitStrider Backpack",
-        "category": "Backpack",
-        "price": "320 EGP",
-        "imgSrc": "../pics/product/bags/bag (9).png",
-        "Code": "608"
-    },
-    {
-        "name": "SwiftTrail Rucksack Backpack",
-        "category": "Backpack",
-        "price": "390 EGP",
-        "imgSrc": "../pics/product/bags/bag (10).png",
-        "Code": "609"
-    },
-    {
-        "name": "TrekTech Adventure Backpack",
-        "category": "Backpack",
-        "price": "510 EGP",
-        "imgSrc": "../pics/product/bags/bag (11).png",
-        "Code": "610"
-    },
-    {
-        "name": "UrbanVibe Backpack",
-        "category": "Backpack",
-        "price": "520 EGP",
-        "imgSrc": "../pics/product/bags/bag (12).png",
-        "Code": "611"
-    },
-    {
-        "name": "PinnaclePacker Rucksack Backpack",
-        "category": "Backpack",
-        "price": "900 EGP",
-        "imgSrc": "../pics/product/bags/bag (13).png",
-        "Code": "612"
-    },
-    {
-        "name": "GrandGlam Backpack",
-        "category": "Backpack",
-        "price": "500 EGP",
-        "imgSrc": "../pics/product/bags/bag (14).png",
-        "Code": "613"
-    },
-    {
-        "name": "EliteExplorer Backpack",
-        "category": "Backpack",
-        "price": "415 EGP",
-        "imgSrc": "../pics/product/bags/bag (15).png",
-        "Code": "614"
-    },
-    {
-        "name": "TerraTrail Hiker Backpack",
-        "category": "Backpack",
-        "price": "412 EGP",
-        "imgSrc": "../pics/product/bags/bag (16).png",
-        "Code": "615"
-    },
-    {
-        "name": "VogueVenture Backpack",
-        "category": "Backpack",
-        "price": "499 EGP",
-        "imgSrc": "../pics/product/bags/bag (17).png",
-        "Code": "616"
-    },
-    {
-        "name": "TrendTrek Traveler Backpack",
-        "category": "Backpack",
-        "price": "399 EGP",
-        "imgSrc": "../pics/product/bags/bag (18).png",
-        "Code": "617"
-    },
-    {
-        "name": "UrbanUmbra Daypack Backpack",
-        "category": "Backpack",
-        "price": "385 EGP",
-        "imgSrc": "../pics/product/bags/bag (19).png",
-        "Code": "618"
-    },
-    {
-        "name": "VentureVibe Backpack",
-        "category": "Backpack",
-        "price": "385 EGP",
-        "imgSrc": "../pics/product/bags/bag (20).png",
-        "Code": "619"
-    },
-    {
-        "name": "TrekTrail Explorer Backpack",
-        "category": "Backpack",
-        "price": "415 EGP",
-        "imgSrc": "../pics/product/bags/bag (21).png",
-        "Code": "620"
-    },
-    {
-        "name": "UrbanPulse Rucksack",
-        "category": "Backpack",
-        "price": "465 EGP",
-        "imgSrc": "../pics/product/bags/bag (22).png",
-        "Code": "621"
-    },
-    {
-        "name": "CitySculpt Backpack",
-        "category": "Backpack",
-        "price": "475 EGP",
-        "imgSrc": "../pics/product/bags/bag (23).png",
-        "Code": "622"
-    },
-    {
-        "name": "TechTrek Voyager Backpack",
-        "category": "Backpack",
-        "price": "485 EGP",
-        "imgSrc": "../pics/product/bags/bag (24).png",
-        "Code": "623"
-    },
-    {
-        "name": "CrimsonCraze Belt",
-        "category": "Belts",
-        "price": "425 EGP",
-        "imgSrc": "../pics/product/belts/belt (1).png",
-        "Code": "700"
-    },
-    {
-        "name": "AzureAdorn Belt",
-        "category": "Belts",
-        "price": "290 EGP",
-        "imgSrc": "../pics/product/belts/belt (2).png",
-        "Code": "701"
-    },
-    {
-        "name": "VelvetVista Belt",
-        "category": "Belts",
-        "price": "365 EGP",
-        "imgSrc": "../pics/product/belts/belt (3).png",
-        "Code": "702"
-    },
-    {
-        "name": "MysticMingle Belt",
-        "category": "Belts",
-        "price": "155 EGP",
-        "imgSrc": "../pics/product/belts/belt (4).png",
-        "Code": "703"
-    },
-    {
-        "name": "EtherealEmbrace Belt",
-        "category": "Belts",
-        "price": "480 EGP",
-        "imgSrc": "../pics/product/belts/belt (5).png",
-        "Code": "704"
-    },
-    {
-        "name": "SereneSash Belt",
-        "category": "Belts",
-        "price": "210 EGP",
-        "imgSrc": "../pics/product/belts/belt (6).png",
-        "Code": "705"
-    },
-    {
-        "name": "GildedGlamour Belt",
-        "category": "Belts",
-        "price": "320 EGP",
-        "imgSrc": "../pics/product/belts/belt (7).png",
-        "Code": "706"
-    },
-    {
-        "name": "RusticRibbon Belt",
-        "category": "Belts",
-        "price": "180 EGP",
-        "imgSrc": "../pics/product/belts/belt (8).png",
-        "Code": "707"
-    },
-    {
-        "name": "WhisperWeave Belt",
-        "category": "Belts",
-        "price": "450 EGP",
-        "imgSrc": "../pics/product/belts/belt (9).png",
-        "Code": "708"
-    },
-    {
-        "name": "SilkSymphony Belt",
-        "category": "Belts",
-        "price": "260 EGP",
-        "imgSrc": "../pics/product/belts/belt (10).png",
-        "Code": "709"
-    },
-    {
-        "name": "VelourVogue Belt",
-        "category": "Belts",
-        "price": "375 EGP",
-        "imgSrc": "../pics/product/belts/belt (11).png",
-        "Code": "710"
-    },
-    {
-        "name": "LustrousLine Belt",
-        "category": "Belts",
-        "price": "420 EGP",
-        "imgSrc": "../pics/product/belts/belt (12).png",
-        "Code": "711"
-    },
-    {
-        "name": "OpulentOrnament Belt",
-        "category": "Belts",
-        "price": "325 EGP",
-        "imgSrc": "../pics/product/belts/belt (13).png",
-        "Code": "712"
-    },
-    {
-        "name": "GoldenGirdle Belt",
-        "category": "Belts",
-        "price": "490 EGP",
-        "imgSrc": "../pics/product/belts/belt (14).png",
-        "Code": "713"
-    },
-    {
-        "name": "EmberEssence Belt",
-        "category": "Belts",
-        "price": "295 EGP",
-        "imgSrc": "../pics/product/belts/belt (15).png",
-        "Code": "714"
-    },
-    {
-        "name": "IvoryIntrigue Belt",
-        "category": "Belts",
-        "price": "400 EGP",
-        "imgSrc": "../pics/product/belts/belt (16).png",
-        "Code": "715"
-    },
-    {
-        "name": "CelestialCord Belt",
-        "category": "Belts",
-        "price": "230 EGP",
-        "imgSrc": "../pics/product/belts/belt (17).png",
-        "Code": "716"
-    },
-    {
-        "name": "SapphireStrap Belt",
-        "category": "Belts",
-        "price": "440 EGP",
-        "imgSrc": "../pics/product/belts/belt (18).png",
-        "Code": "717"
-    },
-    {
-        "name": "OnyxOrbit Belt",
-        "category": "Belts",
-        "price": "350 EGP",
-        "imgSrc": "../pics/product/belts/belt (19).png",
-        "Code": "718"
-    },
-    {
-        "name": "VelvetVortex Belt",
-        "category": "Belts",
-        "price": "270 EGP",
-        "imgSrc": "../pics/product/belts/belt (20).png",
-        "Code": "719"
-    },
-    {
-        "name": "RadiantRibbon Belt",
-        "category": "Belts",
-        "price": "310 EGP",
-        "imgSrc": "../pics/product/belts/belt (21).png",
-        "Code": "720"
-    },
-    {
-        "name": "VelocityVogue Shoes",
-        "category": "Shoes",
-        "price": "580 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (1).png",
-        "Code": "900"
-    },
-    {
-        "name": "SprintStyle Shoes",
-        "category": "Shoes",
-        "price": "710 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (2).png",
-        "Code": "901"
-    },
-    {
-        "name": "VelvetVoyage Shoes",
-        "category": "Shoes",
-        "price": "635 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (3).png",
-        "Code": "902"
-    },
-    {
-        "name": "MysticMotion Shoes",
-        "category": "Shoes",
-        "price": "815 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (4).png",
-        "Code": "903"
-    },
-    {
-        "name": "EtherealElegance Shoes",
-        "category": "Shoes",
-        "price": "590 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (5).png",
-        "Code": "904"
-    },
-    {
-        "name": "SereneStride Shoes",
-        "category": "Shoes",
-        "price": "680 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (6).png",
-        "Code": "905"
-    },
-    {
-        "name": "GildedGait Shoes",
-        "category": "Shoes",
-        "price": "770 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (7).png",
-        "Code": "906"
-    },
-    {
-        "name": "RusticRhythm Shoes",
-        "category": "Shoes",
-        "price": "655 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (8).png",
-        "Code": "907"
-    },
-    {
-        "name": "WhisperWalk Shoes",
-        "category": "Shoes",
-        "price": "725 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (9).png",
-        "Code": "908"
-    },
-    {
-        "name": "SilkStroll Shoes",
-        "category": "Shoes",
-        "price": "600 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (10).png",
-        "Code": "909"
-    },
-    {
-        "name": "VelourVenture Shoes",
-        "category": "Shoes",
-        "price": "695 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (11).png",
-        "Code": "910"
-    },
-    {
-        "name": "LustrousLeap Shoes",
-        "category": "Shoes",
-        "price": "780 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (12).png",
-        "Code": "911"
-    },
-    {
-        "name": "OpulentOutfit Shoes",
-        "category": "Shoes",
-        "price": "640 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (13).png",
-        "Code": "912"
-    },
-    {
-        "name": "GoldenGlide Shoes",
-        "category": "Shoes",
-        "price": "820 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (14).png",
-        "Code": "913"
-    },
-    {
-        "name": "EmberElegance Shoes",
-        "category": "Shoes",
-        "price": "705 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (15).png",
-        "Code": "914"
-    },
-    {
-        "name": "IvoryImpression Shoes",
-        "category": "Shoes",
-        "price": "770 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (16).png",
-        "Code": "915"
-    },
-    {
-        "name": "CelestialCruise Shoes",
-        "category": "Shoes",
-        "price": "655 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (17).png",
-        "Code": "916"
-    },
-    {
-        "name": "SapphireStride Shoes",
-        "category": "Shoes",
-        "price": "790 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (18).png",
-        "Code": "917"
-    },
-    {
-        "name": "OnyxDance Shoes",
-        "category": "Shoes",
-        "price": "600 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (19).png",
-        "Code": "918"
-    },
-    {
-        "name": "VelvetVoyager Shoes",
-        "category": "Shoes",
-        "price": "670 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (20).png",
-        "Code": "919"
-    },
-    {
-        "name": "RadiantRhythm Shoes",
-        "category": "Shoes",
-        "price": "715 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (21).png",
-        "Code": "920"
-    },
-    {
-        "name": "SprintStride Shoes",
-        "category": "Shoes",
-        "price": "850 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (22).png",
-        "Code": "921"
-    },
-    {
-        "name": "MysticMove Shoes",
-        "category": "Shoes",
-        "price": "760 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (23).png",
-        "Code": "922"
-    },
-    {
-        "name": "EtherealEclipse Shoes",
-        "category": "Shoes",
-        "price": "895 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (24).png",
-        "Code": "923"
-    },
-    {
-        "name": "SereneStride Shoes",
-        "category": "Shoes",
-        "price": "650 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (25).png",
-        "Code": "924"
-    },
-    {
-        "name": "GildedGlide Shoes",
-        "category": "Shoes",
-        "price": "780 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (26).png",
-        "Code": "925"
-    },
-    {
-        "name": "DuskDance Shoes",
-        "category": "Shoes",
-        "price": "725 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (27).png",
-        "Code": "926"
-    },
-    {
-        "name": "VelvetVortex Shoes",
-        "category": "Shoes",
-        "price": "465 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (28).png",
-        "Code": "927"
-    },
-    {
-        "name": "EtherealEcho Shoes",
-        "category": "Shoes",
-        "price": "495 EGP",
-        "imgSrc": "../pics/product/shoes/shoes (29).png",
-        "Code": "928"
-    },
-    {
-        "name": "WarmWoven Socks",
-        "category": "Socks",
-        "price": "150 EGP",
-        "imgSrc": "../pics/product/socks/socks (1).png",
-        "Code": "400"
-    },
-    {
-        "name": "VelvetVista Socks",
-        "category": "Socks",
-        "price": "200 EGP",
-        "imgSrc": "../pics/product/socks/socks (2).png",
-        "Code": "401"
-    },
-    {
-        "name": "CozyCotton Socks",
-        "category": "Socks",
-        "price": "180 EGP",
-        "imgSrc": "../pics/product/socks/socks (3).png",
-        "Code": "402"
-    },
-    {
-        "name": "SilkenStride Socks",
-        "category": "Socks",
-        "price": "250 EGP",
-        "imgSrc": "../pics/product/socks/socks (4).png",
-        "Code": "403"
-    },
-    {
-        "name": "FluffyFeather Socks",
-        "category": "Socks",
-        "price": "120 EGP",
-        "imgSrc": "../pics/product/socks/socks (5).png",
-        "Code": "404"
-    },
-    {
-        "name": "WarmWhirl Socks",
-        "category": "Socks",
-        "price": "220 EGP",
-        "imgSrc": "../pics/product/socks/socks (6).png",
-        "Code": "405"
-    },
-    {
-        "name": "CottonCraze Socks",
-        "category": "Socks",
-        "price": "160 EGP",
-        "imgSrc": "../pics/product/socks/socks (7).png",
-        "Code": "406"
-    },
-    {
-        "name": "FlannelFlow Socks",
-        "category": "Socks",
-        "price": "190 EGP",
-        "imgSrc": "../pics/product/socks/socks (8).png",
-        "Code": "407"
-    },
-    {
-        "name": "PlushPulse Socks",
-        "category": "Socks",
-        "price": "230 EGP",
-        "imgSrc": "../pics/product/socks/socks (9).png",
-        "Code": "408"
-    },
-    {
-        "name": "SatinStride Socks",
-        "category": "Socks",
-        "price": "140 EGP",
-        "imgSrc": "../pics/product/socks/socks (10).png",
-        "Code": "409"
-    },
-    {
-        "name": "CosyCraft Socks",
-        "category": "Socks",
-        "price": "170 EGP",
-        "imgSrc": "../pics/product/socks/socks (11).png",
-        "Code": "410"
-    },
-    {
-        "name": "SnugStyle Socks",
-        "category": "Socks",
-        "price": "200 EGP",
-        "imgSrc": "../pics/product/socks/socks (12).png",
-        "Code": "411"
-    },
-    {
-        "name": "FleeceFlair Socks",
-        "category": "Socks",
-        "price": "180 EGP",
-        "imgSrc": "../pics/product/socks/socks (13).png",
-        "Code": "412"
-    },
-    {
-        "name": "SoftStrand Socks",
-        "category": "Socks",
-        "price": "270 EGP",
-        "imgSrc": "../pics/product/socks/socks (14).png",
-        "Code": "413"
-    },
-    {
-        "name": "CushionCraze Socks",
-        "category": "Socks",
-        "price": "150 EGP",
-        "imgSrc": "../pics/product/socks/socks (15).png",
-        "Code": "414"
-    },
-    {
-        "name": "PlaidPulse Socks",
-        "category": "Socks",
-        "price": "210 EGP",
-        "imgSrc": "../pics/product/socks/socks (16).png",
-        "Code": "415"
-    },
-    {
-        "name": "LuxeLoom Socks",
-        "category": "Socks",
-        "price": "190 EGP",
-        "imgSrc": "../pics/product/socks/socks (17).png",
-        "Code": "416"
-    },
-    {
-        "name": "VelourVista Socks",
-        "category": "Socks",
-        "price": "230 EGP",
-        "imgSrc": "../pics/product/socks/socks (18).png",
-        "Code": "417"
-    },
-    {
-        "name": "SnuggleStride Socks",
-        "category": "Socks",
-        "price": "120 EGP",
-        "imgSrc": "../pics/product/socks/socks (19).png",
-        "Code": "418"
-    },
-    {
-        "name": "CozyCraft Socks",
-        "category": "Socks",
-        "price": "250 EGP",
-        "imgSrc": "../pics/product/socks/socks (20).png",
-        "Code": "419"
-    },
-    {
-        "name": "SoftSole Socks",
-        "category": "Socks",
-        "price": "160 EGP",
-        "imgSrc": "../pics/product/socks/socks (21).png",
-        "Code": "420"
-    },
-    {
-        "name": "SilkStitch Socks",
-        "category": "Socks",
-        "price": "180 EGP",
-        "imgSrc": "../pics/product/socks/socks (22).png",
-        "Code": "421"
-    }
+[
+  {
+    "name": "Black Hoodie",
+    "category": "Hoodie",
+    "price": "215 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (1).png",
+    "Code": "500"
+  },
+  {
+    "name": "Black Hoodie skull",
+    "category": "Hoodie",
+    "price": "215 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (2).png",
+    "Code": "501"
+  },
+  {
+    "name": "Black Hoodie pirates bay",
+    "category": "Hoodie",
+    "price": "250 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (3).png",
+    "Code": "502"
+  },
+  {
+    "name": "White Hoodie",
+    "category": "Hoodie",
+    "price": "215 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (4).png",
+    "Code": "503"
+  },
+  {
+    "name": "White S-shirt",
+    "category": "Hoodie",
+    "price": "300 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (5).png",
+    "Code": "504"
+  },
+  {
+    "name": "Black S-shirt",
+    "category": "Hoodie",
+    "price": "215 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (6).png",
+    "Code": "505"
+  },
+  {
+    "name": "Grey S-shirt",
+    "category": "Hoodie",
+    "price": "250 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (7).png",
+    "Code": "506"
+  },
+  {
+    "name": "Black SS-shirt",
+    "category": "Hoodie",
+    "price": "230 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (8).png",
+    "Code": "507"
+  },
+  {
+    "name": "White SS-shirt",
+    "category": "Hoodie",
+    "price": "315 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (9).png",
+    "Code": "508"
+  },
+  {
+    "name": "Black Dragon S-shirt",
+    "category": "Hoodie",
+    "price": "225 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (10).png",
+    "Code": "509"
+  },
+  {
+    "name": "Black Skull S-shirt",
+    "category": "Hoodie",
+    "price": "280 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (11).png",
+    "Code": "510"
+  },
+  {
+    "name": "Black SD S-shirt",
+    "category": "Hoodie",
+    "price": "310 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (12).png",
+    "Code": "511"
+  },
+  {
+    "name": "Black BO S-shirt",
+    "category": "Hoodie",
+    "price": "210 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (13).png",
+    "Code": "512"
+  },
+  {
+    "name": "Black D S-shirt",
+    "category": "Hoodie",
+    "price": "200 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (14).png",
+    "Code": "513"
+  },
+  {
+    "name": "Black L S-shirt",
+    "category": "Hoodie",
+    "price": "245 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (15).png",
+    "Code": "514"
+  },
+  {
+    "name": "White HF S-shirt",
+    "category": "Hoodie",
+    "price": "200 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (16).png",
+    "Code": "515"
+  },
+  {
+    "name": "Black Grim SS-shirt Hoodie",
+    "category": "Hoodie",
+    "price": "260 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (17).png",
+    "Code": "516"
+  },
+  {
+    "name": "White G. S-shirt",
+    "category": "Hoodie",
+    "price": "260 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (18).png",
+    "Code": "517"
+  },
+  {
+    "name": "Black S. SS-shirt",
+    "category": "Hoodie",
+    "price": "280 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (19).png",
+    "Code": "518"
+  },
+  {
+    "name": "Red SS-shirt",
+    "category": "Hoodie",
+    "price": "280 EGP",
+    "imgSrc": "../pics/product/shirts/shirt (20).png",
+    "Code": "519"
+  },
+  {
+    "name": "Pants-sports Blue ",
+    "category": "Pants",
+    "price": "280 EGP",
+    "imgSrc": "../pics/product/pants/pants (1).png",
+    "Code": "800"
+  },
+  {
+    "name": "Pants-sports Dark",
+    "category": "Pants",
+    "price": "450 EGP",
+    "imgSrc": "../pics/product/pants/pants (2).png",
+    "Code": "801"
+  },
+  {
+    "name": "Pants-sports Grey",
+    "category": "Pants",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/pants/pants (3).png",
+    "Code": "802"
+  },
+  {
+    "name": "Pants Black",
+    "category": "Pants",
+    "price": "315 EGP",
+    "imgSrc": "../pics/product/pants/pants (4).png",
+    "Code": "803"
+  },
+  {
+    "name": "Pants Dark Black",
+    "category": "Pants",
+    "price": "520 EGP",
+    "imgSrc": "../pics/product/pants/pants (5).png",
+    "Code": "804"
+  },
+  {
+    "name": "Pants-sports Red",
+    "category": "Pants",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/pants/pants (6).png",
+    "Code": "805"
+  },
+  {
+    "name": "Pants-sports Brown",
+    "category": "Pants",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/pants/pants (7).png",
+    "Code": "806"
+  },
+  {
+    "name": "Pants-sports A-Black",
+    "category": "Pants",
+    "price": "215 EGP",
+    "imgSrc": "../pics/product/pants/pants (8).png",
+    "Code": "807"
+  },
+  {
+    "name": "Pants-sports White",
+    "category": "Pants",
+    "price": "350 EGP",
+    "imgSrc": "../pics/product/pants/pants (9).png",
+    "Code": "808"
+  },
+  {
+    "name": "Pants-sports S-Black",
+    "category": "Pants",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/pants/pants (10).png",
+    "Code": "809"
+  },
+  {
+    "name": "Pants-sports H-Black",
+    "category": "Pants",
+    "price": "300 EGP",
+    "imgSrc": "../pics/product/pants/pants (11).png",
+    "Code": "810"
+  },
+  {
+    "name": "Pants-sports B-Brown",
+    "category": "Pants",
+    "price": "450 EGP",
+    "imgSrc": "../pics/product/pants/pants (12).png",
+    "Code": "811"
+  },
+  {
+    "name": "Pants-sports Army",
+    "category": "Pants",
+    "price": "250 EGP",
+    "imgSrc": "../pics/product/pants/pants (13).png",
+    "Code": "812"
+  },
+  {
+    "name": "Pants-sports R-Brown",
+    "category": "Pants",
+    "price": "360 EGP",
+    "imgSrc": "../pics/product/pants/pants (14).png",
+    "Code": "813"
+  },
+  {
+    "name": "Pants-sports R-Click",
+    "category": "Pants",
+    "price": "360 EGP",
+    "imgSrc": "../pics/product/pants/pants (15).png",
+    "Code": "814"
+  },
+  {
+    "name": "Pants-2000 Black",
+    "category": "Pants",
+    "price": "600 EGP",
+    "imgSrc": "../pics/product/pants/pants (16).png",
+    "Code": "815"
+  },
+  {
+    "name": "Pants-sports B-BlueSky",
+    "category": "Pants",
+    "price": "350 EGP",
+    "imgSrc": "../pics/product/pants/pants (17).png",
+    "Code": "816"
+  },
+  {
+    "name": "Pants-sports G-Dark",
+    "category": "Pants",
+    "price": "500 EGP",
+    "imgSrc": "../pics/product/pants/pants (18).png",
+    "Code": "817"
+  },
+  {
+    "name": "Pants-sports A-Yellow",
+    "category": "Pants",
+    "price": "350 EGP",
+    "imgSrc": "../pics/product/pants/pants (19).png",
+    "Code": "818"
+  },
+  {
+    "name": "Pants-sports N-Black",
+    "category": "Pants",
+    "price": "320 EGP",
+    "imgSrc": "../pics/product/pants/pants (20).png",
+    "Code": "819"
+  },
+  {
+    "name": "ShadowStride Backpack",
+    "category": "Backpack",
+    "price": "350 EGP",
+    "imgSrc": "../pics/product/bags/bag (1).png",
+    "Code": "600"
+  },
+  {
+    "name": "LunaLuxe Tote Backpack",
+    "category": "Backpack",
+    "price": "360 EGP",
+    "imgSrc": "../pics/product/bags/bag (2).png",
+    "Code": "601"
+  },
+  {
+    "name": "NovaNest Explorer Backpack",
+    "category": "Backpack",
+    "price": "375 EGP",
+    "imgSrc": "../pics/product/bags/bag (3).png",
+    "Code": "602"
+  },
+  {
+    "name": "UrbanExplorer Backpack",
+    "category": "Backpack",
+    "price": "390 EGP",
+    "imgSrc": "../pics/product/bags/bag (4).png",
+    "Code": "603"
+  },
+  {
+    "name": "TrailBlazer Rucksack",
+    "category": "Backpack",
+    "price": "410 EGP",
+    "imgSrc": "../pics/product/bags/bag (5).png",
+    "Code": "604"
+  },
+  {
+    "name": "TerraTrek Backpack",
+    "category": "Backpack",
+    "price": "510 EGP",
+    "imgSrc": "../pics/product/bags/bag (6).png",
+    "Code": "605"
+  },
+  {
+    "name": "MetroNomad Backpack",
+    "category": "Backpack",
+    "price": "450 EGP",
+    "imgSrc": "../pics/product/bags/bag (7).png",
+    "Code": "606"
+  },
+  {
+    "name": "CityScape Explorer Backpack",
+    "category": "Backpack",
+    "price": "460 EGP",
+    "imgSrc": "../pics/product/bags/bag (8).png",
+    "Code": "607"
+  },
+  {
+    "name": "SummitStrider Backpack",
+    "category": "Backpack",
+    "price": "320 EGP",
+    "imgSrc": "../pics/product/bags/bag (9).png",
+    "Code": "608"
+  },
+  {
+    "name": "SwiftTrail Rucksack Backpack",
+    "category": "Backpack",
+    "price": "390 EGP",
+    "imgSrc": "../pics/product/bags/bag (10).png",
+    "Code": "609"
+  },
+  {
+    "name": "TrekTech Adventure Backpack",
+    "category": "Backpack",
+    "price": "510 EGP",
+    "imgSrc": "../pics/product/bags/bag (11).png",
+    "Code": "610"
+  },
+  {
+    "name": "UrbanVibe Backpack",
+    "category": "Backpack",
+    "price": "520 EGP",
+    "imgSrc": "../pics/product/bags/bag (12).png",
+    "Code": "611"
+  },
+  {
+    "name": "PinnaclePacker Rucksack Backpack",
+    "category": "Backpack",
+    "price": "900 EGP",
+    "imgSrc": "../pics/product/bags/bag (13).png",
+    "Code": "612"
+  },
+  {
+    "name": "GrandGlam Backpack",
+    "category": "Backpack",
+    "price": "500 EGP",
+    "imgSrc": "../pics/product/bags/bag (14).png",
+    "Code": "613"
+  },
+  {
+    "name": "EliteExplorer Backpack",
+    "category": "Backpack",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/bags/bag (15).png",
+    "Code": "614"
+  },
+  {
+    "name": "TerraTrail Hiker Backpack",
+    "category": "Backpack",
+    "price": "412 EGP",
+    "imgSrc": "../pics/product/bags/bag (16).png",
+    "Code": "615"
+  },
+  {
+    "name": "VogueVenture Backpack",
+    "category": "Backpack",
+    "price": "499 EGP",
+    "imgSrc": "../pics/product/bags/bag (17).png",
+    "Code": "616"
+  },
+  {
+    "name": "TrendTrek Traveler Backpack",
+    "category": "Backpack",
+    "price": "399 EGP",
+    "imgSrc": "../pics/product/bags/bag (18).png",
+    "Code": "617"
+  },
+  {
+    "name": "UrbanUmbra Daypack Backpack",
+    "category": "Backpack",
+    "price": "385 EGP",
+    "imgSrc": "../pics/product/bags/bag (19).png",
+    "Code": "618"
+  },
+  {
+    "name": "VentureVibe Backpack",
+    "category": "Backpack",
+    "price": "385 EGP",
+    "imgSrc": "../pics/product/bags/bag (20).png",
+    "Code": "619"
+  },
+  {
+    "name": "TrekTrail Explorer Backpack",
+    "category": "Backpack",
+    "price": "415 EGP",
+    "imgSrc": "../pics/product/bags/bag (21).png",
+    "Code": "620"
+  },
+  {
+    "name": "UrbanPulse Rucksack",
+    "category": "Backpack",
+    "price": "465 EGP",
+    "imgSrc": "../pics/product/bags/bag (22).png",
+    "Code": "621"
+  },
+  {
+    "name": "CitySculpt Backpack",
+    "category": "Backpack",
+    "price": "475 EGP",
+    "imgSrc": "../pics/product/bags/bag (23).png",
+    "Code": "622"
+  },
+  {
+    "name": "TechTrek Voyager Backpack",
+    "category": "Backpack",
+    "price": "485 EGP",
+    "imgSrc": "../pics/product/bags/bag (24).png",
+    "Code": "623"
+  },
+  {
+    "name": "CrimsonCraze Belt",
+    "category": "Belts",
+    "price": "425 EGP",
+    "imgSrc": "../pics/product/belts/belt (1).png",
+    "Code": "700"
+  },
+  {
+    "name": "AzureAdorn Belt",
+    "category": "Belts",
+    "price": "290 EGP",
+    "imgSrc": "../pics/product/belts/belt (2).png",
+    "Code": "701"
+  },
+  {
+    "name": "VelvetVista Belt",
+    "category": "Belts",
+    "price": "365 EGP",
+    "imgSrc": "../pics/product/belts/belt (3).png",
+    "Code": "702"
+  },
+  {
+    "name": "MysticMingle Belt",
+    "category": "Belts",
+    "price": "155 EGP",
+    "imgSrc": "../pics/product/belts/belt (4).png",
+    "Code": "703"
+  },
+  {
+    "name": "EtherealEmbrace Belt",
+    "category": "Belts",
+    "price": "480 EGP",
+    "imgSrc": "../pics/product/belts/belt (5).png",
+    "Code": "704"
+  },
+  {
+    "name": "SereneSash Belt",
+    "category": "Belts",
+    "price": "210 EGP",
+    "imgSrc": "../pics/product/belts/belt (6).png",
+    "Code": "705"
+  },
+  {
+    "name": "GildedGlamour Belt",
+    "category": "Belts",
+    "price": "320 EGP",
+    "imgSrc": "../pics/product/belts/belt (7).png",
+    "Code": "706"
+  },
+  {
+    "name": "RusticRibbon Belt",
+    "category": "Belts",
+    "price": "180 EGP",
+    "imgSrc": "../pics/product/belts/belt (8).png",
+    "Code": "707"
+  },
+  {
+    "name": "WhisperWeave Belt",
+    "category": "Belts",
+    "price": "450 EGP",
+    "imgSrc": "../pics/product/belts/belt (9).png",
+    "Code": "708"
+  },
+  {
+    "name": "SilkSymphony Belt",
+    "category": "Belts",
+    "price": "260 EGP",
+    "imgSrc": "../pics/product/belts/belt (10).png",
+    "Code": "709"
+  },
+  {
+    "name": "VelourVogue Belt",
+    "category": "Belts",
+    "price": "375 EGP",
+    "imgSrc": "../pics/product/belts/belt (11).png",
+    "Code": "710"
+  },
+  {
+    "name": "LustrousLine Belt",
+    "category": "Belts",
+    "price": "420 EGP",
+    "imgSrc": "../pics/product/belts/belt (12).png",
+    "Code": "711"
+  },
+  {
+    "name": "OpulentOrnament Belt",
+    "category": "Belts",
+    "price": "325 EGP",
+    "imgSrc": "../pics/product/belts/belt (13).png",
+    "Code": "712"
+  },
+  {
+    "name": "GoldenGirdle Belt",
+    "category": "Belts",
+    "price": "490 EGP",
+    "imgSrc": "../pics/product/belts/belt (14).png",
+    "Code": "713"
+  },
+  {
+    "name": "EmberEssence Belt",
+    "category": "Belts",
+    "price": "295 EGP",
+    "imgSrc": "../pics/product/belts/belt (15).png",
+    "Code": "714"
+  },
+  {
+    "name": "IvoryIntrigue Belt",
+    "category": "Belts",
+    "price": "400 EGP",
+    "imgSrc": "../pics/product/belts/belt (16).png",
+    "Code": "715"
+  },
+  {
+    "name": "CelestialCord Belt",
+    "category": "Belts",
+    "price": "230 EGP",
+    "imgSrc": "../pics/product/belts/belt (17).png",
+    "Code": "716"
+  },
+  {
+    "name": "SapphireStrap Belt",
+    "category": "Belts",
+    "price": "440 EGP",
+    "imgSrc": "../pics/product/belts/belt (18).png",
+    "Code": "717"
+  },
+  {
+    "name": "OnyxOrbit Belt",
+    "category": "Belts",
+    "price": "350 EGP",
+    "imgSrc": "../pics/product/belts/belt (19).png",
+    "Code": "718"
+  },
+  {
+    "name": "VelvetVortex Belt",
+    "category": "Belts",
+    "price": "270 EGP",
+    "imgSrc": "../pics/product/belts/belt (20).png",
+    "Code": "719"
+  },
+  {
+    "name": "RadiantRibbon Belt",
+    "category": "Belts",
+    "price": "310 EGP",
+    "imgSrc": "../pics/product/belts/belt (21).png",
+    "Code": "720"
+  },
+  {
+    "name": "VelocityVogue Shoes",
+    "category": "Shoes",
+    "price": "580 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (1).png",
+    "Code": "900"
+  },
+  {
+    "name": "SprintStyle Shoes",
+    "category": "Shoes",
+    "price": "710 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (2).png",
+    "Code": "901"
+  },
+  {
+    "name": "VelvetVoyage Shoes",
+    "category": "Shoes",
+    "price": "635 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (3).png",
+    "Code": "902"
+  },
+  {
+    "name": "MysticMotion Shoes",
+    "category": "Shoes",
+    "price": "815 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (4).png",
+    "Code": "903"
+  },
+  {
+    "name": "EtherealElegance Shoes",
+    "category": "Shoes",
+    "price": "590 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (5).png",
+    "Code": "904"
+  },
+  {
+    "name": "SereneStride Shoes",
+    "category": "Shoes",
+    "price": "680 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (6).png",
+    "Code": "905"
+  },
+  {
+    "name": "GildedGait Shoes",
+    "category": "Shoes",
+    "price": "770 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (7).png",
+    "Code": "906"
+  },
+  {
+    "name": "RusticRhythm Shoes",
+    "category": "Shoes",
+    "price": "655 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (8).png",
+    "Code": "907"
+  },
+  {
+    "name": "WhisperWalk Shoes",
+    "category": "Shoes",
+    "price": "725 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (9).png",
+    "Code": "908"
+  },
+  {
+    "name": "SilkStroll Shoes",
+    "category": "Shoes",
+    "price": "600 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (10).png",
+    "Code": "909"
+  },
+  {
+    "name": "VelourVenture Shoes",
+    "category": "Shoes",
+    "price": "695 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (11).png",
+    "Code": "910"
+  },
+  {
+    "name": "LustrousLeap Shoes",
+    "category": "Shoes",
+    "price": "780 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (12).png",
+    "Code": "911"
+  },
+  {
+    "name": "OpulentOutfit Shoes",
+    "category": "Shoes",
+    "price": "640 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (13).png",
+    "Code": "912"
+  },
+  {
+    "name": "GoldenGlide Shoes",
+    "category": "Shoes",
+    "price": "820 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (14).png",
+    "Code": "913"
+  },
+  {
+    "name": "EmberElegance Shoes",
+    "category": "Shoes",
+    "price": "705 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (15).png",
+    "Code": "914"
+  },
+  {
+    "name": "IvoryImpression Shoes",
+    "category": "Shoes",
+    "price": "770 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (16).png",
+    "Code": "915"
+  },
+  {
+    "name": "CelestialCruise Shoes",
+    "category": "Shoes",
+    "price": "655 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (17).png",
+    "Code": "916"
+  },
+  {
+    "name": "SapphireStride Shoes",
+    "category": "Shoes",
+    "price": "790 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (18).png",
+    "Code": "917"
+  },
+  {
+    "name": "OnyxDance Shoes",
+    "category": "Shoes",
+    "price": "600 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (19).png",
+    "Code": "918"
+  },
+  {
+    "name": "VelvetVoyager Shoes",
+    "category": "Shoes",
+    "price": "670 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (20).png",
+    "Code": "919"
+  },
+  {
+    "name": "RadiantRhythm Shoes",
+    "category": "Shoes",
+    "price": "715 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (21).png",
+    "Code": "920"
+  },
+  {
+    "name": "SprintStride Shoes",
+    "category": "Shoes",
+    "price": "850 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (22).png",
+    "Code": "921"
+  },
+  {
+    "name": "MysticMove Shoes",
+    "category": "Shoes",
+    "price": "760 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (23).png",
+    "Code": "922"
+  },
+  {
+    "name": "EtherealEclipse Shoes",
+    "category": "Shoes",
+    "price": "895 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (24).png",
+    "Code": "923"
+  },
+  {
+    "name": "SereneStride Shoes",
+    "category": "Shoes",
+    "price": "650 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (25).png",
+    "Code": "924"
+  },
+  {
+    "name": "GildedGlide Shoes",
+    "category": "Shoes",
+    "price": "780 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (26).png",
+    "Code": "925"
+  },
+  {
+    "name": "DuskDance Shoes",
+    "category": "Shoes",
+    "price": "725 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (27).png",
+    "Code": "926"
+  },
+  {
+    "name": "VelvetVortex Shoes",
+    "category": "Shoes",
+    "price": "465 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (28).png",
+    "Code": "927"
+  },
+  {
+    "name": "EtherealEcho Shoes",
+    "category": "Shoes",
+    "price": "495 EGP",
+    "imgSrc": "../pics/product/shoes/shoes (29).png",
+    "Code": "928"
+  },
+  {
+    "name": "WarmWoven Socks",
+    "category": "Socks",
+    "price": "150 EGP",
+    "imgSrc": "../pics/product/socks/socks (1).png",
+    "Code": "400"
+  },
+  {
+    "name": "VelvetVista Socks",
+    "category": "Socks",
+    "price": "200 EGP",
+    "imgSrc": "../pics/product/socks/socks (2).png",
+    "Code": "401"
+  },
+  {
+    "name": "CozyCotton Socks",
+    "category": "Socks",
+    "price": "180 EGP",
+    "imgSrc": "../pics/product/socks/socks (3).png",
+    "Code": "402"
+  },
+  {
+    "name": "SilkenStride Socks",
+    "category": "Socks",
+    "price": "250 EGP",
+    "imgSrc": "../pics/product/socks/socks (4).png",
+    "Code": "403"
+  },
+  {
+    "name": "FluffyFeather Socks",
+    "category": "Socks",
+    "price": "120 EGP",
+    "imgSrc": "../pics/product/socks/socks (5).png",
+    "Code": "404"
+  },
+  {
+    "name": "WarmWhirl Socks",
+    "category": "Socks",
+    "price": "220 EGP",
+    "imgSrc": "../pics/product/socks/socks (6).png",
+    "Code": "405"
+  },
+  {
+    "name": "CottonCraze Socks",
+    "category": "Socks",
+    "price": "160 EGP",
+    "imgSrc": "../pics/product/socks/socks (7).png",
+    "Code": "406"
+  },
+  {
+    "name": "FlannelFlow Socks",
+    "category": "Socks",
+    "price": "190 EGP",
+    "imgSrc": "../pics/product/socks/socks (8).png",
+    "Code": "407"
+  },
+  {
+    "name": "PlushPulse Socks",
+    "category": "Socks",
+    "price": "230 EGP",
+    "imgSrc": "../pics/product/socks/socks (9).png",
+    "Code": "408"
+  },
+  {
+    "name": "SatinStride Socks",
+    "category": "Socks",
+    "price": "140 EGP",
+    "imgSrc": "../pics/product/socks/socks (10).png",
+    "Code": "409"
+  },
+  {
+    "name": "CosyCraft Socks",
+    "category": "Socks",
+    "price": "170 EGP",
+    "imgSrc": "../pics/product/socks/socks (11).png",
+    "Code": "410"
+  },
+  {
+    "name": "SnugStyle Socks",
+    "category": "Socks",
+    "price": "200 EGP",
+    "imgSrc": "../pics/product/socks/socks (12).png",
+    "Code": "411"
+  },
+  {
+    "name": "FleeceFlair Socks",
+    "category": "Socks",
+    "price": "180 EGP",
+    "imgSrc": "../pics/product/socks/socks (13).png",
+    "Code": "412"
+  },
+  {
+    "name": "SoftStrand Socks",
+    "category": "Socks",
+    "price": "270 EGP",
+    "imgSrc": "../pics/product/socks/socks (14).png",
+    "Code": "413"
+  },
+  {
+    "name": "CushionCraze Socks",
+    "category": "Socks",
+    "price": "150 EGP",
+    "imgSrc": "../pics/product/socks/socks (15).png",
+    "Code": "414"
+  },
+  {
+    "name": "PlaidPulse Socks",
+    "category": "Socks",
+    "price": "210 EGP",
+    "imgSrc": "../pics/product/socks/socks (16).png",
+    "Code": "415"
+  },
+  {
+    "name": "LuxeLoom Socks",
+    "category": "Socks",
+    "price": "190 EGP",
+    "imgSrc": "../pics/product/socks/socks (17).png",
+    "Code": "416"
+  },
+  {
+    "name": "VelourVista Socks",
+    "category": "Socks",
+    "price": "230 EGP",
+    "imgSrc": "../pics/product/socks/socks (18).png",
+    "Code": "417"
+  },
+  {
+    "name": "SnuggleStride Socks",
+    "category": "Socks",
+    "price": "120 EGP",
+    "imgSrc": "../pics/product/socks/socks (19).png",
+    "Code": "418"
+  },
+  {
+    "name": "CozyCraft Socks",
+    "category": "Socks",
+    "price": "250 EGP",
+    "imgSrc": "../pics/product/socks/socks (20).png",
+    "Code": "419"
+  },
+  {
+    "name": "SoftSole Socks",
+    "category": "Socks",
+    "price": "160 EGP",
+    "imgSrc": "../pics/product/socks/socks (21).png",
+    "Code": "420"
+  },
+  {
+    "name": "SilkStitch Socks",
+    "category": "Socks",
+    "price": "180 EGP",
+    "imgSrc": "../pics/product/socks/socks (22).png",
+    "Code": "421"
+  }
 ]
