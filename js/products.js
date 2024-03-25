@@ -82,7 +82,7 @@ function getProductsSocks() {
 
 function displayProducts(data) {
   divContainer.innerHTML = ""; // Clear the container before adding new items
-
+  debugger;
   if (data.length === 0) {
     // No matching products found
     divContainer.innerHTML = "No products found.";
