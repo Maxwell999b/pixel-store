@@ -53,28 +53,28 @@
 }
 
 .card-cs1:hover img {
-  content: url("/pics/category/hoodie (1).jpg");
+  content: url("/pics/category/hoodie(1).jpg");
   opacity: 0.8;
 }
 
 .card-cs2:hover img {
-  content: url("/pics/category/pants (2).jpg");
+  content: url("/pics/category/pants(2).jpg");
 }
 
 .card-cs3:hover img {
-  content: url("/pics/category/backpack (1).jpg");
+  content: url("/pics/category/backpack(1).jpg");
 }
 
 .card-cs4:hover img {
-  content: url("/pics/category/belt (2).jpg");
+  content: url("/pics/category/belt(2).jpg");
 }
 
 .card-cs5:hover img {
-  content: url("/pics/category/shoes (1).jpg");
+  content: url("/pics/category/shoes(1).jpg");
 }
 
 .card-cs6:hover img {
-  content: url("/pics/category/socks (2).jpg");
+  content: url("/pics/category/socks(2).jpg");
 }
 @keyframes colorStopA {
   0% {

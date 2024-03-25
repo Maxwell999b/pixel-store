@@ -125,7 +125,8 @@ function searchProducts(query) {
         // No matching products found
         if (isProductsPage) {
           // If it's the Products Page, display "No products found."
-          divContainer.innerHTML = "No products found.";
+          divContainer.innerHTML =
+            "<div style='color:white; font-weight: bold; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px;'>404<div style='font-size: 25px;'>No products found.</div></div>";
           return;
         }
       }
