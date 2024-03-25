@@ -11,12 +11,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(148,187,233,1) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(148, 187, 233, 1) 100%);
   opacity: 0.1;
   transition: opacity 2s;
   z-index: 1;
 }
-  
+
 .card-cs:hover {
   transform: scale(1.019);
   filter: brightness(70%);
@@ -53,28 +53,28 @@
 }
 
 .card-cs1:hover img {
-  content: url('/pics/category/hoodie (1).jpg');
+  content: url("/pics/category/hoodie (1).jpg");
   opacity: 0.8;
 }
 
 .card-cs2:hover img {
-  content: url('/pics/category/pants (2).jpg');
+  content: url("/pics/category/pants (2).jpg");
 }
 
 .card-cs3:hover img {
-  content: url('/pics/category/backpack (1).jpg');
+  content: url("/pics/category/backpack (1).jpg");
 }
 
 .card-cs4:hover img {
-  content: url('/pics/category/belt (2).jpg');
+  content: url("/pics/category/belt (2).jpg");
 }
 
 .card-cs5:hover img {
-  content: url('/pics/category/shoes (1).jpg');
+  content: url("/pics/category/shoes (1).jpg");
 }
 
 .card-cs6:hover img {
-  content: url('/pics/category/socks (2).jpg');
+  content: url("/pics/category/socks (2).jpg");
 }
 @keyframes colorStopA {
   0% {
@@ -87,13 +87,13 @@
 
 .btn-overlay-cs {
   background: linear-gradient(135deg, rgba(255, 254, 176, 0.7), rgba(255, 127, 1, 0.7));
-  color: #1B082E;
+  color: #1b082e;
   padding: 5%;
   font-weight: bolder;
-  position:absolute;
+  position: absolute;
   z-index: 1;
   text-orientation: upright;
-  font-family: 'LilitaOne';
+  font-family: "LilitaOne";
   height: 120%;
   width: 85%;
   display: flex;
@@ -119,7 +119,7 @@
   overflow-y: auto;
 }
 .custom-offcanvas {
-  bottom: 20vh; 
+  bottom: 20vh;
 }
 
 .carousel-control-prev i,

@@ -16,6 +16,7 @@
   <link rel="stylesheet" type="" href="../css/dist/cart.css">
   <link rel="stylesheet" type="" href="../css/dist/Products.css">
   <link rel="stylesheet" type="" href="../css/dist/toast.css">
+  <link rel="stylesheet" type="" href="../css/dist/lazyload.css">
 </head>
 
 <body>
@@ -74,7 +75,8 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
-          <img src="../pics/banner/2-1.jpg" class="d-block w-100 h-100" id="blur-bg-image-hc">
+          <img data-src="../pics/banner/2-1.jpg" class="d-block w-100 h-100 lazyload" id="blur-bg-image-hc2"
+            alt="banner.jpg">
           <div class="carousel-caption d-none d-md-block">
             <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel">
               <a href="Home.html">
@@ -89,7 +91,8 @@
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="3000">
-          <img src="../pics/banner/2-2.jpg" class="d-block w-100 h-100" id="blur-bg-image-hc2">
+          <img data-src="../pics/banner/2-2.jpg" class="d-block w-100 h-100 lazyload" id="blur-bg-image-hc2"
+            alt="banner.jpg">
           <div class="carousel-caption d-none d-md-block">
             <button type="button" class="btn btn-lg btn-outline-dark logo-buttons-carousel"><a href="Home.html"><img
                   src="../pics/logo/white-logo-small.png"></a></button>
@@ -192,13 +195,13 @@
           <div class="carousel-item active">
             <div class="d-flex justify-content-center">
               <div class="card col-5 me-3 card-cs card-cs1 card-cs-sp">
-                <img src="../pics/category/hoodie (2).jpg" class="card-img-top" alt="Hoodie's Category">
+                <img data-src="../pics/category/hoodie (2).jpg" class="card-img-top lazyload" alt="Hoodie's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Hoodie.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Hoodies</a>
                 </div>
               </div>
               <div class="card col-5 me-3 card-cs card-cs2">
-                <img src="../pics/category/pants (1).jpg" class="card-img-top" alt="Pants's Category">
+                <img data-src="../pics/category/pants (1).jpg" class="card-img-top lazyload" alt="Pants's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Pants.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Pants</a>
                 </div>
@@ -210,13 +213,14 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <div class="card col-5 me-3 card-cs card-cs3">
-                <img src="../pics/category/backpack (2).jpg" class="card-img-top" alt="Backpack's Category">
+                <img data-src="../pics/category/backpack (2).jpg" class="card-img-top lazyload"
+                  alt="Backpack's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Backpack.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Backpacks</a>
                 </div>
               </div>
               <div class="card col-5 me-3 card-cs card-cs4">
-                <img src="../pics/category/belt (1).jpg" class="card-img-top" alt="Belts's Category">
+                <img data-src="../pics/category/belt (1).jpg" class="card-img-top lazyload" alt="Belts's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Belts.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Belts</a>
                 </div>
@@ -228,13 +232,13 @@
           <div class="carousel-item">
             <div class="d-flex justify-content-center">
               <div class="card col-5 me-3 card-cs card-cs5">
-                <img src="../pics/category/shoes (2).jpg" class="card-img-top" alt="Shoes's Category">
+                <img data-src="../pics/category/shoes (2).jpg" class="card-img-top lazyload" alt="Shoes's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Shoes.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Shoes</a>
                 </div>
               </div>
               <div class="card col-5 me-3 card-cs card-cs6">
-                <img src="../pics/category/socks (1).jpg" class="card-img-top" alt="Socks's Category">
+                <img data-src="../pics/category/socks (1).jpg" class="card-img-top lazyload" alt="Socks's Category">
                 <div class="card-img-overlay card-img-overlay-cs">
                   <a href="Socks.html" class="btn btn-overlay btn-overlay-cs card-title-Home-page">Socks</a>
                 </div>
@@ -280,6 +284,7 @@
     </div>
   </footer>
   <!-- Copyright -->
+  <script src="../js/lazysizes.min.js"></script>
   <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

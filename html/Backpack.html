@@ -1,133 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backpacks's Page</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" type="" href="../css/dist/style.css">
-    <link rel="stylesheet" type="" href="../css/dist/cart.css">
-    <link rel="stylesheet" type="" href="../css/dist/Products.css">
-    <link rel="stylesheet" type="" href="../css/dist/Fonts.css">
-    <link rel="stylesheet" type="" href="../css/dist/mediaquery.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backpacks's Page</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="" href="../css/dist/style.css">
+  <link rel="stylesheet" type="" href="../css/dist/cart.css">
+  <link rel="stylesheet" type="" href="../css/dist/Products.css">
+  <link rel="stylesheet" type="" href="../css/dist/Fonts.css">
+  <link rel="stylesheet" type="" href="../css/dist/mediaquery.css">
 </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary special-page-bg2">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/logo/black-logo-small.png" width="50em"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i class="fa-solid fa-phone fa-shake"></i>Contact Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-link" aria-current="page" role="button" href="About-us.html" target="_self"><i class="fa-solid fa-circle-info fa-bounce"></i>About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self" onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodies</a></li>
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants</a></li>
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Backpack.html" target="_Self">Backpacks</a></li>
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Belts.html" target="_Self">Belts</a></li>
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Shoes.html" target="_Self">Shoes</a></li>
-                  <li><a class="dropdown-item navbarcheck nav-link-menu" href="Socks.html" target="_Self">Socks</a></li>
-                </ul>
-            </li>
 
-            </li>
-          </ul>
-          <form class="d-flex" role="search" id="searchForm">
-            <input class="form-control me-2 search-click visually-hidden" type="search" placeholder="Type your search here..." aria-label="Search" id="searchInput">
-            <button class="btn btn-outline-dark search-btn" type="submit" id="toggleButton">
-                <i class="fa-solid fa-magnifying-glass"></i>Search
-            </button>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary special-page-bg2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html" target="_self"><img src="../pics/logo/black-logo-small.png"
+          width="50em"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" role="button" href="Contact-us.html" target="_self"><i
+                class="fa-solid fa-phone fa-shake"></i>Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-link" aria-current="page" role="button" href="About-us.html" target="_self"><i
+                class="fa-solid fa-circle-info fa-bounce"></i>About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" role="button" href="Products.html" target="_self"
+              onclick="getProducts()"><i class="fa-solid fa-cog fa-spin"></i>Product</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Hoodie.html" target="_self">Hoodies</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Pants.html" target="_Self">Pants</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Backpack.html" target="_Self">Backpacks</a>
+              </li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Belts.html" target="_Self">Belts</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Shoes.html" target="_Self">Shoes</a></li>
+              <li><a class="dropdown-item navbarcheck nav-link-menu" href="Socks.html" target="_Self">Socks</a></li>
+            </ul>
+          </li>
+
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="searchForm">
+          <input class="form-control me-2 search-click visually-hidden" type="search"
+            placeholder="Type your search here..." aria-label="Search" id="searchInput">
+          <button class="btn btn-outline-dark search-btn" type="submit" id="toggleButton">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </button>
         </form>
-          </div>
       </div>
-    </nav>
-    
-      <section >
-        <br>
-        <div id="containeritems"></div>
-      </section>
-      <footer class="text-center text-lg-start bg-dark text-muted text-fixed-bottom fixed-bottom footer footer-products-fixed">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-          <div class="container d-flex align-items-center">
-            <!-- Left -->
-            <span><a href="Home.html"><img src="../pics/logo/white-logo-small.png" width="50em"></a></span>
+    </div>
+  </nav>
+
+  <section>
+    <br>
+    <div id="containeritems"></div>
+  </section>
+  <footer
+    class="text-center text-lg-start bg-dark text-muted text-fixed-bottom fixed-bottom footer footer-products-fixed">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <div class="container d-flex align-items-center">
+        <!-- Left -->
+        <span><a href="Home.html"><img src="../pics/logo/white-logo-small.png" width="50em"></a></span>
+      </div>
+
+      <div class="container d-flex align-items-center justify-content-center justify-content-lg-end">
+        <!-- Right -->
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-facebook brand-prod"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-twitter brand-prod"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-instagram brand-prod"></i>
+        </a>
+        <a href="#" target="_blank" class="me-4 link-secondary">
+          <i class="fab fa-linkedin brand-prod"></i>
+        </a>
+        <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
+          <i class="fa-brands fa-github brand-prod"></i>
+        </a>
+        <!-- Cart Menu -->
+        <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button"
+          data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions"
+          aria-controls="offcanvasLeftBothOptions">
+          <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
+          <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            style="display: none;"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1"
+          id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasLeftBothOptionsLabel">Cart</h5>
+            <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
           </div>
-      
-          <div class="container d-flex align-items-center justify-content-center justify-content-lg-end">
-            <!-- Right -->
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-facebook brand-prod"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-twitter brand-prod"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-instagram brand-prod"></i>
-            </a>
-            <a href="#" target="_blank" class="me-4 link-secondary">
-              <i class="fab fa-linkedin brand-prod"></i>
-            </a>
-            <a href="https://github.com/Maxwell999b" target="_blank" class="me-4 link-secondary">
-              <i class="fa-brands fa-github brand-prod"></i>
-            </a>
-            <!-- Cart Menu -->
-            <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions" aria-controls="offcanvasLeftBothOptions">
-              <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
-              <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;"></span>
-            </button>
-            
-          
-          <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1" id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasLeftBothOptionsLabel">Cart</h5>
-                  <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body small cart-list canvas-cart-body">
-              </div>
-              <div class="cart-total">
-                  <h6 id="cart-total-title">Total is :</h6>
-                  <span id="cart-total-value"></span>
+          <div class="offcanvas-body small cart-list canvas-cart-body">
+          </div>
+          <div class="cart-total">
+            <h6 id="cart-total-title">Total is :</h6>
+            <span id="cart-total-value"></span>
 
-              </div>
-              <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
-              <i class="fa-solid fa-credit-card"></i>BUY
-              </button>
+          </div>
+          <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
+            <i class="fa-solid fa-credit-card"></i>BUY
+          </button>
 
-<!-- Alert BUY Message here -->
-<div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
-  <strong>Thank you for your purchase!</strong> Your order has been received.
-</div>
+          <!-- Alert BUY Message here -->
+          <div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert" style="display:none;">
+            <strong>Thank you for your purchase!</strong> Your order has been received.
+          </div>
 
-            <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="buyToast">
+          <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="buyToast">
                 <div class="toast-body">
                     Your purchase was successful!
                 </div>
             </div> -->
-          </div>
-
-          
         </div>
-        </section>
-      </footer>
-      
+
+
+      </div>
+    </section>
+  </footer>
+
   <!-- Footer -->
-    <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="../js/products.js"></script>
-    <script src="../js/search.js"></script>
-    <script src="../js/cart.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/437b80c4cb.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="../js/products.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+
 </html>

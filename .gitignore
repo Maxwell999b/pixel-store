@@ -34,3 +34,9 @@ Trash
 
 # pictures *remove next restart* after del
 pics/product/shoes/assets/shoes
+
+# .md
+Guide.md
+
+# Prettier settings
+Prettier.prettierrc
