@@ -3,7 +3,6 @@ var divContainer = document.getElementById("containeritems");
 var searchForm = document.getElementById("searchForm");
 var searchInput = document.getElementById("searchInput");
 const pageCategory = getPageCategory();
-
 function loadApi() {
   fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82")
     .then((response) => response.json())
@@ -95,17 +94,52 @@ function displayProducts(data) {
   });
 }
 
-function createProductElement(title, price, thumbnail) {
+function createProductElement(title, price, thumbnail, productName) {
   const divPrd = document.createElement("div");
   divPrd.classList.add("item");
+
   divPrd.innerHTML = `
-        <div class="product-title">${title}</div>
-        <div class="product-price">${price}</div>
-        <img class='img_item' src='${thumbnail}' loading='lazy'>
-        <button class="add-to-cart-button" onclick="addToCart('${title}', '${price}', '${thumbnail}')">Add to Cart</button>
-    `;
+    <div class="product-info">
+      <div class="product-title">${title}</div>
+      <div class="product-price">${price}</div>
+        <div class="rating" data-productname='${productName}'>
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+      </div>
+    </div>
+    <div class="product-image">
+      <img class='img_item' src='${thumbnail}' loading='lazy' data-productname='${productName}'>
+      <button class="add-to-cart-button" onclick="addToCart('${title}', '${price}', '${thumbnail}')">Add to Cart</button>
+    </div>
+  `;
+
+  const ratingDiv = divPrd.querySelector(".rating");
+
+  // Attach mouseover and mouseout event listeners to the product container
+  divPrd.addEventListener("mouseover", function () {
+    ratingDiv.style.display = "block";
+  });
+
+  divPrd.addEventListener("mouseout", function () {
+    ratingDiv.style.display = "block";
+  });
+
+  // Attach event listeners to each star span
+  const stars = ratingDiv.querySelectorAll(".star");
+  stars.forEach((star) => {
+    star.addEventListener("click", function () {
+      const value = parseInt(this.getAttribute("data-value"));
+      clearStars(divPrd);
+      fillStars(divPrd, value);
+    });
+  });
+
   return divPrd;
 }
+
 function searchProducts(query) {
   fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
     .then((response) => response.json())
@@ -189,4 +223,31 @@ function getPageCategory() {
 
   // Return the category or a default value (e.g., 'All' or 'Products')
   return categoryMatch ? categoryMatch[1] : "/Products.html";
+}
+
+// 5 star rating
+const stars = document.querySelectorAll(".star");
+
+stars.forEach((star) => {
+  star.addEventListener("click", () => {
+    const value = parseInt(star.getAttribute("data-value"));
+    clearStars();
+    fillStars(value);
+  });
+});
+
+function clearStars(productElement) {
+  const ratingDiv = productElement.querySelector(".rating");
+  const stars = ratingDiv.querySelectorAll(".star");
+  stars.forEach((star) => {
+    star.classList.remove("active");
+  });
+}
+
+function fillStars(productElement, value) {
+  const ratingDiv = productElement.querySelector(".rating");
+  const stars = ratingDiv.querySelectorAll(".star");
+  for (let i = 0; i < value; i++) {
+    stars[i].classList.add("active");
+  }
 }
