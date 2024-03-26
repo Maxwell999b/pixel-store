@@ -1,5 +1,5 @@
 // Update the addToCart function
-function addToCart(title, price, thumbnail) {
+function addToCart(title, price, thumbnail, size) {
   var cartList = document.querySelector(".cart-list");
   var existingCartItem = cartList.querySelector(`.cart-item[data-title="${title}"]`);
 
@@ -11,8 +11,8 @@ function addToCart(title, price, thumbnail) {
       quantityElement.value = Math.min(quantity + 1, 100);
     }
   } else {
-    var productId = title.replace(/\s+/g, "-").toLowerCase() + "-" + Date.now();
-    addItemToCart(cartList, title, price, thumbnail, productId);
+    // Update the function call to pass the size parameter
+    addItemToCart(cartList, title, price, thumbnail, size); // Pass the size parameter
   }
 
   // Trigger a custom event when quantity changes
@@ -21,7 +21,7 @@ function addToCart(title, price, thumbnail) {
   updateTotalPrice();
 
   // Save the cart to local storage after a delay
-  saveCartToLocalStorage(); // Use the updated saveCartToLocalStorageDelayed function
+  saveCartToLocalStorage();
 }
 
 // Add this function to update quantity in local storage
@@ -99,10 +99,18 @@ function loadCartFromLocalStorage() {
     cartList.innerHTML = "";
 
     cart.forEach(function (item) {
-      addItemToCart(cartList, item.title, item.price, item.thumbnail, item.productId, item.size, ""); // Pass the required parameters
+      addItemToCart(cartList, item.title, item.price, item.thumbnail, item.size); // Update the function call
       var existingCartItem = cartList.querySelector(`.cart-item[data-title="${item.title}"]`);
       var quantityInput = existingCartItem.querySelector(".cart-item-quantity");
       quantityInput.value = item.quantity; // Update the value directly using quantityInput
+
+      // Select the correct size based on the saved data
+      var sizeInputs = existingCartItem.querySelectorAll("input[type=radio][name^=size]");
+      sizeInputs.forEach(function (sizeInput) {
+        if (sizeInput.value === item.size) {
+          sizeInput.checked = true;
+        }
+      });
     });
 
     // Trigger a custom event when the cart is updated
@@ -150,11 +158,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 200); // Adjust the delay as needed
 });
 
-function addItemToCart(cartList, title, price, thumbnail, productId, size) {
+function addItemToCart(cartList, title, price, thumbnail, size) {
   var cartItem = document.createElement("div");
   cartItem.classList.add("cart-item");
-  cartItem.setAttribute("data-title", title);
-  cartItem.setAttribute("data-id", productId); // Add product ID attribute
+  cartItem.setAttribute("data-title", title); // Use title as a unique identifier
 
   var thumbnailElement = document.createElement("img");
   thumbnailElement.src = new URL(thumbnail, window.location.href).href; // Use absolute path
@@ -168,28 +175,28 @@ function addItemToCart(cartList, title, price, thumbnail, productId, size) {
         <p class="cart-item-price">${price}</p>
         <div class="size" data-productname='${title}'>
             <div class="form-check form-check-inline">
-              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-S-${productId}" value="S" ${
+              <input class="form-check-input size-square" type="radio" name="size-${title}" id="size-S-${title}" value="S" ${
     size === "S" ? "checked" : ""
   }>
-              <label class="form-check-label" for="size-S-${productId}">S</label>
+              <label class="form-check-label" for="size-S-${title}">S</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-M-${productId}" value="M" ${
+              <input class="form-check-input size-square" type="radio" name="size-${title}" id="size-M-${title}" value="M" ${
     size === "M" ? "checked" : ""
   }>
-              <label class="form-check-label" for="size-M-${productId}">M</label>
+              <label class="form-check-label" for="size-M-${title}">M</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-L-${productId}" value="L" ${
+              <input class="form-check-input size-square" type="radio" name="size-${title}" id="size-L-${title}" value="L" ${
     size === "L" ? "checked" : ""
   }>
-              <label class="form-check-label" for="size-L-${productId}">L</label>
+              <label class="form-check-label" for="size-L-${title}">L</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-XL-${productId}" value="XL" ${
+              <input class="form-check-input size-square" type="radio" name="size-${title}" id="size-XL-${title}" value="XL" ${
     size === "XL" ? "checked" : ""
   }>
-              <label class="form-check-label" for="size-XL-${productId}">XL</label>
+              <label class="form-check-label" for="size-XL-${title}">XL</label>
             </div>
         </div>
         <div class="cart-item-actions">
@@ -209,7 +216,6 @@ function addItemToCart(cartList, title, price, thumbnail, productId, size) {
   var sizes = cartItemDetails.querySelectorAll(".size-square");
   sizes.forEach((sizeSquare) => {
     sizeSquare.addEventListener("change", function () {
-      size = sizeSquare.value;
       saveCartToLocalStorage(); // Save cart to local storage when size is changed
     });
   });
