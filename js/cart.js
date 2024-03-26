@@ -51,11 +51,21 @@ function saveCartToLocalStorage() {
     var thumbnailElement = cartItem.querySelector(".cart-item-thumbnail");
     var thumbnail = thumbnailElement.src;
 
+    // Retrieve the value of the selected size
+    var selectedSize = "";
+    var sizeInputs = cartItem.querySelectorAll("input[type=radio][name^=size]");
+    sizeInputs.forEach(function (sizeInput) {
+      if (sizeInput.checked) {
+        selectedSize = sizeInput.value;
+      }
+    });
+
     cart.push({
       title: title,
       price: price,
       quantity: quantity,
       thumbnail: thumbnail,
+      size: selectedSize, // Include the selected size in the cart item object
     });
   });
 
@@ -89,7 +99,7 @@ function loadCartFromLocalStorage() {
     cartList.innerHTML = "";
 
     cart.forEach(function (item) {
-      addItemToCart(cartList, item.title, item.price, item.thumbnail, ""); // Pass the required parameters
+      addItemToCart(cartList, item.title, item.price, item.thumbnail, item.productId, item.size, ""); // Pass the required parameters
       var existingCartItem = cartList.querySelector(`.cart-item[data-title="${item.title}"]`);
       var quantityInput = existingCartItem.querySelector(".cart-item-quantity");
       quantityInput.value = item.quantity; // Update the value directly using quantityInput
@@ -140,29 +150,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 200); // Adjust the delay as needed
 });
 
-function clearStars(productElement) {
-  const ratingDiv = productElement.querySelector(".rating");
-  const stars = ratingDiv.querySelectorAll(".star");
-  stars.forEach((star) => {
-    star.classList.remove("active");
-  });
-}
-
-function fillStars(productElement, value) {
-  const ratingDiv = productElement.querySelector(".rating");
-  const stars = ratingDiv.querySelectorAll(".star");
-  for (let i = 0; i < value; i++) {
-    stars[i].classList.add("active");
-  }
-}
-
-function addItemToCart(cartList, title, price, thumbnail, productId, rating) {
+function addItemToCart(cartList, title, price, thumbnail, productId, size) {
   var cartItem = document.createElement("div");
   cartItem.classList.add("cart-item");
   cartItem.setAttribute("data-title", title);
   cartItem.setAttribute("data-id", productId); // Add product ID attribute
 
-  var thumbnailElement = new Image();
+  var thumbnailElement = document.createElement("img");
   thumbnailElement.src = new URL(thumbnail, window.location.href).href; // Use absolute path
   thumbnailElement.alt = title;
   thumbnailElement.classList.add("cart-item-thumbnail");
@@ -172,12 +166,31 @@ function addItemToCart(cartList, title, price, thumbnail, productId, rating) {
   cartItemDetails.innerHTML = `
         <p class="cart-item-title">${title}</p>
         <p class="cart-item-price">${price}</p>
-        <div class="rating" data-productname='${title}'>
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
+        <div class="size" data-productname='${title}'>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-S-${productId}" value="S" ${
+    size === "S" ? "checked" : ""
+  }>
+              <label class="form-check-label" for="size-S-${productId}">S</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-M-${productId}" value="M" ${
+    size === "M" ? "checked" : ""
+  }>
+              <label class="form-check-label" for="size-M-${productId}">M</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-L-${productId}" value="L" ${
+    size === "L" ? "checked" : ""
+  }>
+              <label class="form-check-label" for="size-L-${productId}">L</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input size-square" type="radio" name="size-${productId}" id="size-XL-${productId}" value="XL" ${
+    size === "XL" ? "checked" : ""
+  }>
+              <label class="form-check-label" for="size-XL-${productId}">XL</label>
+            </div>
         </div>
         <div class="cart-item-actions">
             <button class="btn btn-sm btn-outline-secondary" onclick="decrementCartItem(this)">-</button>
@@ -192,20 +205,12 @@ function addItemToCart(cartList, title, price, thumbnail, productId, rating) {
 
   cartList.appendChild(cartItem);
 
-  // Set initial star rating
-  var stars = cartItemDetails.querySelectorAll(".star");
-  stars.forEach((star, index) => {
-    if (index < rating) {
-      star.classList.add("active");
-    }
-  });
-
-  // Attach event listeners to each star span
-  stars.forEach((star, index) => {
-    star.addEventListener("click", function () {
-      const newRating = index + 1;
-      clearStars(cartItemDetails);
-      fillStars(cartItemDetails, newRating);
+  // Set initial size
+  var sizes = cartItemDetails.querySelectorAll(".size-square");
+  sizes.forEach((sizeSquare) => {
+    sizeSquare.addEventListener("change", function () {
+      size = sizeSquare.value;
+      saveCartToLocalStorage(); // Save cart to local storage when size is changed
     });
   });
 
