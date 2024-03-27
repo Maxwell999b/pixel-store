@@ -40,3 +40,6 @@ Guide.md
 
 # Prettier settings
 Prettier.prettierrc
+
+#vscode settings
+.vscode

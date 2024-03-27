@@ -116,7 +116,6 @@
           <div class="cart-total">
             <h6 id="cart-total-title">Total is :</h6>
             <span id="cart-total-value"></span>
-
           </div>
           <button class="btn btn-light btn-sm BUY-btn" type="button" onclick="showBuyAlert()">
             <i class="fa-solid fa-credit-card"></i>BUY
@@ -127,12 +126,14 @@
             <strong>Thank you for your purchase!</strong> Your order has been received.
           </div>
 
-          <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="buyToast">
-                <div class="toast-body">
-                    Your purchase was successful!
-                </div>
-            </div> -->
+          <!-- Add a warning alert for size selection -->
+          <div class="alert alert-warning alert-dismissible fade show" role="alert" id="sizeAlert"
+            style="display:none;">
+            <strong>Error:</strong>Select sizes for all products to complete purchase.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
         </div>
+
 
 
       </div>

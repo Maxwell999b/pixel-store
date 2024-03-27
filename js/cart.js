@@ -384,25 +384,66 @@ function calculateTotalPrice() {
 document.addEventListener("DOMContentLoaded", updateTotalPrice);
 
 function showBuyAlert() {
-  // Check if there are items in the cart
   var cartItems = document.querySelectorAll(".cart-item");
-  if (cartItems.length > 0) {
-    // Show the alert
-    var buyAlert = document.getElementById("buyAlert");
-    buyAlert.style.display = "block";
+  var hasSelectedSize = true;
 
-    // Reload the page after a delay
-    setTimeout(function () {
-      location.reload();
-    }, 2500); // 3000 milliseconds (3 seconds) delay before reload
+  cartItems.forEach(function (cartItem) {
+    var sizeInputs = cartItem.querySelectorAll("input[type=radio][name^=size]");
+    var sizeSelected = Array.from(sizeInputs).some(function (sizeInput) {
+      return sizeInput.checked;
+    });
 
-    // Clear the cart modal
+    if (!sizeSelected) {
+      hasSelectedSize = false;
+    }
+  });
+
+  if (!hasSelectedSize) {
+    var sizeAlert = document.getElementById("sizeAlert");
+    sizeAlert.style.display = "block";
+
     setTimeout(function () {
-      clearCartAndBuy();
-    }, 500);
+      sizeAlert.style.display = "none";
+    }, 3000);
+    return;
   }
+
+  var buyAlert = document.getElementById("buyAlert");
+  buyAlert.style.display = "block";
+
+  setTimeout(function () {
+    location.reload();
+  }, 2500);
+
+  setTimeout(function () {
+    clearCartAndBuy();
+  }, 500);
 }
 
+document.addEventListener("change", function (event) {
+  if (event.target.matches("input[type=radio][name^=size]")) {
+    var allSizesSelected = checkAllSizesSelected();
+    var buyButton = document.querySelector(".BUY-btn");
+    buyButton.disabled = !allSizesSelected;
+  }
+});
+function checkAllSizesSelected() {
+  var cartItems = document.querySelectorAll(".cart-item");
+
+  for (var i = 0; i < cartItems.length; i++) {
+    var cartItem = cartItems[i];
+    var sizeInputs = cartItem.querySelectorAll("input[type=radio][name^=size]");
+    var sizeSelected = Array.from(sizeInputs).some(function (sizeInput) {
+      return sizeInput.checked;
+    });
+
+    if (!sizeSelected) {
+      return false; // If any size is not selected, return false
+    }
+  }
+
+  return true; // All sizes are selected
+}
 // Modify the clearCartModal function to update the visibility of the BUY button
 function clearCartModal() {
   var cartList = document.querySelector(".cart-list");
