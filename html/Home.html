@@ -116,7 +116,6 @@
       </button>
     </div>
   </header>
-
   <section class="text-center text-lg-start bg-white text-muted text-fixed-bottom special-page-bg2">
     <!-- Section: Social media -->
     <section class="d-flex flex-column flex-lg-row justify-content-lg-between align-items-center p-4 border-bottom">
@@ -130,21 +129,21 @@
         <!-- Cart Modal -->
         <div class="me-3 mb-3 mb-lg-0">
           <button id="cartButton" class="btn btn-secondary btn-sm position-relative" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomOptions" aria-controls="offcanvasBottomOptions">
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeftBothOptions"
+            aria-controls="offcanvasLeftBothOptions">
             <i class="fa-solid fa-cart-shopping fa-fade"></i> Cart
             <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill"
               style="display: none;"></span>
           </button>
 
-          <div class="offcanvas offcanvas-bottom canvas-cart-heading custom-offcanvas" data-bs-scroll="true"
-            tabindex="-1" id="offcanvasBottomOptions" aria-labelledby="offcanvasBottomOptionsLabel">
+          <div class="offcanvas offcanvas-start canvas-cart-heading" data-bs-scroll="true" tabindex="-1"
+            id="offcanvasLeftBothOptions" aria-labelledby="offcanvasLeftBothOptionsLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasBottomOptionsLabel">Cart</h5>
+              <h5 class="offcanvas-title canvas-cart-heading-title" id="offcanvasLeftBothOptionsLabel">Cart</h5>
               <button type="button" class="btn-close text-reset canvas-cart-close-button" data-bs-dismiss="offcanvas"
                 aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body small cart-list canvas-cart-body canvas-body-desktop">
-              <!-- Your cart items go here -->
+            <div class="offcanvas-body small cart-list canvas-cart-body">
             </div>
             <div class="cart-total">
               <h6 id="cart-total-title">Total is :</h6>
@@ -158,6 +157,13 @@
             <div class="alert alert-success alert-dismissible fade show" role="alert" id="buyAlert"
               style="display:none;">
               <strong>Thank you for your purchase!</strong> Your order has been received.
+            </div>
+
+            <!-- Add a warning alert for size selection -->
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" id="sizeAlert"
+              style="display:none;">
+              <strong>Select sizes for all products </strong>to complete purchase.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
           </div>
         </div>
@@ -187,8 +193,8 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links  -->
-    <section class="container-fluid p-4 d-flex justify-content-center">
-      <div id="categoryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <section class="container-fluid p-4 d-flex justify-content-center main-container-home-cards-hero">
+      <div id="categoryCarousel" class="carousel slide carousel-home-cards-hero" data-bs-ride="carousel">
         <div class="carousel-inner">
           <!-- First Carousel Item -->
           <div class="carousel-item active">
