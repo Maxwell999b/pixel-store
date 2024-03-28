@@ -44,3 +44,6 @@ Prettier.prettierrc
 
 #vscode settings
 .vscode
+
+# .swm
+.swm/
