@@ -14,15 +14,13 @@ function validateMessage(message) {
   // Check if the message has at least 15 characters
   return message.length >= 15;
 }
-// ignore this warning error
 function sendMessage() {
   var fullnameInput = document.getElementById("fullnameInput");
   var emailInput = document.getElementById("emailInput");
   var messageTextarea = document.getElementById("messageTextarea");
   var validationAlert = document.getElementById("validationAlert");
   var validationErrors = document.getElementById("validationErrors");
-  var successModal = new bootstrap.Modal(document.getElementById("successModal"));
-
+  var successModal = new bootstrap.Modal(document.getElementById("successModal")); // ignore this warning error
   // Reset previous validation errors
   validationErrors.innerHTML = "";
 

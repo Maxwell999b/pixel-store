@@ -112,16 +112,6 @@
   color: #775896;
 }
 
-/* this is for the cart modal on the Home Page Only *Desktop Size only* */
-.canvas-cart-body {
-  min-height: 120px;
-  /* max-height: 100px; */
-  overflow-y: auto;
-}
-.custom-offcanvas {
-  bottom: 20vh;
-}
-
 .carousel-control-prev i,
 .carousel-control-next i {
   font-size: 2rem;

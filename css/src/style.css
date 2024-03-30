@@ -23,7 +23,7 @@ body {
   color: rgb(255, 255, 255);
   font-size: 1rem;
 }
-
+/* ignore unknown error the class/id is correct */
 .navbarcheck:hover {
   color: rgb(30, 103, 170);
 }
@@ -102,7 +102,7 @@ body {
   pointer-events: none;
   padding: 10px;
   line-height: 1.5;
-  color: #212529; /* Text color */
+  color: #212529;
 }
 
 .hidden {
@@ -112,23 +112,21 @@ body {
 /* Hover background color for fields */
 #emailInput:hover,
 #messageTextarea:hover,
+/* ignore unknown error the class/id is correct */
 #fullnameInput:hover {
-  background-color: rgba(106, 192, 192, 0.247) !important; /* Added !important to ensure it overrides other styles */
+  background-color: rgba(106, 192, 192, 0.247) !important;
 }
 
-/* Hover color for @ symbol in emailInput */
-#emailInput::after {
-  content: "@";
-  color: #f8cb84 !important; /* Added !important to ensure it overrides other styles */
-}
-
-/* Hover background color for Clear */
 #Clear_button_form:hover {
-  background-color: #292929 !important; /* Added !important to ensure it overrides other styles */
+  background-color: #7cb0ff !important;
+  color: #921600;
+  font-weight: bold;
 }
-/* Hover background color for Send */
+
 #Send_button_form:hover {
-  background-color: #f5d184 !important; /* Added !important to ensure it overrides other styles */
+  background-color: #f5d184 !important;
+  color: #009231;
+  font-weight: bold;
 }
 
 .modal-dialog.modal-dialog-top {
@@ -170,9 +168,6 @@ body {
   color: #ff6f61;
   font-weight: bold;
 }
-/* #blur-bg-image-hc{
-  filter: blur(1.9px);
-} */
 
 .brand-text {
   color: #333333;
@@ -199,6 +194,8 @@ body {
   font-weight: bold;
   background-color: #f0e7db !important;
 }
+
+/* ignore unknown error the class/id is correct */
 #containeritems {
   margin-bottom: 8%;
 }
@@ -221,6 +218,9 @@ a.link-secondary {
 }
 .search-click {
   background-color: #ffdde1 !important;
+}
+.search-click::-moz-placeholder {
+  color: #2980b9;
 }
 .search-click::placeholder {
   color: #2980b9;

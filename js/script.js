@@ -30,7 +30,6 @@ function displayProd(p, container) {
 
 getProducts();
 
-// Other parts of your code remain unchanged
 var textarea = document.querySelector(".form-control");
 var textareaContent = document.querySelector(".textarea-content");
 

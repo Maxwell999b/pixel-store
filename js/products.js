@@ -47,7 +47,7 @@ function getProductsBackpack() {
   fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
-      // Display only Pants Backpack
+      // Display only Backpack Backpack
       displayProducts(data.filter((item) => item.category === "Backpack"));
     });
 }

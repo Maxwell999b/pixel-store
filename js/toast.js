@@ -1,17 +1,16 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Create an audio element for the notification sound
-  var notificationSound = new Audio('../sounds/notifications-sound-toast-play.mp3');
+  var notificationSound = new Audio("../sounds/notifications-sound-toast-play.mp3");
 
-  // Ignore error: undeclared variable 'bootstrap'
   // Create a toast instance
-  var myToast = new bootstrap.Toast(document.querySelector('.toast'));
+  var myToast = new bootstrap.Toast(document.querySelector(".toast")); // Ignore error: undeclared variable 'bootstrap'
 
   // Track whether the toast has been shown
   var toastShown = false;
 
   // Function to check if the user has scrolled to the footer
   function checkScroll() {
-    var footer = document.querySelector('#toastfooter');
+    var footer = document.querySelector("#toastfooter");
     var footerOffset = footer.offsetTop;
     var scrollTop = window.scrollY;
     var windowHeight = window.innerHeight || document.documentElement.clientHeight;
@@ -31,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Add 'shown.bs.toast' event listener to play sound once the toast is shown
-  document.querySelector('.toast').addEventListener('shown.bs.toast', function () {
+  document.querySelector(".toast").addEventListener("shown.bs.toast", function () {
     playNotificationSound();
   });
 
   // Add scroll event listener
-  window.addEventListener('scroll', checkScroll);
+  window.addEventListener("scroll", checkScroll);
 });

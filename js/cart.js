@@ -1,4 +1,4 @@
-// Update the addToCart function
+// addToCart function
 function addToCart(title, price, thumbnail, size) {
   var cartList = document.querySelector(".cart-list");
   var existingCartItem = cartList.querySelector(`.cart-item[data-title="${title}"]`);
@@ -11,8 +11,7 @@ function addToCart(title, price, thumbnail, size) {
       quantityElement.value = Math.min(quantity + 1, 100);
     }
   } else {
-    // Update the function call to pass the size parameter
-    addItemToCart(cartList, title, price, thumbnail, size); // Pass the size parameter
+    addItemToCart(cartList, title, price, thumbnail, size);
   }
 
   // Trigger a custom event when quantity changes
@@ -65,7 +64,7 @@ function saveCartToLocalStorage() {
       price: price,
       quantity: quantity,
       thumbnail: thumbnail,
-      size: selectedSize, // Include the selected size in the cart item object
+      size: selectedSize,
     });
   });
 
@@ -84,7 +83,7 @@ function saveCartToLocalStorageDelayed() {
   // Set a new timeout for delayed saving
   window.saveCartTimeout = setTimeout(function () {
     saveCartToLocalStorage();
-  }, 200); // You can adjust the delay as needed
+  }, 200);
 }
 
 // Function to load the cart from local storage on page load
@@ -99,10 +98,10 @@ function loadCartFromLocalStorage() {
     cartList.innerHTML = "";
 
     cart.forEach(function (item) {
-      addItemToCart(cartList, item.title, item.price, item.thumbnail, item.size); // Update the function call
+      addItemToCart(cartList, item.title, item.price, item.thumbnail, item.size);
       var existingCartItem = cartList.querySelector(`.cart-item[data-title="${item.title}"]`);
       var quantityInput = existingCartItem.querySelector(".cart-item-quantity");
-      quantityInput.value = item.quantity; // Update the value directly using quantityInput
+      quantityInput.value = item.quantity;
 
       // Select the correct size based on the saved data
       var sizeInputs = existingCartItem.querySelectorAll("input[type=radio][name^=size]");
@@ -150,12 +149,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Use setTimeout to delay the visibility checks
   setTimeout(function () {
-    // Add this line to hide the BUY button initially if the cart is empty
+    // hide the BUY button initially if the cart is empty
     checkBuyButtonVisibility();
 
-    // Update the Cart Badge Count
     updateCartBadgeCount();
-  }, 200); // Adjust the delay as needed
+  }, 200);
 });
 
 function addItemToCart(cartList, title, price, thumbnail, size) {
@@ -216,7 +214,7 @@ function addItemToCart(cartList, title, price, thumbnail, size) {
   var sizes = cartItemDetails.querySelectorAll(".size-square");
   sizes.forEach((sizeSquare) => {
     sizeSquare.addEventListener("change", function () {
-      saveCartToLocalStorage(); // Save cart to local storage when size is changed
+      saveCartToLocalStorage();
     });
   });
 
@@ -234,7 +232,6 @@ function validateQuantity(input) {
     input.value = Math.min(value, 100);
   }
 
-  // Update the total value
   updateTotalPrice();
 }
 
@@ -249,12 +246,11 @@ function updateTotalPrice() {
   }
 }
 
-// Function to format a number with commas
+// Function to format a number with commas For Total Price to show as 1,000,000.00 "3 Number Digits"
 function formatNumberWithCommas(number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// Listen for the custom event
 document.addEventListener("cartUpdated", updateTotalPrice);
 
 function removeCartItem(button) {
@@ -292,7 +288,7 @@ function incrementCartItem(button) {
   var quantityInput = button.parentElement.querySelector(".cart-item-quantity");
   var quantity = parseInt(quantityInput.value);
 
-  // Increment the quantity, but ensure it does not exceed the limit (10000)
+  // Increment the quantity, but ensure it does not exceed the limit (100)
   quantityInput.value = Math.min(quantity + 1, 100);
 
   // Dispatch custom event when quantity is changed
@@ -321,11 +317,10 @@ function decrementCartItem(button) {
     dispatchQuantityChangeEvent();
   }
 
-  // Update the total value
   updateTotalPrice();
-  // Update the Cart Badge Count
+
   updateCartBadgeCount();
-  // Update the Local Storage
+
   saveCartToLocalStorage();
 }
 
@@ -333,18 +328,16 @@ function deleteCartItem(button) {
   var cartItem = button.closest(".cart-item");
   cartItem.remove();
 
-  // Update the total value
   updateTotalPrice();
 
   // Trigger a custom event to notify the cart is updated
   var event = new Event("cartUpdated");
   document.dispatchEvent(event);
 
-  // Update the total value
   updateTotalPrice();
-  // Update the Cart Badge Count
+
   updateCartBadgeCount();
-  // Update the Local Storage
+
   saveCartToLocalStorage();
 }
 
@@ -464,22 +457,6 @@ function clearCartModal() {
   buyButton.style.display = cartList.hasChildNodes() ? "inline-block" : "none";
 }
 
-// if i use this one it rest to 1 on Local Storage and the Cart modal
-// // Initial setup to hide the BUY button
-// document.addEventListener('DOMContentLoaded', function () {
-//     var buyButton = document.querySelector('.BUY-btn');
-//     buyButton.style.display = 'none';
-
-//     // Trigger the loadCartFromLocalStorage function after a slight delay
-//     setTimeout(function () {
-//         loadCartFromLocalStorage();
-//     }, 200); // Adjust the delay as needed
-// });
-
-// if i use this one it rest to 1 on Local Storage but on the Cart modal the right quantity
-// that i was having before refreshing the page stays on the cart modal until
-// i use + or - or add to cart button any other function to make the Local storage catch
-// that same quantity
 // Add this line to hide the BUY button initially if the cart is empty
 document.addEventListener("DOMContentLoaded", function () {
   var buyButton = document.querySelector(".BUY-btn");
@@ -494,10 +471,7 @@ document.addEventListener("cartUpdated", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Initial setup to update the total price on page load
   updateTotalPrice();
-
-  // Add other necessary setup or initialization code here
 });
 
 // Update the cart badge count for each item
@@ -517,7 +491,6 @@ function updateCartBadgeCount() {
   updateCartBadge(totalQuantity);
 }
 
-// Add this function to update the cart badge
 function updateCartBadge(count) {
   var badgeElement = document.getElementById("cart-badge");
   if (badgeElement) {
@@ -526,12 +499,10 @@ function updateCartBadge(count) {
   }
 }
 
-// Add this function to clear the cart and update the visibility of the BUY button
 function clearCartAndBuy() {
   var cartList = document.querySelector(".cart-list");
   cartList.innerHTML = ""; // Clear the cart items
 
-  // Trigger a custom event to notify the offcanvas script
   var event = new Event("cartModalUpdated");
   document.dispatchEvent(event);
 
@@ -548,7 +519,6 @@ function clearCartAndBuy() {
   localStorage.removeItem("cart");
 }
 
-// Listen for the custom event
 document.addEventListener("cartUpdated", function () {
   var cartItems = document.querySelectorAll(".cart-item");
   var cartItemCount = cartItems.length;
@@ -560,7 +530,6 @@ document.addEventListener("DOMContentLoaded", function () {
   updateCartBadgeCount();
 });
 
-// Add this line to hide the BUY button initially if the cart is empty
 clearCartModal();
 
 // function to check the visibility of the BUY button
@@ -595,12 +564,3 @@ document.addEventListener("input", function (event) {
 });
 
 updateCartBadgeCount();
-
-// function showBuyToast() {
-//     // Trigger the toast
-//     var toast = new bootstrap.Toast(document.getElementById('buyToast'));
-//     toast.show();
-
-//     // Close the cart modal
-//     $('#offcanvasLeftBothOptions').offcanvas('hide');
-// }
