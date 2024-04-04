@@ -57,7 +57,10 @@
         </ul>
         <form class="d-flex" role="search" id="searchForm">
           <input class="form-control me-2 search-click visually-hidden" type="search"
-            placeholder="Type your search here..." aria-label="Search" id="searchInput">
+            placeholder="Type your search here..." aria-label="Search" id="searchInput" list="search-cat">
+          <datalist id="search-cat">
+            <option value="Stride"></option>
+          </datalist>
           <button class="btn btn-outline-dark search-btn" type="submit" id="toggleButton">
             <i class="fa-solid fa-magnifying-glass"></i>Search
           </button>
