@@ -147,6 +147,12 @@ function searchProducts(query) {
       divContainer.innerHTML = "";
 
       const isProductsPage = window.location.pathname.includes("Products.html");
+      const isHoodiePage = window.location.pathname.includes("Hoodie.html");
+      const isPantsPage = window.location.pathname.includes("Pants.html");
+      const isBackpackPage = window.location.pathname.includes("Backpack.html");
+      const isBeltsPage = window.location.pathname.includes("Belts.html");
+      const isShoesPage = window.location.pathname.includes("Shoes.html");
+      const isSocksPage = window.location.pathname.includes("Socks.html");
 
       const filteredData = Data.filter(
         (item) =>
@@ -156,7 +162,15 @@ function searchProducts(query) {
 
       if (filteredData.length === 0) {
         // No matching products found
-        if (isProductsPage) {
+        if (
+          isProductsPage ||
+          isHoodiePage ||
+          isPantsPage ||
+          isBackpackPage ||
+          isBeltsPage ||
+          isShoesPage ||
+          isSocksPage
+        ) {
           // If it's the Products Page, display "No products found."
           divContainer.innerHTML =
             "<div style='color:white; font-weight: bold; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 50px;'>404<div style='font-size: 25px;'>No products found.</div></div>";
