@@ -46,4 +46,4 @@ Prettier.prettierrc
 .vscode
 
 # .swm
-.swm/
+#.swm/
