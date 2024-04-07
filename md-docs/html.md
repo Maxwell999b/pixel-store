@@ -1,27 +1,27 @@
 # Html File structure :
 
 1. **Info Pages**
-   
+
    1. [/html/Home.html](/html/Home.html)
-   
+
    2. [/html/Contact-us.html](/html/Contact-us.html)
-   
+
    3. [/html/About-us.html](/html/About-us.html)
 
 2. **Shopping Pages** :
-   
+
    1. [/html/Products.html](/html/Products.html)
-   
+
    2. [/html/Hoodie.html](/html/Hoodie.html)
-   
+
    3. [/html/Pants.html](/html/Pants.html)
-   
+
    4. [/html/Backpack.html](/html/Backpack.html)
-   
+
    5. [/html/Belts.html](/html/Belts.html)
-   
+
    6. [/html/Shoes.html](/html/Shoes.html)
-   
+
    7. [/html/Socks.html](/html/Socks.html)
 
 ## Info Pages File Structure :
@@ -32,23 +32,23 @@
 
 3. **Head Section**: Contains meta information about the document, including character encoding, viewport settings, and links to external stylesheets and scripts.
 
-   - **Meta Tags**: Define metadata about the HTML document, such as character encoding, viewport settings, and compatibility settings.
+- **Meta Tags**: Define metadata about the HTML document, such as character encoding, viewport settings, and compatibility settings.
 
-   - **Title Tag**: Specifies the title of the document, which appears in the browser tab.
+- **Title Tag**: Specifies the title of the document, which appears in the browser tab.
 
-   - **Link Tags**: Link to external CSS stylesheets and fonts, including Bootstrap for responsive design and custom styles for the site.
+- **Link Tags**: Link to external CSS stylesheets and fonts, including Bootstrap for responsive design and custom styles for the site.
 
 4. **Body Section**: Contains the content of the document, structured into various sections.
 
-   - **Navigation Bar**: A responsive navigation bar that includes links to different sections of the site, such as Contact Us, About Us, and Products. It also features a search bar and a dropdown menu for navigating to specific product categories.
+- **Navigation Bar**: A responsive navigation bar that includes links to different sections of the site, such as Contact Us, About Us, and Products. It also features a search bar and a dropdown menu for navigating to specific product categories.
 
-   - **Hero Section**: A carousel that showcases featured products or promotions, with each slide containing an image and a caption.
+- **Hero Section**: A carousel that showcases featured products or promotions, with each slide containing an image and a caption.
 
-   - **Social Media and Contact Section**: Displays links to social media profiles and contact information, including phone numbers and email addresses.
+- **Social Media and Contact Section**: Displays links to social media profiles and contact information, including phone numbers and email addresses.
 
-   - **Main Content Section**: A Special section that Depends From Each page and another.
+- **Main Content Section**: A Special section that Depends From Each page and another.
 
-   - **Footer**: Contains copyright information and contact details, including phone numbers, email address, and physical location.
+- **Footer**: Contains copyright information and contact details, including phone numbers, email address, and physical location.
 
 5. **Script Tags**: Link to external JavaScript files that provide functionality for the site, such as lazy loading images, handling cart operations, and displaying toast notifications.
 
@@ -113,17 +113,21 @@ This file is crucial for providing visitors with a deeper understanding of the [
 2. **HTML Tag**: The root element of an HTML page.
 
 3. **Head Section**: Contains meta information about the document, including character encoding, viewport settings, and links to external stylesheets and scripts.
+
 - **Meta Tags**: Define metadata about the HTML document, such as character encoding, viewport settings, and compatibility settings.
 
 - **Title Tag**: Specifies the title of the document, which appears in the browser tab.
 
 - **Link Tags**: Link to external CSS stylesheets and fonts, including Bootstrap for responsive design and custom styles for the site.
+
 4. **Body Section**: Contains the content of the document, structured into various sections.
+
 - **Navigation Bar**: A responsive navigation bar that includes links to different sections of the site, such as Home, Contact Us, and About Us. It also features a search bar and a dropdown menu for navigating to specific product categories.
 
 - **Products Section**: A dynamic section where products are displayed. This section is designed to be populated with product information fetched from a server or a local JSON file, allowing for a flexible and scalable product listing.
 
 - **Footer**: Contains copyright information and contact details, including phone numbers, email address, and physical location.
+
 5. **Script Tags**: Link to external JavaScript files that provide functionality for the site, such as lazy loading images, handling product listings, and displaying toast notifications.
 
 ### Key Features
@@ -227,3 +231,5 @@ The [/html/Socks.html](/html/Socks.html) file serves as a dedicated product list
 - **Socks Section**: A dynamic section where socks are displayed. This section is designed to be populated with sock information fetched from a server or a local JSON file, allowing for a flexible and scalable product listing.
 
 This file is crucial for showcasing the [Pixel Store](https://pixel-store-seven.vercel.app/)'s sock offerings, making it an essential part of the website's architecture.
+
+[← GO BACK](../README.md)

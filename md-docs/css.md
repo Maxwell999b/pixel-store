@@ -1,51 +1,51 @@
 # CSS File structure :
 
 1. [/css/dist/](/css/dist/)
-   
+
    1. [/css/dist/style.css](/css/dist/style.css)
-   
+
    2. [/css/dist/home.css](/css/dist/home.css)
-   
+
    3. [/css/dist/About-us.css](/css/dist/About-us.css)
-   
+
    4. [/css/dist/mediaquery.css](/css/dist/mediaquery.css)
-   
+
    5. [/css/dist/mist-effect.css](/css/dist/mist-effect.css)
-   
+
    6. [/css/dist/toast.css](/css/dist/toast.css)
-   
+
    7. [/css/dist/lazyload.css](/css/dist/lazyload.css)
-   
+
    8. [/css/dist/Fonts.css](/css/dist/Fonts.css)
-   
+
    9. [/css/dist/Products.css](/css/dist/Products.css)
-   
+
    10. [/css/dist/cart.css](/css/dist/cart.css)
-   
+
    11. [/css/dist/5star.css](/css/dist/5star.css)
 
 2. [/css/src/](/css/src/)
-   
+
    1. [/css/src/style.css](/css/src/style.css)
-   
+
    2. [/css/src/home.css](/css/src/home.css)
-   
+
    3. [/css/src/About-us.css](/css/src/About-us.css)
-   
+
    4. [/css/src/mediaquery.css](/css/src/mediaquery.css)
-   
+
    5. [/css/src/mist-effect.css](/css/src/mist-effect.css)
-   
+
    6. [/css/src/toast.css](/css/src/toast.css)
-   
+
    7. [/css/src/lazyload.css](/css/src/lazyload.css)
-   
+
    8. [/css/src/Fonts.css](/css/src/Fonts.css)
-   
+
    9. [/css/src/Products.css](/css/src/Products.css)
-   
+
    10. [/css/src/cart.css](/css/src/cart.css)
-   
+
    11. [/css/src/5star.css](/css/src/5star.css)
 
 ---
@@ -262,3 +262,5 @@ This file likely contains styles for the product listing pages, where users can 
 - **Accessibility**: Ensuring that the site is accessible to all users, including those with disabilities, is crucial. This includes proper use of ARIA roles and ensuring that interactive elements are keyboard-navigable.
 
 These CSS files play a crucial role in the visual presentation and functionality of the Pixel Store website, enhancing the user experience and ensuring that the site is both visually appealing and user-friendly.
+
+[← GO BACK](../README.md)

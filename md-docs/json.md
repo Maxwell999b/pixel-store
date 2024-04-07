@@ -10,11 +10,11 @@ Each product object in the `product.json` file has the following structure:
 
 ```json
 {
- "name": "Product Name",
- "category": "Product Category",
- "price": "Product Price",
- "imgSrc": "Relative Path to Product Image",
- "Code": "Unique Product Code"
+  "name": "Product Name",
+  "category": "Product Category",
+  "price": "Product Price",
+  "imgSrc": "Relative Path to Product Image",
+  "Code": "Unique Product Code"
 }
 ```
 
@@ -40,11 +40,11 @@ Example of adding a new product:
 
 ```json
 {
- "name": "New Product Name",
- "category": "New Product Category",
- "price": "New Product Price",
- "imgSrc": "../path/to/new/product/image.png",
- "Code": "New Unique Product Code"
+  "name": "New Product Name",
+  "category": "New Product Category",
+  "price": "New Product Price",
+  "imgSrc": "../path/to/new/product/image.png",
+  "Code": "New Unique Product Code"
 }
 ```
 
@@ -57,3 +57,5 @@ Example of adding a new product:
 - The unique code (`Code`) for each product should be unique to avoid conflicts.
 
 By following these steps, you can easily add more items to the product catalog in the [/json/product.json](/json/product.json) file, ensuring that the Pixel Store website remains up-to-date with the latest products.
+
+[← GO BACK](../README.md)

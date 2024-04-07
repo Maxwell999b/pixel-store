@@ -2,6 +2,8 @@
 
 This document provides an overview of the available documentation in this repository.
 
+> [Live Demo](https://pixel-store-seven.vercel.app/ "https://pixel-store-seven.vercel.app")
+
 ## Documentation
 
 - [HTML Docs](md-docs/html.md) - This document outlines the structure of the e-commerce website, including the layout, navigation bar, and product display components. It covers the use of HTML elements and attributes to create a responsive and user-friendly interface.
