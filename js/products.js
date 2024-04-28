@@ -4,7 +4,7 @@ var searchForm = document.getElementById("searchForm");
 var searchInput = document.getElementById("searchInput");
 const pageCategory = getPageCategory();
 function loadApi() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82")
+  fetch("https://raw.githubusercontent.com/Maxwell999b/pixel-store/main/json/product.json")
     .then((response) => response.json())
     .then((data) => {
       if (pageCategory === "Hoodie") {
@@ -26,7 +26,7 @@ function loadApi() {
 }
 
 function getProductsHoodie() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Hoodie products
@@ -35,7 +35,7 @@ function getProductsHoodie() {
 }
 
 function getProductsPants() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Pants products
@@ -44,7 +44,7 @@ function getProductsPants() {
 }
 
 function getProductsBackpack() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Backpack Backpack
@@ -53,7 +53,7 @@ function getProductsBackpack() {
 }
 
 function getProductsBelts() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Belts products
@@ -62,7 +62,7 @@ function getProductsBelts() {
 }
 
 function getProductsShoes() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Shoes products
@@ -71,7 +71,7 @@ function getProductsShoes() {
 }
 
 function getProductsSocks() {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((data) => {
       // Display only Socks products
@@ -141,7 +141,7 @@ function createProductElement(title, price, thumbnail, productName) {
 }
 
 function searchProducts(query) {
-  fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" })
+  fetch("https://raw.githubusercontent.com/maxwell999b/pixel-store/main/json/product.json", { method: "get" })
     .then((response) => response.json())
     .then((Data) => {
       divContainer.innerHTML = "";

@@ -1,9 +1,9 @@
 var divContainer = document.getElementById("containeritems");
 
 function fetchProducts() {
-  return fetch("https://mocki.io/v1/d2da016c-2ebf-4e5e-9907-3dfeaf86bf82", { method: "get" }).then((response) =>
-    response.json()
-  );
+  return fetch("https://raw.githubusercontent.com/Maxwell999b/pixel-store/main/json/product.json", {
+    method: "get",
+  }).then((response) => response.json());
 }
 
 function getProducts() {
