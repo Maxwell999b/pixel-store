@@ -145,6 +145,14 @@ div.cart-item {
   font-size: 12px;
   font-weight: bold;
 }
+.size-square:hover + label {
+  background-color: rgb(228, 191, 243);
+  border-color: rgb(74, 72, 99);
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff9aa;
+}
+
 .size-square:checked + label {
   background-color: rgb(207, 135, 235);
   border-color: rgb(44, 42, 80);
