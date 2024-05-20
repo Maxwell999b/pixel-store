@@ -47,3 +47,8 @@ Prettier.prettierrc
 
 # .swm
 #.swm/
+
+# performance assets
+
+unlighthouse.config.ts
+.unlighthouse/
