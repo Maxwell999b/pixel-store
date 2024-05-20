@@ -46,7 +46,7 @@ Prettier.prettierrc
 .vscode
 
 # .swm
-#.swm/
+.swm/
 
 # performance assets
 
